@@ -2800,12 +2800,12 @@ ul.alert {
   .CSA-button-left,
   .CSA-button-right {
     opacity: .4;
-    background-image: url(CSA-buttons.png);
+    background-image: url(../img/csa-buttons.png);
     background-repeat: no-repeat;
   }
   .CSA-button-up {
     opacity: .4;
-    background-image: url(CSA-buttons.png);
+    background-image: url(../img/csa-buttons.png);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -2959,7 +2959,7 @@ ul.alert {
 .fancybox-close,
 .fancybox-next span,
 .fancybox-prev span {
-  background-image: url(../img/fancybox/fancybox_sprite.png);
+  background-image: url(../img/fancybox_sprite.png);
 }
 
 #fancybox-loading {
@@ -3001,7 +3001,7 @@ ul.alert {
   width: 44px;
   height: 44px;
 
-  background: url(../img/fancybox/fancybox_loading.gif) center center no-repeat;
+  background: url(../img/fancybox_loading.gif) center center no-repeat;
 }
 
 .fancybox-close {
@@ -3020,7 +3020,7 @@ ul.alert {
 
   text-decoration: none;
 
-  background: url(../img/fancybox/blank.gif);
+  background: url(../img/blank.gif);
 
   -webkit-tap-highlight-color: transparent;
 }
@@ -3093,7 +3093,7 @@ ul.alert {
   display: none;
   overflow: hidden;
 
-  background: url(../img/fancybox/fancybox_overlay.png);
+  background: url(../img/fancybox_overlay.png);
 }
 
 .fancybox-overlay-fixed {

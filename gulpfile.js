@@ -49,9 +49,9 @@ var appFiles = {
   vendor_scripts: [paths.scripts.vendor_src]
 };
 var spriteConfig = {
-  imgName: 'sprite.png',
+  imgName: 'sprite2.png',
   cssName: '_sprite.scss',
-  imgPath: '../img/' + 'sprite.png'
+  imgPath: '../img/' + 'sprite2.png'
 };
 var changeEvent = function (evt) {
   gutil.log('File', gutil.colors.cyan(evt.path.replace(new RegExp('/.*(?=/' + basePaths.src + ')/'), '')), 'was', gutil.colors.magenta(evt.type));
