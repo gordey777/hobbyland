@@ -830,7 +830,9 @@ input[type=checkbox] + label .facet-color-item .facet-color-icon {
   font-weight: 400;
   font-style: normal;
 
-  src: url(../fonts/MVideo_regular_webkit.woff2?vk6or) format('woff2'), url(../fonts/MVideo_regular_webkit.woff?vk6or) format('woff'), url(../fonts/MVideo_regular_webkit.ttf?vk6or) format('truetype'), url(../fonts/MVideo_regular_webkit.svg?vk6or#MVideo-Regular) format('svg');
+  src: url(../fonts/MVideo_regular_webkit.woff2) format('woff2'),
+  url(../fonts/MVideo_regular_webkit.woff) format('woff'),
+  url(../fonts/MVideo_regular_webkit.ttf) format('truetype'), url(../fonts/MVideo_regular_webkit.svg) format('svg');
 }
 
 @font-face {
@@ -838,7 +840,7 @@ input[type=checkbox] + label .facet-color-item .facet-color-icon {
   font-weight: 700;
   font-style: normal;
 
-  src: url(../fonts/MVideo_bold_webkit.woff2?vk6or) format('woff2'), url(../fonts/MVideo_bold_webkit.woff?vk6or) format('woff'), url(../fonts/MVideo_bold_webkit.ttf?vk6or) format('truetype'), url(../fonts/MVideo_bold_webkit.svg?vk6or#M.Video-Bold) format('svg');
+  src: url(../fonts/MVideo_bold_webkit.woff2) format('woff2'), url(../fonts/MVideo_bold_webkit.woff) format('woff'), url(../fonts/MVideo_bold_webkit.ttf) format('truetype'), url(../fonts/MVideo_bold_webkit.svg) format('svg');
 }
 
 @font-face {
@@ -854,7 +856,7 @@ input[type=checkbox] + label .facet-color-item .facet-color-icon {
   font-weight: 700;
   font-style: italic;
 
-  src: url(../fonts/MVideo_italic_bold_webkit.woff2?vk6or) format('woff2'), url(../fonts/MVideo_italic_bold_webkit.woff?vk6or) format('woff'), url(../fonts/MVideo_italic_bold_webkit.ttf?vk6or) format('truetype'), url(../fonts/MVideo_italic_bold_webkit.svg?vk6or#M.Video-BoldItalic) format('svg');
+  src: url(../fonts/MVideo_italic_bold_webkit.woff2) format('woff2'), url(../fonts/MVideo_italic_bold_webkit.woff) format('woff'), url(../fonts/MVideo_italic_bold_webkit.ttf) format('truetype'), url(../fonts/MVideo_italic_bold_webkit.svg) format('svg');
 }
 
 @font-face {
@@ -862,7 +864,7 @@ input[type=checkbox] + label .facet-color-item .facet-color-icon {
   font-weight: 400;
   font-style: normal;
 
-  src: url(../fonts/MVideo_icon_font.woff2?qack98) format('woff2'), url(../fonts/MVideo_icon_font.woff?qack98) format('woff'), url(../fonts/MVideo_icon_font.ttf?qack98) format('truetype'), url(../fonts/MVideo_icon_font.svg?qack98#MVideo_icon_font) format('svg');
+  src: url(../fonts/MVideo_icon_font.woff2) format('woff2'), url(../fonts/MVideo_icon_font.woff) format('woff'), url(../fonts/MVideo_icon_font.ttf?qack98) format('truetype'), url(../fonts/MVideo_icon_font.svg?qack98#MVideo_icon_font) format('svg');
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 0) {
@@ -5825,7 +5827,6 @@ input.header-search-btn {
 
 .tab-placeholder {
   height: 7rem;
-
   /* background: url(../img/mvideo_grey_preloader_small.gif) 50% (50% / 30px) 30px no-repeat; */
 }
 
