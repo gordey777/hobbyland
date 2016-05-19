@@ -7,758 +7,17 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
-
-
+<title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
+<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/libs.css">
+<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-common.css">
+<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-blocks.css">
+<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-pages.css">
+<link media="print" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-print.css">
+<!--
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"> -->
   <?php wp_head(); ?>
-
-
-
-
-
-    <script type="text/javascript" async="" src="js/plugin.library.bl.min.js.jgz"></script>
-  <script type="text/javascript" async="" src="js/sitemap.js"></script>
-  <script type="text/javascript" async="" src="js/plugin.library.min.js.jgz"></script>
-  <script type="text/javascript" async="" src="js/code.js"></script>
-  <script type="text/javascript" async="" src="js/analytics.js"></script>
-  <script type="text/javascript" async="" src="js/watch.js"></script>
-  <script type="text/javascript" async="" src="js/all.js"></script>
-  <script type="text/javascript" async="" src="js/watch.js"></script>
-  <script type="text/javascript" async="" src="http://track.recreativ.ru/trck.php?shop=1617&amp;ttl=30&amp;offer=10007781&amp;rnd=476"></script>
-
-
-  <script>
-  if ( /*@cc_on!@*/ false) {
-    document.documentElement.className += ' ie10';
-  }
-  </script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <script src="js/plusone.js" gapi_processed="true"></script>
-  <script src="js/client-plusone.js" gapi_processed="true"></script>
-                <script type="text/javascript" async="" id="canvas-script" dl="dataLayer" src="js/179.js"></script>
-                <script>
-                var gtmRegistration = function() {
-                  document.getElementById('gtmRegistrationDiv').innerHTML =
-                    '<span class="hidden" id="gtmRegistration">{\
-                    "event": "OWOX",\
-                    "eventCategory": "Interactions",\
-                    "eventAction": "click",\
-                    "eventLabel": "registration"\
-                    }</span>';
-                };
-                var gtmLogin = function() {
-                  document.getElementById('gtmLoginDiv').innerHTML =
-                    '<span class="hidden" id="gtmLogin">{\
-                    "event": "OWOX",\
-                    "eventCategory": "Interactions",\
-                    "eventAction": "click",\
-                    "eventLabel": "authorisation",\
-                    "eventContext": "email"\
-                    }</span>';
-                };
-                </script>
- <script>
-                var gtmMiniBasketNavigation = function() {
-                  document.getElementById('gtmMiniBasketNavigationDiv').innerHTML =
-                    '<span class="hidden" id="gtmMiniBasketNavigation">{\
-        "event": "OWOX",\
-        "eventCategory": "Interactions",\
-        "eventAction": "click",\
-        "eventLabel": "initiateCart"\
-        }</span>';
-                };
-                </script>
-                        <script>
-                        var gtmMiniBasket = function() {
-                          document.getElementById('gtmMiniBasketDiv').innerHTML =
-                            '<span class="hidden" id="gtmMiniBasket">{\
-              "event": "OWOX",\
-              "eventCategory": "Interactions",\
-              "eventAction": "click",\
-              "eventLabel": "initiateCart"\
-              }</span>';
-                        };
-                        </script>
-                        <script>
-                        var gtmBlock = function(blockId, action, label, context, content) {
-                          document.getElementById('Div' + blockId).innerHTML =
-                            '<span class="hidden" id="' + blockId + '">{\
-          "event": "OWOX",\
-          "eventCategory": "Interactions",\
-          "eventAction": "' + action + '",\
-          "eventLabel": "' + label + '",\
-          "eventContext": "' + context + '",\
-          "eventContent": "' + content + '",\
-          "eventNoninteraction": "1"\
-          }</span>';
-                        };
-                        </script>
-                          <script>
-                          var gtmBlock = function(blockId, action, label, context, content) {
-                            document.getElementById('Div' + blockId).innerHTML =
-                              '<span class="hidden" id="' + blockId + '">{\
-          "event": "OWOX",\
-          "eventCategory": "Interactions",\
-          "eventAction": "' + action + '",\
-          "eventLabel": "' + label + '",\
-          "eventContext": "' + context + '",\
-          "eventContent": "' + content + '",\
-          "eventNoninteraction": "1"\
-          }</span>';
-                          };
-                          </script>
-                    <script>
-                    var gtmServiceBestPriceOpen = function(warecode, parentCategory) {
-                      document.getElementById('gtmServiceBestPriceOpenDiv').innerHTML =
-                        '<span class="hidden" id="gtmServiceBestPriceOpen">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Interactions",\
-                      "eventAction": "open",\
-                      "eventLabel": "bestPrice",\
-                      "eventProductCategoryId": "' + parentCategory + '",\
-                      "eventProductId": "' + warecode + '"\
-                  }</span>';
-                    };
-                    </script>
-                    <!--noindex-->
-                        <script>
-                        var gtmServiceBestPriceHelp = function(warecode, parentCategory) {
-                          document.getElementById('gtmServiceBestPriceHelpDiv').innerHTML =
-                            '<span class="hidden" id="gtmServiceBestPriceHelp">{\
-                            "event": "OWOX",\
-                            "eventCategory": "Interactions",\
-                            "eventAction": "click",\
-                            "eventLabel": "bestPrice",\
-                            "eventContext": "help",\
-                            "eventProductId": "' + warecode + '",\
-                            "eventProductCategoryId": "' + parentCategory + '",\
-                            "eventNoninteraction": "1"\
-                          }</span>';
-                        };
-                        </script>
-                          <script>
-                          var gtmAddToBasket = function(productId, value, oneCart, categoryId) {
-                            document.getElementById('gtmAddToBasketDiv' + productId).innerHTML =
-                              '<span class="hidden" id="gtmAddToBasket' + productId + '">{\
-            "event": "OWOX",\
-            "eventCategory": "Conversions",\
-            "eventAction": "click",\
-            "eventLabel": "AddToCart",\
-            "eventValue": "' + value + '",\
-            "eventOneCart": "' + oneCart + '",\
-            "eventProductCategoryId": "' + categoryId + '",\
-            "eventProductId": "' + productId + '"\
-            }</span>';
-                          };
-                          </script>
-                        <script>
-                        var gtmSimilarProducts = function() {
-                          document.getElementById('gtmSimilarProductsDiv').innerHTML =
-                            '<span class="hidden" id="gtmSimilarProducts">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Interactions",\
-                      "eventAction": "click",\
-                      "eventLabel": "similarProducts",\
-                      "eventContext": "productBlock"\
-                      }</span>';
-                        };
-                        </script>
-                        <script>
-                        var gmtAddToWishList = function(productId, value, categoryId) {
-                          document.getElementById('gmtAddToWishListDiv' + productId).innerHTML =
-                            '<span class="hidden" id="gmtAddToWishList' + productId + '">{\
-          "event": "OWOX",\
-          "eventCategory": "Conversions",\
-          "eventAction": "add",\
-          "eventLabel": "toWishlist",\
-          "eventValue": "' + value + '",\
-          "eventProductCategoryId": "' + categoryId + '",\
-          "eventProductId": "' + productId + '"\
-          }</span>';
-                        };
-                        </script>
-                    <script>
-                    var gtmCompare = function(productId, category, action, label, value, categoryId) {
-                      document.getElementById('gtmCompareDiv' + productId).innerHTML =
-                        '<span class="hidden" id="gtmCompare' + productId + '">{\
-          "event": "OWOX",\
-          "eventCategory": "' + category + '",\
-          "eventAction": "' + action + '",\
-          "eventLabel": "' + label + '",\
-          "eventValue": "' + value + '",\
-          "eventProductCategoryId": "' + categoryId + '",\
-          "eventProductId": "' + productId + '",\
-          "mutable": "true",\
-          "mutationFunction": "mvideo.Module._items.gtmCompareMutationFunction"\
-          }</span>';
-                    };
-                    </script>
-                        <script>
-                        var gtmBlock = function(blockId, action, label, context, content) {
-                          document.getElementById('Div' + blockId).innerHTML =
-                            '<span class="hidden" id="' + blockId + '">{\
-          "event": "OWOX",\
-          "eventCategory": "Interactions",\
-          "eventAction": "' + action + '",\
-          "eventLabel": "' + label + '",\
-          "eventContext": "' + context + '",\
-          "eventContent": "' + content + '",\
-          "eventNoninteraction": "1"\
-          }</span>';
-                        };
-                        </script>
-                          <script>
-                          var gtmBlock = function(blockId, action, label, context, content) {
-                            document.getElementById('Div' + blockId).innerHTML =
-                              '<span class="hidden" id="' + blockId + '">{\
-          "event": "OWOX",\
-          "eventCategory": "Interactions",\
-          "eventAction": "' + action + '",\
-          "eventLabel": "' + label + '",\
-          "eventContext": "' + context + '",\
-          "eventContent": "' + content + '",\
-          "eventNoninteraction": "1"\
-          }</span>';
-                          };
-                          </script>
-                                      <script>
-                                      var gtmSearch = function(gtmId, value, oneCart, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventOneCart": "' + oneCart + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmSimilarProducts = function(gtmId, value, content, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContent": "' + content + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmOtherProducts = function(gtmId, value, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-                                      </script>
-                                      <script>
-                                      var gtmSearch = function(gtmId, value, oneCart, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventOneCart": "' + oneCart + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmSimilarProducts = function(gtmId, value, content, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContent": "' + content + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmOtherProducts = function(gtmId, value, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-                                      </script>
-                                      <script>
-                                      var gtmSearch = function(gtmId, value, oneCart, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventOneCart": "' + oneCart + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmSimilarProducts = function(gtmId, value, content, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContent": "' + content + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmOtherProducts = function(gtmId, value, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-                                      </script>
-                                      <script>
-                                      var gtmSearch = function(gtmId, value, oneCart, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventOneCart": "' + oneCart + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmSimilarProducts = function(gtmId, value, content, location, position, categoryId, productId)
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContent": "' + content + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-
-                                      var gtmOtherProducts = function(gtmId, value, location, position, categoryId, productId) {
-                                        document.getElementById('Div' + gtmId).innerHTML =
-                                          '<span class="hidden" id="' + gtmId + '">{\
-                      "event": "OWOX",\
-                      "eventCategory": "Conversions",\
-                      "eventAction": "click",\
-                      "eventLabel": "AddToCart",\
-                      "eventValue": "' + value + '",\
-                      "eventContext": "productBlock",\
-                      "eventLocation": "' + location + '",\
-                      "eventPosition": "' + position + '",\
-                      "eventProductCategoryId": "' + categoryId + '",\
-                      "eventProductId": "' + productId + '"\
-                      }</span>';
-                                      };
-                                      </script>
-  <script src="js/libs.js"></script>
-  <script src="js/jst.js"></script>
-  <script src="js/mvid.js"></script>
-  <script>
-  dataLayer = [{
-    'pageType': 'ProductPage',
-
-    'user_crm_id':   '',
-    'userAuth':   '0',
-      
-    'cityId':   '1',
-    'cityName':   'Москва',
-    'storeName':   '',
-    'storeID':   '',
-
-    'productId': '10007781', //# id товара на сайте
-    'productName': 'Телевизор Samsung Ultra HD UE55JU7500U', //# название товара
-    'productPriceLocal': '134990.00', //# цена товара в локальной валюте (руб)
-    'productPriceOldLocal': 134990.0, //# старая цена на товара в локальной валюте (руб)
-    'productVendorName': 'Samsung', //# название производителя
-    'productVendorId': '13', //# id производителя
-    'productAvailability': 'available', //# статус наличия товара (интернет склад)
-    'productCategoryName': 'Телевизоры',
-    'productCategoryId': 'cat2_cis_0000000001',
-    'productGroupName': 'Телевизоры и цифровое ТВ',
-    'productGroupId': 'cat1_cis_0000000001',
-    'productTag': 'promo',
-    'similarProducts': '1',
-    'bestPrice': '1',
-    'OnlineConsultant': '1'
-  }];
-  </script>
-
-  <script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-6ZQL');
-  </script>
-  <script type="text/javascript">
-  document.write("<img src='//counter.yadro.ru/hit?r" + escape(document.referrer) + ((typeof(screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' width=\"1\" height=\"1\" class=hidden alt=\"\"/>");
-  </script>
-  <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" src="js/main.js" data-settings="js/init.js"></script>
-
-  <script type="text/javascript" id="">
-  (function(b, e, h, a, c, f, d) {
-    b.GoogleAnalyticsObject = c;
-    b[c] = b[c] || function() {
-      (b[c].q = b[c].q || []).push(arguments)
-    };
-    b[c].l = 1 * new Date;
-    f = e.createElement(h);
-    d = e.getElementsByTagName(h)[0];
-    f.async = 1;
-    f.src = a;
-    d.parentNode.insertBefore(f, d)
-  })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
-  ga("create", "UA-1873769-1", "auto", {
-    name: "owox",
-    allowLinker: !1
-  });
-  ga("owox.require", "OWOXBIStreaming", {
-    sessionIdDimension: 15,
-    hitIdDimension: 14
-  });
-  (function() {
-    var b = function(b, a) {
-        var c = b.get("sendHitTask"),
-          f = function() {
-            function d(b, d) {
-              var a = "XDomainRequest" in window ? "XDomainRequest" : "XMLHttpRequest",
-                c = new window[a];
-              c.open("POST", b, !0);
-              c.onprogress = function() {};
-              c.ontimeout = function() {};
-              c.onerror = function() {};
-              c.onload = function() {};
-              c.setRequestHeader && c.setRequestHeader("Content-Type", "text/plain");
-              "XDomainRequest" == a ? setTimeout(function() {
-                c.send(d)
-              }, 0) : c.send(d)
-            }
-
-            function c(d, b) {
-              var a = new Image;
-              a.onload = function() {};
-              a.src = d + "?" + b
-            }
-            var f = a && a.domain ?
-              a.domain : "google-analytics.bi.owox.com";
-            return {
-              send: function(a) {
-                var e = location.protocol + "//" + f + "/collect",
-                  g;
-                try {
-                  navigator.sendBeacon && navigator.sendBeacon(g = e + "?tid\x3d" + b.get("trackingId"), a) || (2036 < a.length ? d(g ? g : e + "?tid\x3d" + b.get("trackingId"), a) : c(e, a))
-                } catch (k) {}
-              }
-            }
-          }();
-        b.set("sendHitTask", function(d) {
-          if (a && 0 < a.sessionIdDimension) try {
-            var b = d.get("clientId") + "_" + Date.now();
-            d.set("dimension" + a.sessionIdDimension, b);
-            if (0 < a.hitIdDimension) try {
-              d.set("dimension" + a.hitIdDimension, b)
-            } catch (e) {}
-            d.get("buildHitTask")(d)
-          } catch (e) {}
-          c(d);
-          f.send(d.get("hitPayload"))
-        })
-      },
-      e = window[window.GoogleAnalyticsObject || "ga"];
-    e && e("provide", "OWOXBIStreaming", b)
-  })();
-  </script>
-  <script type="text/javascript" id="">
-  switch (dataLayer[0].pageType) {
-    case "ProductPage":
-      1 != dataLayer[0].cityId ? dataLayer[0].hasOwnProperty("cityId") && dataLayer[0].hasOwnProperty("productId") && dataLayer.push({
-        cityProductId: "10007781_1"
-      }) : dataLayer.push({
-        cityProductId: "10007781"
-      });
-      break;
-    default:
-      dataLayer.push({
-        cityProductId: "10007781"
-      })
-  };
-  </script>
-  <script type="text/javascript" id="">
-  (function(a, e, f, g, b, c, d) {
-    a.GoogleAnalyticsObject = b;
-    a[b] = a[b] || function() {
-      (a[b].q = a[b].q || []).push(arguments)
-    };
-    a[b].l = 1 * new Date;
-    c = e.createElement(f);
-    d = e.getElementsByTagName(f)[0];
-    c.async = 1;
-    c.src = g;
-    d.parentNode.insertBefore(c, d)
-  })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
-  ga("create", "UA-1873769-1", "auto");
-  ga("set", "dimension16", google_tag_manager["GTM-6ZQL"].macro('gtm1462879285540'));
-  </script>
-  <script type="text/javascript" id="">
-  "www.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "prod",
-    enabled: .01 >= Math.random()
-  } : "www.atguat.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat1"
-  } : "www.atguat2.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat2"
-  } : "www.atguat3.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat3"
-  } : "www.atguat4.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat4"
-  } : "www.atguat5.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat5"
-  } : "www.atguat6.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat6"
-  } : "www.atguat6.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat7"
-  } : "www.atguat6.mvideo.ru" === window.location.hostname ? window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "uat8"
-  } : "www.atguat6.mvideo.ru" === window.location.hostname && (window._trackJs = {
-    token: "3904ca2025864a09bec910cb640a48f1",
-    application: "nft"
-  });
-  </script>
-  <script type="text/javascript" id="" src="js/tracker.js"></script>
-  <script type="text/javascript" id="">
-  (function(b, e) {
-    var c = b.getElementsByTagName("script")[0],
-      a = b.createElement("script"),
-      d = function() {
-        c.parentNode.insertBefore(a, c)
-      };
-    a.type = "text/javascript";
-    a.async = !0;
-    a.src = "http://track.recreativ.ru/trck.php?shop\x3d1617\x26ttl\x3d30\x26offer\x3d10007781\x26rnd\x3d" + Math.floor(999 * Math.random());
-    "[object Opera]" == window.opera ? b.addEventListener("DOMContentLoaded", d, !1) : d()
-  })(document, window);
-  </script>
-  <script type="text/javascript" id="">
-  (function(h) {
-    function k() {
-      var a = function(d, b) {
-        if (this instanceof AdriverCounter) d = a.items.length || 1, a.items[d] = this, b.ph = d, b.custom && (b.custom = a.toQueryString(b.custom, ";")), a.request(a.toQueryString(b));
-        else return a.items[d]
-      };
-      a.httplize = function(a) {
-        return (/^\/\//.test(a) ? location.protocol : "") + a
-      };
-      a.loadScript = function(a) {
-        try {
-          var b = g.getElementsByTagName("head")[0],
-            c = g.createElement("script");
-          c.setAttribute("type", "text/javascript");
-          c.setAttribute("charset", "windows-1251");
-          c.setAttribute("src", a.split("![rnd]").join(Math.round(1E6 *
-            Math.random())));
-          c.onreadystatechange = function() {
-            /loaded|complete/.test(this.readyState) && (c.onload = null, b.removeChild(c))
-          };
-          c.onload = function() {
-            b.removeChild(c)
-          };
-          b.insertBefore(c, b.firstChild)
-        } catch (f) {}
-      };
-      a.toQueryString = function(a, b, c) {
-        b = b || "\x26";
-        c = c || "\x3d";
-        var f = [],
-          e;
-        for (e in a) a.hasOwnProperty(e) && f.push(e + c + escape(a[e]));
-        return f.join(b)
-      };
-      a.request = function(d) {
-        var b = a.toQueryString(a.defaults);
-        a.loadScript(a.redirectHost + "/cgi-bin/erle.cgi?" + d + "\x26rnd\x3d![rnd]" + (b ? "\x26" + b : ""))
-      };
-      a.items = [];
-      a.defaults = {
-        tail256: document.referrer || "unknown"
-      };
-      a.redirectHost = a.httplize("//ad.adriver.ru");
-      return a
-    }
-    var g = document;
-    "undefined" === typeof AdriverCounter && (AdriverCounter = k());
-    new AdriverCounter(0, h)
-  })({
-    sid: 210076,
-    bt: 62,
-    custom: {
-      10: google_tag_manager["GTM-6ZQL"].macro('gtm1462879285546'),
-      154: google_tag_manager["GTM-6ZQL"].macro('gtm1462879285671')
-    }
-  });
-  </script>
-  <script type="text/javascript" id="">
-  window.dataLayer2 = window.dataLayer2 || [];
-  window.dataLayer2.push(google_tag_manager["GTM-6ZQL"].macro('gtm1462879285672'));
-  </script>
-  <script type="text/javascript" id="">
-  (function() {
-    var a = document.createElement("script");
-    a.type = "text/javascript";
-    a.async = !0;
-    a.src = ("https:" == document.location.protocol ? "https://" : "http://") + "bn.adblender.ru/c/mvideo/all.js?" + Math.floor((new Date).valueOf() / 1E3 / 3600);
-    var b = document.getElementsByTagName("script")[0];
-    b.parentNode.insertBefore(a, b)
-  })();
-  </script>
-  <script type="text/javascript" id="" src="js/B9306366.126769007"></script>
-  <script type="text/javascript" id="">
-  (function(d, b, a) {
-    (b[a] = b[a] || []).push(function() {
-      try {
-        b.yaCounter338158 = new Ya.Metrika({
-          id: 338158,
-          clickmap: !0,
-          trackLinks: !0,
-          accurateTrackBounce: !0,
-          webvisor: !0
-        })
-      } catch (a) {}
-    });
-    var e = d.getElementsByTagName("script")[0],
-      c = d.createElement("script");
-    a = function() {
-      e.parentNode.insertBefore(c, e)
-    };
-    c.type = "text/javascript";
-    c.async = !0;
-    c.src = "https://mc.yandex.ru/metrika/watch.js";
-    "[object Opera]" == b.opera ? d.addEventListener("DOMContentLoaded", a, !1) : a()
-  })(document, window, "yandex_metrika_callbacks");
-  </script>
-  <script type="text/javascript" id="">
-  (function(b, c, a) {
-    var d = -1 < window.location.href.indexOf(a);
-    a = document.createElement("script");
-    a.type = "text/javascript";
-    a.async = !0;
-    a.id = "canvas-script";
-    a.setAttribute("dl", c);
-    a.src = d ? "//www.personalicanvas.com/" + b + ".p.js" : "//www.personalicanvas.com/" + b + ".js";
-    b = document.body.getElementsByTagName("script")[0];
-    b.parentNode.insertBefore(a, b)
-  })("179", "dataLayer", "#CANVAS_PREVIEW");
-  </script>
-  <script type="text/javascript" id="">
-  function setHeaderRegion() {
-    var a = $(".region-popup .popover-content strong").text();
-    0 < a.length && $(".header-sities-link.region-opener").text(a)
-  }
-  $("#region-popup").popover().on("show.bs.popover", function() {
-    setHeaderRegion()
-  });
-  $(window).load(function() {
-    setHeaderRegion()
-  });
-  setHeaderRegion();
-  </script>
-  <script type="text/javascript" id="">
-  var i = 0,
-    totalvalue = "";
-  "null" != dataLayer[0].productPriceLocal && (totalvalue = dataLayer[0].productPriceLocal, dataLayer.push({
-    ecomm_totalvalue: totalvalue
-  }));
-  </script>
-  <script type="text/javascript" src="js/code.min.js.jgz"></script>
-
-
-
-
-
-
-
 
 
 
@@ -805,7 +64,7 @@
               <div class="header-area-center">
                 <div class="header-area-holder">
                   <a href="http://www.mvideo.ru/" class="header-logo font-icon icon-logo-main">
-                    <img class="header-logo-img" src="img/mvideo-logo.png" alt="М.Видео, нам не всё равно">
+                    <img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/mvideo-logo.png" alt="М.Видео, нам не всё равно">
                     <strong>М.Видео, нам не всё равно</strong>
                   </a>
                 </div>
@@ -856,7 +115,7 @@
                               <div class="mini-basket-product-image">
                                 <div class="mini-basket-picture-holder">
                                   <a href="http://www.mvideo.ru/products/radioupravlyaemaya-mashina-pilotage-buggy-stem-12-rd-ep-rc17514-40063842">
-                                    <img src="img/40063842s.jpg" alt="Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514" class="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/40063842s.jpg" alt="Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514" class="">
                                   </a>
                                 </div>
                               </div>
@@ -904,7 +163,7 @@
                       <div class="slider-pict">
                         <div class="slider-pict-center">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/ex_ret.gif" alt="Гарантия и обмен по чеку" class="lazy " src="img/stub.gif">
+                            <img data-original="img/ex_ret.gif" alt="Гарантия и обмен по чеку" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                       </div>
@@ -1183,7 +442,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/actions-menu.png" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/actions-menu.png" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -1203,7 +462,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_1_L.jpg" alt="Телевизоры" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_1_L.jpg" alt="Телевизоры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1212,7 +471,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/menu_diag_220x220.jpg" alt="По диагонали" class="lazy " src="img/stub.gif">
+                                <img data-original="img/menu_diag_220x220.jpg" alt="По диагонали" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1221,7 +480,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/menu_brand-new_220x220.jpg" alt="По бренду" class="lazy " src="img/stub.gif">
+                                <img data-original="img/menu_brand-new_220x220.jpg" alt="По бренду" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1230,7 +489,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cls_484_S.jpg" alt="Видеотехника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cls_484_S.jpg" alt="Видеотехника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1239,7 +498,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_5_S.jpg" alt="Hi-Fi техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_5_S.jpg" alt="Hi-Fi техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1248,7 +507,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_142_S.jpg" alt="Аксессуары и цифровое ТВ" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_142_S.jpg" alt="Аксессуары и цифровое ТВ" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1449,7 +708,7 @@
                               <a href="http://www.mvideo.ru/aksessuary-dlya-telefonov/media-strimery-1381">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                    <img data-original="img/new.jpg" alt="Медиа-стриммеры" class="lazy " src="img/stub.gif">
+                                    <img data-original="img/new.jpg" alt="Медиа-стриммеры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Медиа-стриммеры
                               </a>
@@ -1480,7 +739,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/loewe-tv">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Loewe_ready.jpg" alt="Телевизоры LOEWE" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Loewe_ready.jpg" alt="Телевизоры LOEWE" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -1502,7 +761,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_11_S.jpg" alt="Аудиотехника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_11_S.jpg" alt="Аудиотехника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1511,7 +770,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_7_S.jpg" alt="Автоакустика" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_7_S.jpg" alt="Автоакустика" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1520,7 +779,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_155_S.jpg" alt="Наушники" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_155_S.jpg" alt="Наушники" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1529,7 +788,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_5_S.jpg" alt="Hi-Fi техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_5_S.jpg" alt="Hi-Fi техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1538,7 +797,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_115_S.jpg" alt="Портативное аудио" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_115_S.jpg" alt="Портативное аудио" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1547,7 +806,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_158_S.jpg" alt="Оборудование для диджеев" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_158_S.jpg" alt="Оборудование для диджеев" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1564,7 +823,7 @@
                               <a href="http://www.mvideo.ru/audiotehnika/muzykalnye-centry-68/f/category=besprovodnye-audio-sistemy-3268">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                     <img data-original="img/new.jpg" alt="Беспроводные аудио системы" class="lazy " src="img/stub.gif">
+                                     <img data-original="img/new.jpg" alt="Беспроводные аудио системы" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Беспроводные аудио системы
                               </a>
@@ -1577,7 +836,7 @@
                               <a href="http://www.mvideo.ru/audiotehnika/muzykalnye-centry-68/f/category=muzykalnye-sistemy-midi-449">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                     <img data-original="img/new.jpg" alt="Музыкальные системы Midi" class="lazy " src="img/stub.gif">
+                                     <img data-original="img/new.jpg" alt="Музыкальные системы Midi" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Музыкальные системы Midi
                               </a>
@@ -1774,7 +1033,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/menu_baner_sony.jpg" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/menu_baner_sony.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -1794,7 +1053,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_8_S.jpg" alt="Планшеты, ноутбуки и компьютеры" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_8_S.jpg" alt="Планшеты, ноутбуки и компьютеры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1803,7 +1062,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_116_S.jpg" alt="Электронные книги и аксессуары" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_116_S.jpg" alt="Электронные книги и аксессуары" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1812,7 +1071,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cls_248_S.jpg" alt="Компьютерная техника Apple" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cls_248_S.jpg" alt="Компьютерная техника Apple" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1821,7 +1080,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_113_S.jpg" alt="Периферийные устройства" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_113_S.jpg" alt="Периферийные устройства" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1830,7 +1089,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Grp_1765_L.jpg" alt="Игровые аксессуары" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Grp_1765_L.jpg" alt="Игровые аксессуары" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -1839,7 +1098,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_114_S.jpg" alt="Компьютерные аксессуары" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_114_S.jpg" alt="Компьютерные аксессуары" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2059,7 +1318,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/books">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/ban-menu_90x48.gif" alt="Один клик до книг" class="lazy " src="img/stub.gif">
+                                <img data-original="img/ban-menu_90x48.gif" alt="Один клик до книг" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -2068,7 +1327,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://digital.mvideo.ru/">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Digital.png" alt="M.Digital" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Digital.png" alt="M.Digital" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -2092,7 +1351,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_12_S.jpg" alt="Телефоны и связь" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_12_S.jpg" alt="Телефоны и связь" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2101,7 +1360,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/iphone6.jpg" alt="Apple" class="lazy " src="img/stub.gif">
+                                <img data-original="img/iphone6.jpg" alt="Apple" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2110,7 +1369,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Samsung.jpg" alt="Samsung" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Samsung.jpg" alt="Samsung" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2119,7 +1378,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_165_S.jpg" alt="Гаджеты" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_165_S.jpg" alt="Гаджеты" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2128,7 +1387,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_159_S.jpg" alt="Аксессуары для телефонов" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_159_S.jpg" alt="Аксессуары для телефонов" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2137,7 +1396,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_155_S.jpg" alt="Наушники" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_155_S.jpg" alt="Наушники" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2191,7 +1450,7 @@
                               <a href="http://www.mvideo.ru/gadzhety/apple-watch-2947">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                     <img data-original="img/new.jpg" alt="Apple Watch" class="lazy " src="img/stub.gif">
+                                     <img data-original="img/new.jpg" alt="Apple Watch" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Apple Watch
                               </a>
@@ -2264,7 +1523,7 @@
                               <a href="http://www.mvideo.ru/gadzhety/giroskutery-3627">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                     <img data-original="img/new.jpg" alt="Гироскутеры" class="lazy " src="img/stub.gif">
+                                     <img data-original="img/new.jpg" alt="Гироскутеры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Гироскутеры
                               </a>
@@ -2309,7 +1568,7 @@
                               <a href="http://www.mvideo.ru/aksessuary-dlya-telefonov/media-strimery-1381">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                     <img data-original="img/new.jpg" alt="Медиа-стриммеры" class="lazy " src="img/stub.gif">
+                                     <img data-original="img/new.jpg" alt="Медиа-стриммеры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Медиа-стриммеры
                               </a>
@@ -2386,7 +1645,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/promo/besprovodnye-audioreshenija">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/menu_multiroom.png" alt="Мультирум решения" class="lazy " src="img/stub.gif">
+                                <img data-original="img/menu_multiroom.png" alt="Мультирум решения" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -2414,7 +1673,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_14_S.jpg" alt="Фотоаппараты" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_14_S.jpg" alt="Фотоаппараты" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2423,7 +1682,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/leica_p_2.jpg" alt="Фотоаппараты премиум класса" class="lazy " src="img/stub.gif">
+                                <img data-original="img/leica_p_2.jpg" alt="Фотоаппараты премиум класса" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2432,7 +1691,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cat_Aks_S.jpg" alt="Аксессуары для фото- и видеотехники" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cat_Aks_S.jpg" alt="Аксессуары для фото- и видеотехники" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2441,7 +1700,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cat_Vcam_S.jpg" alt="Видеокамеры" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cat_Vcam_S.jpg" alt="Видеокамеры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2450,7 +1709,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cls_14_S.jpg" alt="Фотопринтеры и цифровые фоторамки" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cls_14_S.jpg" alt="Фотопринтеры и цифровые фоторамки" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2459,7 +1718,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cls_494_S.jpg" alt="Бинокли и телескопы" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cls_494_S.jpg" alt="Бинокли и телескопы" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2633,7 +1892,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/180x163_prophoto_1.jpg" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/180x163_prophoto_1.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -2653,7 +1912,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_183_S.jpg" alt="Стиральные и сушильные машины" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_183_S.jpg" alt="Стиральные и сушильные машины" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2662,7 +1921,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_2_S.jpg" alt="Малая бытовая техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_2_S.jpg" alt="Малая бытовая техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2671,7 +1930,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_184_S.jpg" alt="Пылесосы" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_184_S.jpg" alt="Пылесосы" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2680,7 +1939,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_13_S.jpg" alt="Климатическая техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_13_S.jpg" alt="Климатическая техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2689,7 +1948,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_151_S.jpg" alt="Аксессуары для дома" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_151_S.jpg" alt="Аксессуары для дома" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2698,7 +1957,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_164_S.jpg" alt="Освещение" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_164_S.jpg" alt="Освещение" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2932,7 +2191,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/promo/aeg">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/aeg-menu-logo.png" alt="Бренд-хаб AEG" class="lazy " src="img/stub.gif">
+                                <img data-original="img/aeg-menu-logo.png" alt="Бренд-хаб AEG" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -2941,7 +2200,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/promo/smeg">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/smeg-menu-logo.png" alt="Бренд хаб Smeg" class="lazy " src="img/stub.gif">
+                                <img data-original="img/smeg-menu-logo.png" alt="Бренд хаб Smeg" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -2950,7 +2209,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/miele">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Miele.gif" alt="Техника Miele в М.видео" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Miele.gif" alt="Техника Miele в М.видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -2965,7 +2224,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/smsp-menu.jpg" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/smsp-menu.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -2985,7 +2244,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_189_S.jpg" alt="Холодильники и морозильники" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_189_S.jpg" alt="Холодильники и морозильники" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -2994,7 +2253,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cat_Kkt_S.jpg" alt="Крупная кухонная техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cat_Kkt_S.jpg" alt="Крупная кухонная техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3003,7 +2262,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_3_S.jpg" alt="Кухонная техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_3_S.jpg" alt="Кухонная техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3012,7 +2271,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_120_S.jpg" alt="Приготовление кофе" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_120_S.jpg" alt="Приготовление кофе" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3021,7 +2280,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_154_S.jpg" alt="Посуда" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_154_S.jpg" alt="Посуда" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3030,7 +2289,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_152_S.jpg" alt="Аксессуары для кухни" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_152_S.jpg" alt="Аксессуары для кухни" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3268,7 +2527,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/promo/aeg">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/aeg-menu-logo.png" alt="Бренд-хаб AEG" class="lazy " src="img/stub.gif">
+                                <img data-original="img/aeg-menu-logo.png" alt="Бренд-хаб AEG" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -3277,7 +2536,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/miele">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Miele.gif" alt="Техника Miele в М.видео" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Miele.gif" alt="Техника Miele в М.видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -3286,7 +2545,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/tefal">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/ban-menu_90x48.gif" alt="BH Tefal" class="lazy " src="img/stub.gif">
+                                <img data-original="img/ban-menu_90x48.gif" alt="BH Tefal" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -3301,7 +2560,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/Menu.jpg" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/Menu.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -3321,7 +2580,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_179_S.jpg" alt="Встраиваемые панели" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_179_S.jpg" alt="Встраиваемые панели" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3330,7 +2589,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_182_S.jpg" alt="Встраиваемые духовые шкафы" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_182_S.jpg" alt="Встраиваемые духовые шкафы" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3339,7 +2598,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_181_S.jpg" alt="Встраиваемые вытяжки" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_181_S.jpg" alt="Встраиваемые вытяжки" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3348,7 +2607,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_180_S.jpg" alt="Встраиваемые посудомоечные машины" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_180_S.jpg" alt="Встраиваемые посудомоечные машины" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3357,7 +2616,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_4_S.jpg" alt="Встраиваемая бытовая техника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_4_S.jpg" alt="Встраиваемая бытовая техника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3513,7 +2772,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/promo/aeg">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/aeg-menu-logo.png" alt="Бренд-хаб AEG" class="lazy " src="img/stub.gif">
+                                <img data-original="img/aeg-menu-logo.png" alt="Бренд-хаб AEG" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -3522,7 +2781,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/promo/smeg">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/smeg-menu-logo.png" alt="Бренд хаб Smeg" class="lazy " src="img/stub.gif">
+                                <img data-original="img/smeg-menu-logo.png" alt="Бренд хаб Smeg" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -3535,7 +2794,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/menu.jpg" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/menu.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -3555,7 +2814,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_102_S.jpg" alt="Товары для красоты" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_102_S.jpg" alt="Товары для красоты" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3564,7 +2823,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_136_S.jpg" alt="Товары для здоровья" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_136_S.jpg" alt="Товары для здоровья" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3573,7 +2832,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_137_S.jpg" alt="Товары для детей" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_137_S.jpg" alt="Товары для детей" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3582,7 +2841,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/garmin.jpg" alt="Гаджеты" class="lazy " src="img/stub.gif">
+                                <img data-original="img/garmin.jpg" alt="Гаджеты" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3647,7 +2906,7 @@
                               <a href="http://www.mvideo.ru/tovary-dlya-zdorovya/zubnye-shhetki-114/f/category=elektricheskie-zubnye-centry-2848">
                                 <div class="header-nav-drop-down-list-item-img">
                                   <div class="lazy-load-image-holder">
-                                     <img data-original="img/new.jpg" alt="Зубные центры" class="lazy " src="img/stub.gif">
+                                     <img data-original="img/new.jpg" alt="Зубные центры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                   </div>
                                 </div> Зубные центры
                               </a>
@@ -3737,7 +2996,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_106_S.jpg" alt="Навигаторы и автомобильная электроника" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_106_S.jpg" alt="Навигаторы и автомобильная электроника" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3746,7 +3005,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_7_S.jpg" alt="Автоакустика" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_7_S.jpg" alt="Автоакустика" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3755,7 +3014,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_131_S.jpg" alt="Автомобильные минимойки" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_131_S.jpg" alt="Автомобильные минимойки" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3764,7 +3023,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Cls_138_S.jpg" alt="Аксессуары для автомобилей" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Cls_138_S.jpg" alt="Аксессуары для автомобилей" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3915,7 +3174,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_105_S.jpg" alt="Игровые приставки и аксессуары" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_105_S.jpg" alt="Игровые приставки и аксессуары" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3924,7 +3183,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_117_S.jpg" alt="Игры для игровых приставок" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_117_S.jpg" alt="Игры для игровых приставок" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3933,7 +3192,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_162_S.jpg" alt="Аксессуары для игровых приставок" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_162_S.jpg" alt="Аксессуары для игровых приставок" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3942,7 +3201,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_108_S.jpg" alt="Компьютерные программы и PC игры" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_108_S.jpg" alt="Компьютерные программы и PC игры" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3951,7 +3210,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_156_S.jpg" alt="Музыкальные инструменты" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_156_S.jpg" alt="Музыкальные инструменты" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -3960,7 +3219,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <div class="header-nav-drop-down-image-container">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Dir_157_S.jpg" alt="Радио- управляемые устройства" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Dir_157_S.jpg" alt="Радио- управляемые устройства" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </div>
                           </div>
@@ -4144,7 +3403,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://digital.mvideo.ru/">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/Digital.png" alt="M.Digital" class="lazy " src="img/stub.gif">
+                                <img data-original="img/Digital.png" alt="M.Digital" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -4153,7 +3412,7 @@
                           <div class="header-nav-drop-down-image-container">
                             <a href="http://www.mvideo.ru/books">
                               <div class="lazy-load-image-holder">
-                                <img data-original="img/ban-menu_90x48.gif" alt="Один клик до книг" class="lazy " src="img/stub.gif">
+                                <img data-original="img/ban-menu_90x48.gif" alt="Один клик до книг" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                               </div>
                             </a>
                           </div>
@@ -4168,7 +3427,7 @@
                       <div class="drop-down-advert">
                         <div class="drop-down-advert-picture">
                           <div class="lazy-load-image-holder">
-                            <img data-original="img/ps4-uncharted-bundle.jpg" alt="" class="lazy " src="img/stub.gif">
+                            <img data-original="img/ps4-uncharted-bundle.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                           </div>
                         </div>
                         <div class="drop-down-advert-description">
@@ -4285,7 +3544,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                     <div class="product-data" data-pushable="true" data-action="redHelperAction" data-holder="#redHelperAction">
                       <div class="product-data-header">
                         <h1 itemprop="name" class="product-title">Телевизор Samsung Ultra HD UE55JU7500U</h1>
-                        <img src="img/samsung_logo.png" alt="Samsung" class="brand-logo pull-right">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/samsung_logo.png" alt="Samsung" class="brand-logo pull-right">
                       </div>
                       <div class="product-data-rating-code">
                         <div class="star-ratings">
@@ -4308,7 +3567,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                   <div class="product-details-media-container">
                     <div data-device="true" class="media-gallery page-gallery">
                       <div class="image image-holder">
-                        <img src="img/10007781b.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="product-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/10007781b.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="product-image">
 
                         <!--noindex-->
                         <div id="DivgtmSkuMarkerBubbleShow" style="display: none;"><span class="hidden" id="gtmSkuMarkerBubbleShow">{         "event": "OWOX",          "eventCategory": "Interactions",          "eventAction": "show",          "eventLabel": "bubble",         "eventContext": "mark30303146",         "eventContent": "Умная рассрочка 0-0-24 (0-0-24) (до 16.05) (бабл)",          "eventNoninteraction": "1"          }</span>
@@ -4321,7 +3580,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                           </div>
                           <!--/noindex-->
                           <a href="http://www.mvideo.ru/promo/rassrochka-0024" id="product-page-bundle-marker" data-pushable="true" data-action="click" data-holder="#gtmSkuMarkerBubbleClick" target="_blank">
-                            <img src="img/rassrochka-0024-bubble_0-0-24.png" alt=" " class="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/rassrochka-0024-bubble_0-0-24.png" alt=" " class="">
                           </a>
                         </div>
                       </div>
@@ -4337,56 +3596,56 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                             <li class="selected-image" rel="0" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b.jpg" data-type="img" class="wrapper" data-src="//img.mvideo.ru/Pdb/10007781b.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U " class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U " class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li class="view3d-li rotation-js" data-type="3d" rel="1" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/3dPics/10007781/001.jpg" class="wrapper" data-type="3d" data-images="//img.mvideo.ru/3dPics/10007781/###.jpg">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/3d-small.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U 3d" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/3d-small.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U 3d" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li rel="2" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b1.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b1.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b1.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b1.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b1.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b1.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781b1.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781b1.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li rel="3" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b2.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b2.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b2.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b2.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b2.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b2.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781b2.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781b2.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li rel="4" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b3.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b3.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b3.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b3.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b3.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b3.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781b3.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781b3.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li rel="5" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b4.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b4.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b4.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b4.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b4.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b4.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781b4.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781b4.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li rel="6" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b5.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b5.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b5.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b5.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b5.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b5.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781b5.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781b5.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
                             <li rel="7" style="width: 51.7778px;">
                               <a href="http://img.mvideo.ru/Pdb/10007781b6.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b6.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b6.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b6.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b6.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b6.jpg&quot;}">
                                 <div class="lazy-load-image-holder">
-                                  <img data-original="img/10007781b6.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                  <img data-original="img/10007781b6.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                 </div>
                               </a>
                             </li>
@@ -4404,15 +3663,15 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                         <div class="modal-body">
                           <div data-device="true" class="media-gallery page-gallery">
                             <div class="image image-holder">
-                              <img src="img/10007781b.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="product-image">
+                              <img src="<?php echo get_template_directory_uri(); ?>/img/10007781b.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="product-image">
                               <div class="product-badge">
                                 <a href="http://www.mvideo.ru/promo/rassrochka-0024" id="product-page-bundle-marker" data-pushable="true" data-action="click" data-holder="#gtmSkuMarkerBubbleClick" target="_blank">
-                                  <img src="img/rassrochka-0024-bubble_0-0-24.png" alt=" " class="">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/img/rassrochka-0024-bubble_0-0-24.png" alt=" " class="">
                                 </a>
                               </div>
                             </div>
                             <div class="video image-holder">
-                              <iframe src="./product_files/saved_resource(1).html" frameborder="0" class="product-carousel-view-iframe"></iframe>
+                         <!--      <iframe src="#" frameborder="0" class="product-carousel-view-iframe"></iframe> -->
                             </div>
                           </div>
                         </div>
@@ -4424,56 +3683,56 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                   <li class="selected-image" rel="0" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b.jpg" data-type="img" class="wrapper" data-src="//img.mvideo.ru/Pdb/10007781b.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U " class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U " class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li class="view3d-li rotation-js" data-type="3d" rel="1" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/3dPics/10007781/001.jpg" class="wrapper" data-type="3d" data-images="//img.mvideo.ru/3dPics/10007781/###.jpg">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/3d-small.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U 3d" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/3d-small.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U 3d" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li rel="2" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b1.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b1.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b1.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b1.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b1.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b1.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b1.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781b1.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li rel="3" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b2.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b2.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b2.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b2.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b2.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b2.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b2.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781b2.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li rel="4" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b3.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b3.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b3.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b3.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b3.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b3.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b3.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781b3.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li rel="5" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b4.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b4.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b4.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b4.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b4.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b4.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b4.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781b4.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li rel="6" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b5.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b5.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b5.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b5.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b5.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b5.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b5.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781b5.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
                                   <li rel="7" style="width: 38.7778px;">
                                     <a href="http://img.mvideo.ru/Pdb/10007781b6.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b6.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b6.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b6.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b6.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b6.jpg&quot;}">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b6.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781b6.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </li>
@@ -4626,11 +3885,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                             <input data-pushable="true" data-holder="#gmtAddToWishList10007781" name="/atg/commerce/gifts/GiftlistFormHandler.AddCatalogItemToWishlist" value="В избранное" class="btn btn btn-invers-deep-grey btn-fluid submit-button" type="submit" data-action="click">
                             <input name="_D:/atg/commerce/gifts/GiftlistFormHandler.AddCatalogItemToWishlist" value=" " type="hidden">
                           </div>
-                          <input name="_DARGS" value="/sitebuilder/components/product/wishlist/addToWishList.jsp" type="hidden"><span onclick="Netotiate.Plugin.draw({&quot;sku&quot;:&quot;10007781&quot;,&quot;categoryId&quot;:&quot;Телевизоры&quot;,&quot;productPrice&quot;:&quot;134990.00&quot;,&quot;productImgUrl&quot;:&quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;productTitle&quot;:&quot;Телевизор Samsung Ultra HD UE55JU7500U&quot;,&quot;productAmp&quot;:&quot;&quot;,&quot;productBrand&quot;:&quot;Samsung&quot;,&quot;email&quot;:&quot;&quot;,&quot;flex1&quot;:&quot;&quot;,&quot;flex2&quot;:&quot;available&quot;,&quot;flex3&quot;:&quot;&quot;,&quot;flex4&quot;:&quot;&quot;,&quot;cartUrl&quot;:&quot;http://www.atguat7.mvideo.ru/cart?personali_offer_id=TOKEN&amp;productId=10007781&amp;skuId=10007781&amp;_DARGS=/sitebuilder/components/product/add-to-basket.jsp.10007781&quot;,&quot;waitFor&quot;:&quot;[]&quot;});"></span></form>
-                        <!--
-  TODO this page is equals(functionality) productShippingInfo.jsp, but this is a new design.
-  TODO While new functional is not approved(task : https://jira.epam.com/jira/browse/MVIDATG-12001) - don't remove productShippingInfo.jsp.
--->
+
                         <div class="product-details-summary-delivery" data-init="switchTab" data-init-param="{&quot;isBlockAnchors&quot;:&quot;true&quot;, &quot;subTarget&quot;:&quot;&quot;}">
                           <div data-init="custom-tooltip" data-tooltip-text="" data-init-param=",,,true" class="product-details-summary-delivery-shop profited" data-original-title="" title="">
                             <div class="clearfix">
@@ -4768,7 +4023,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                           <!--/noindex-->
                           <a href="http://www.mvideo.ru/promo/tsifrovoe-tv-podarok" data-pushable="true" data-action="click" data-holder="#gtmSkuMarkerFederalClick" target="_blank">
                             <div class="lazy-load-image-holder">
-                              <img data-original="img/trikolor-v-podarok-product.jpg" alt="" class="lazy " src="img/stub.gif">
+                              <img data-original="img/trikolor-v-podarok-product.jpg" alt="" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                             </div>
                           </a>
                         </div>
@@ -5012,7 +4267,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                     <div class="product-tile-picture-holder">
                                       <a href="http://www.mvideo.ru/products/saundbar-samsung-hw-j8501-10008046" class="product-tile-picture-link" data-ga-track="false" data-track-event="click" data-track-category="add_to_cart_pop_up" data-track-action="cart_popup_acessories_product_photo_click" data-track-label="Саундбар Samsung HW-J8501">
                                         <div class="lazy-load-image-holder">
-                                          <img data-original="img/10008046m.jpg" alt="Саундбар Samsung HW-J8501" class="lazy product-tile-picture-image" src="img/stub.gif">
+                                          <img data-original="img/10008046m.jpg" alt="Саундбар Samsung HW-J8501" class="lazy product-tile-picture-image" src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                         </div>
                                       </a>
                                     </div>
@@ -5104,7 +4359,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                     <div class="product-tile-picture-holder">
                                       <a href="http://www.mvideo.ru/products/kabel-cifrovoi-audio-video-belkin-f3y021bf5m-50037461" class="product-tile-picture-link" data-ga-track="false" data-track-event="click" data-track-category="add_to_cart_pop_up" data-track-action="cart_popup_acessories_product_photo_click" data-track-label="Кабель цифровой аудио-видео Belkin F3Y021bf5M">
                                         <div class="lazy-load-image-holder">
-                                          <img data-original="img/50037461m.jpg" alt="Кабель цифровой аудио-видео Belkin F3Y021bf5M" class="lazy product-tile-picture-image" src="img/stub.gif">
+                                          <img data-original="img/50037461m.jpg" alt="Кабель цифровой аудио-видео Belkin F3Y021bf5M" class="lazy product-tile-picture-image" src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                         </div>
                                       </a>
                                     </div>
@@ -5196,7 +4451,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                     <div class="product-tile-picture-holder">
                                       <a href="http://www.mvideo.ru/products/podstavka-dlya-televizora-akma-v3-610mol-black-50036628" class="product-tile-picture-link" data-ga-track="false" data-track-event="click" data-track-category="add_to_cart_pop_up" data-track-action="cart_popup_acessories_product_photo_click" data-track-label="Подставка для телевизора АКМА V3-610MOL Black">
                                         <div class="lazy-load-image-holder">
-                                          <img data-original="img/50036628m.jpg" alt="Подставка для телевизора АКМА V3-610MOL Black" class="lazy product-tile-picture-image" src="img/stub.gif">
+                                          <img data-original="img/50036628m.jpg" alt="Подставка для телевизора АКМА V3-610MOL Black" class="lazy product-tile-picture-image" src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                         </div>
                                       </a>
                                     </div>
@@ -5288,7 +4543,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                     <div class="product-tile-picture-holder">
                                       <a href="http://www.mvideo.ru/products/setevoi-filtr-interstep-is-sp-106lt50me-000b201-50041690" class="product-tile-picture-link" data-ga-track="false" data-track-event="click" data-track-category="add_to_cart_pop_up" data-track-action="cart_popup_acessories_product_photo_click" data-track-label="Сетевой фильтр InterStep IS-SP-106LT50ME-000B201">
                                         <div class="lazy-load-image-holder">
-                                          <img data-original="img/50041690m.jpg" alt="Сетевой фильтр InterStep IS-SP-106LT50ME-000B201" class="lazy product-tile-picture-image" src="img/stub.gif">
+                                          <img data-original="img/50041690m.jpg" alt="Сетевой фильтр InterStep IS-SP-106LT50ME-000B201" class="lazy product-tile-picture-image" src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                         </div>
                                       </a>
                                     </div>
@@ -5514,7 +4769,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                   <div class="multi-bundles-img-vertical">
                                     <a href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781">
                                       <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="lazy " src="img/stub.gif">
+                                        <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                       </div>
                                     </a>
                                   </div>
@@ -5558,7 +4813,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                                 <div class="multi-bundles-img-vertical">
                                   <a href="http://www.mvideo.ru/products/komplekt-cifrovogo-tv-trikolor-full-hd-e501-c591-evropa-10006694">
                                     <div class="lazy-load-image-holder">
-                                      <img data-original="img/10006694s.jpg" alt="Комплект цифрового ТВ Триколор Full HD E501/C591 Европа" class="lazy " src="img/stub.gif">
+                                      <img data-original="img/10006694s.jpg" alt="Комплект цифрового ТВ Триколор Full HD E501/C591 Европа" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                                     </div>
                                   </a>
                                 </div>
@@ -5877,9 +5132,9 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                 </div>
                 <div class="shadow-top-inner listing-banner">
                   <div class="lazy-load-image-holder">
-                    <img data-original="img/warranty-banner-big.jpg" alt="Description" class="lazy visible-desktop " src="img/stub.gif">
-                    <img data-original="img/warranty-banner-tablet.jpg" alt="Description" class="lazy visible-tablet " src="img/stub.gif">
-                    <img data-original="img/warranty-banner-small.jpg" alt="Description" class="lazy visible-phone " src="img/stub.gif">
+                    <img data-original="img/warranty-banner-big.jpg" alt="Description" class="lazy visible-desktop " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
+                    <img data-original="img/warranty-banner-tablet.jpg" alt="Description" class="lazy visible-tablet " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
+                    <img data-original="img/warranty-banner-small.jpg" alt="Description" class="lazy visible-phone " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
                   </div>
                 </div>
               </div>
@@ -5923,12 +5178,12 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
             <div class="sticky-header-holder">
               <div class="sticky-header-left">
                 <a href="http://www.mvideo.ru/" class="header-logo font-icon icon-logo-main">
-                  <img class="header-logo-img" src="img/mvideo-logo.png" alt="М.Видео, нам не всё равно">
+                  <img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/mvideo-logo.png" alt="М.Видео, нам не всё равно">
                   <strong>М.Видео, нам не всё равно</strong>
                 </a>
                 <div class="image-holder">
                   <a href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#overview" data-init="switchTab">
-                    <img src="img/10007781s.jpg" alt="Купить null в интернет-магазине М.Видео" class="product-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/10007781s.jpg" alt="Купить null в интернет-магазине М.Видео" class="product-image">
                   </a>
                 </div>
               </div>
@@ -6153,10 +5408,10 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
         <div class="footer-bottom">
           <div class="section">
             <div class="footer-akit-ico">
-              <a href="http://www.mvideo.ru/akit"><img src="img/akit-logo.png" alt="АКИТ - Ассоциация Компаний Интернет Торговли" title="АКИТ"></a>
+              <a href="http://www.mvideo.ru/akit"><img src="<?php echo get_template_directory_uri(); ?>/img/akit-logo.png" alt="АКИТ - Ассоциация Компаний Интернет Торговли" title="АКИТ"></a>
             </div>
             <div class="footer-copyright">
-              <a href="http://www.mvideo.ru/"><img src="img/logo-small.png" alt="М.Видео" title="М.Видео"></a>
+              <a href="http://www.mvideo.ru/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="М.Видео" title="М.Видео"></a>
               Copyright© «М.Видео»,&nbsp;2016
             </div>
             <ul class="footer-sub-nav">
@@ -6168,7 +5423,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       </footer>
     </div>
   </div>
-  <iframe name="oauth2relay369446746" id="oauth2relay369446746" src="img/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+  <iframe name="oauth2relay369446746" id="oauth2relay369446746" src="<?php echo get_template_directory_uri(); ?>/img/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
 
   <div class="device-manager"></div>
   <div class="sticky-header sticky-header-product" style="display: none;">
@@ -6176,12 +5431,12 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       <div class="sticky-header-holder">
         <div class="sticky-header-left">
           <a href="http://www.mvideo.ru/" class="header-logo font-icon icon-logo-main">
-            <img class="header-logo-img" src="img/mvideo-logo.png" alt="М.Видео, нам не всё равно">
+            <img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/mvideo-logo.png" alt="М.Видео, нам не всё равно">
             <strong>М.Видео, нам не всё равно</strong>
           </a>
           <div class="image-holder">
             <a href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#overview" data-init="switchTab">
-              <img src="img/10007781s.jpg" alt="Купить null в интернет-магазине М.Видео" class="product-image">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/10007781s.jpg" alt="Купить null в интернет-магазине М.Видео" class="product-image">
             </a>
           </div>
         </div>
@@ -6256,7 +5511,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       </div>
     </div>
   </div>
-<img src="img/hit" width="1" height="1" class="hidden" alt="">
+<img src="<?php echo get_template_directory_uri(); ?>/img/hit" width="1" height="1" class="hidden" alt="">
   <span class="hidden" id="redHelperAction">
       {
         "Chat opened": {
@@ -6352,14 +5607,14 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       }
     </span>
   <!-- 126ms (4ms / 1ms / 121ms) | MStore-weblogic-test-prod-a -->
-  <iframe id="apiproxyed011dd507befb8911df97c5b6e12d219d8fef670.6080046305209756" name="apiproxyed011dd507befb8911df97c5b6e12d219d8fef670.6080046305209756" src="img/proxy.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+  <iframe id="apiproxyed011dd507befb8911df97c5b6e12d219d8fef670.6080046305209756" name="apiproxyed011dd507befb8911df97c5b6e12d219d8fef670.6080046305209756" src="<?php echo get_template_directory_uri(); ?>/img/proxy.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
 
   <div id="netotiate-hub-container" class="" style="">
-    <iframe id="netotiate-hub" src="img/saved_resource(2).html" width="1px" height="1px" overflow="hidden" frameborder="0" class="netotiate-window-client"></iframe>
+    <iframe id="netotiate-hub" src="<?php echo get_template_directory_uri(); ?>/img/saved_resource(2).html" width="1px" height="1px" overflow="hidden" frameborder="0" class="netotiate-window-client"></iframe>
   </div>
 
   <div id="netotiate_plugin" style="display: none;" class="">
-    <iframe scrolling="no" allowtransparency="true" frameborder="0" id="netotiate_iframe" name="netotiate_iframe" src="img/saved_resource(3).html" class="netotiate-window-client" style="width:628px;height:440px;visibility:visible;overflow:hidden;z-index:10000"></iframe>
+
   </div>
 </body>
 
