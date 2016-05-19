@@ -7,13 +7,11 @@
 
   <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
 
-  <link href="http://www.google-analytics.com/" rel="dns-prefetch"><!-- dns prefetch -->
-
-<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/libs.css">
-<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-common.css">
-<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-blocks.css">
-<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-pages.css">
-<link media="print" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-print.css">
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/libs.css">
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-common.css">
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-blocks.css">
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-pages.css">
+  <link media="print" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-print.css">
 
   <!-- icons -->
   <link href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
@@ -26,23 +24,10 @@
   <!-- css + javascript -->
   <?php wp_head(); ?>
 
-<html class="js flash history localstorage sessionstorage mediaqueries no-touchevents cssscrollbar" xml:lang="ru-RU" lang="ru-RU">
-<!--<![endif]-->
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-    <?php wp_head(); ?>
-
-
 </head>
 <body <?php body_class('productDetails no-inner-shaddow'); ?>>
 
-<body class="productDetails no-inner-shaddow">
+
   <div class="wrapper">
 
     <div class="page-content" style="left: 0px;">
@@ -118,12 +103,6 @@
         <a href="http://www.mvideo.ru/products/radioupravlyaemaya-mashina-pilotage-buggy-stem-12-rd-ep-rc17514-40063842">Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514</a> </h4> </div>
                             </li>
                           </ul>
-                          <div style="display: none">
-
-                            <input id="update-mini-basket-button" name="/atg/commerce/order/purchase/CartModifierFormHandler.setOrderByCommerceId" type="submit">
-
-                            <input id="remove-mini-basket-button" name="/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrder" type="submit">
-                          </div>
                         </form>
                       </div>
                     </div>
