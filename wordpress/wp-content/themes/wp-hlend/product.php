@@ -1,6 +1,6 @@
 <?php /* Template Name: Produect Page */  ?>
-
 <?php get_header(); ?>
+
 
 
 
@@ -19,46 +19,7 @@
                       <div class="social-item last"><a data-network="odnoklassniki" id="odnoklassniki-share" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" data-pushable="true" data-action="click" data-holder="#socialSharingGoogleAnalytics-OK" class="social-share-link"><span class="socials-sharing font-icon icon-odnoklassniki"></span><span id="odnoklassniki-counter" class="social-counter">0</span></a></div>
                     </div>
                   </div>
-                  <span class="hidden" id="socialSharingGoogleAnalytics">
-{
-"event": "Social",
-"socialNetwork": "Поделиться",
-"socialAction": "share",
-"socialTarget": "http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781"
-}
-  </span>
-                  <span class="hidden" id="socialSharingGoogleAnalytics-Facebook">
-{
-"event": "Social",
-"socialNetwork": "Facebook",
-"socialAction": "share",
-"socialTarget": "http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781"
-}
-  </span>
-                  <span class="hidden" id="socialSharingGoogleAnalytics-Twitter">
-{
-"event": "Social",
-"socialNetwork": "Twitter",
-"socialAction": "share",
-"socialTarget": "http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781"
-}
-  </span>
-                  <span class="hidden" id="socialSharingGoogleAnalytics-VKontakte">
-{
-"event": "Social",
-"socialNetwork": "VKontakte",
-"socialAction": "share",
-"socialTarget": "http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781"
-}
-  </span>
-                  <span class="hidden" id="socialSharingGoogleAnalytics-OK">
-{
-"event": "Social",
-"socialNetwork": "OK",
-"socialAction": "share",
-"socialTarget": "http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781"
-}
-  </span>
+
                   <ul class="main-toolbar-menu">
                     <li class="main-toolbar-menu-item share-link">
                       <a data-init="social-sharing" data-placement="bottom" data-init-param=".share-link a, #social-sharing" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" data-toggle="toolt
@@ -121,24 +82,18 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                       <div class="image image-holder">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/10007781b.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U" class="product-image">
 
-                        <!--noindex-->
-                        <div id="DivgtmSkuMarkerBubbleShow" style="display: none;"><span class="hidden" id="gtmSkuMarkerBubbleShow">{         "event": "OWOX",          "eventCategory": "Interactions",          "eventAction": "show",          "eventLabel": "bubble",         "eventContext": "mark30303146",         "eventContent": "Умная рассрочка 0-0-24 (0-0-24) (до 16.05) (бабл)",          "eventNoninteraction": "1"          }</span>
-                        </div>
-                        <!--/noindex-->
+
                         <div class="product-badge" data-pushable="true" data-action="load" data-holder="#gtmSkuMarkerBubbleShow">
 
-                          <!--noindex-->
-                          <div id="DivgtmSkuMarkerBubbleClick" style="display: none;"><span class="hidden" id="gtmSkuMarkerBubbleClick">{         "event": "OWOX",          "eventCategory": "Interactions",          "eventAction": "click",         "eventLabel": "bubble",         "eventContext": "mark30303146",         "eventContent": "Умная рассрочка 0-0-24 (0-0-24) (до 16.05) (бабл)",          "eventNoninteraction": "1"          }</span>
-                          </div>
-                          <!--/noindex-->
+
                           <a href="http://www.mvideo.ru/promo/rassrochka-0024" id="product-page-bundle-marker" data-pushable="true" data-action="click" data-holder="#gtmSkuMarkerBubbleClick" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/rassrochka-0024-bubble_0-0-24.png" alt=" " class="">
                           </a>
                         </div>
                       </div>
-                      <div class="video image-holder">
-                        <iframe src="./product_files/saved_resource.html" frameborder="0" class="product-carousel-view-iframe"></iframe>
-                      </div>
+                  <!--     <div class="video image-holder">
+                    <iframe src="./product_files/saved_resource.html" frameborder="0" class="product-carousel-view-iframe"></iframe>
+                  </div> -->
                     </div>
                     <div class="carousel-holder">
                       <a href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" class="zoom"><i class="font-icon icon-zoom"></i>Увеличить</a>
@@ -230,66 +185,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                         <div class="modal-footer">
                           <div class="carousel-holder">
                             <div class="list-carousel" data-device="true">
-                              <div class="caroufredsel_wrapper" style="display: block; text-align: center; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 255px; height: 62px; margin: 0px; overflow: hidden;">
-                                <ul class="product-carousel in-modal" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1071px; height: 62px;">
-                                  <li class="selected-image" rel="0" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b.jpg" data-type="img" class="wrapper" data-src="//img.mvideo.ru/Pdb/10007781b.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781s.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U " class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li class="view3d-li rotation-js" data-type="3d" rel="1" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/3dPics/10007781/001.jpg" class="wrapper" data-type="3d" data-images="//img.mvideo.ru/3dPics/10007781/###.jpg">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/3d-small.jpg" alt="Телевизор Samsung Ultra HD UE55JU7500U 3d" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li rel="2" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b1.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b1.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b1.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b1.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b1.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b1.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b1.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li rel="3" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b2.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b2.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b2.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b2.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b2.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b2.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b2.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li rel="4" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b3.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b3.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b3.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b3.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b3.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b3.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b3.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li rel="5" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b4.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b4.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b4.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b4.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b4.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b4.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b4.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li rel="6" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b5.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b5.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b5.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b5.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b5.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b5.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b5.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li rel="7" style="width: 38.7778px;">
-                                    <a href="http://img.mvideo.ru/Pdb/10007781b6.jpg" class="wrapper" data-type="img" data-src="//img.mvideo.ru/Pdb/10007781b6.jpg" data-src-obj="{&quot;mobile&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/600/10007781b6.jpg&quot;,&quot;tablet&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b6.jpg&quot;,&quot;desktop&quot;: &quot;//img.mvideo.ru/Pdb/small_pic/480/10007781b6.jpg&quot;,&quot;original&quot;: &quot;//img.mvideo.ru/Pdb/10007781b6.jpg&quot;}">
-                                      <div class="lazy-load-image-holder">
-                                        <img data-original="img/10007781b6.jpg" alt="Купить Телевизор Samsung Ultra HD UE55JU7500U в интернет-магазине М.Видео" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                                      </div>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
+
                               <a class="font-icon icon-left-open prev-btn disabled" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" style="display: inline;"></a>
                               <a class="font-icon icon-right-open next-btn" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" style="display: inline;"></a>
                             </div>
@@ -306,22 +202,22 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
 
                     <div id="gtmServiceBestPriceOpenDiv" style="display: none;"><span class="hidden" id="gtmServiceBestPriceOpen">{                     "event": "OWOX",                      "eventCategory": "Interactions",                      "eventAction": "open",                      "eventLabel": "bestPrice",                      "eventProductCategoryId": "cat2_cis_0000000001",                      "eventProductId": "10007781"                  }</span>
                     </div>
-                    <!--/noindex-->
-                    <div data-init="bestPriceGuarantee" class="best-price-guarantee" data-pushable="true" data-action="click" data-holder="#gtmServiceBestPriceOpen">
-                      <i class="ico pull-left best-price-guarantee-thumbs-up"></i>
-                      <div class="best-price-guarantee-info">
-                        <strong>Нашли дешевле? Снизим цену!</strong><i class="pull-right font-icon icon-right-open best-price-guarantee-more"></i>
-                      </div>
+                  <!--   /noindex
+                  <div data-init="bestPriceGuarantee" class="best-price-guarantee" data-pushable="true" data-action="click" data-holder="#gtmServiceBestPriceOpen">
+                    <i class="ico pull-left best-price-guarantee-thumbs-up"></i>
+                    <div class="best-price-guarantee-info">
+                      <strong>Нашли дешевле? Снизим цену!</strong><i class="pull-right font-icon icon-right-open best-price-guarantee-more"></i>
                     </div>
-                    <div class="expanded-container">
+                  </div>
+                                    <div id="gtmServiceBestPriceHelpDiv" style="display: none;"><span class="hidden" id="gtmServiceBestPriceHelp">{                           "event": "OWOX",                            "eventCategory": "Interactions",                            "eventAction": "click",                           "eventLabel": "bestPrice",                            "eventContext": "help",                           "eventProductId": "10007781",                           "eventProductCategoryId": "cat2_cis_0000000001",                            "eventNoninteraction": "1"                          }</span>
+                      </div>
+                      /noindex -->
+                        <p>      <div class="expanded-container">
                       <!-- User not authorized -->
                       <div class="form-block not-authorized">
 
-                        <!--noindex-->
-                        <div id="gtmServiceBestPriceHelpDiv" style="display: none;"><span class="hidden" id="gtmServiceBestPriceHelp">{                           "event": "OWOX",                            "eventCategory": "Interactions",                            "eventAction": "click",                           "eventLabel": "bestPrice",                            "eventContext": "help",                           "eventProductId": "10007781",                           "eventProductCategoryId": "cat2_cis_0000000001",                            "eventNoninteraction": "1"                          }</span>
-                        </div>
-                        <!--/noindex-->
-                        <p>
+
+
                           Видели товар дешевле? Отправьте ссылку на данный товар. У конкурента будет цена ниже — вернем разницу! Промокод будет отправлен на телефон и е-mail.
                           <br>
                           <a href="http://www.mvideo.ru/ppc" target="_blank" data-pushable="true" data-action="click" data-holder="#gtmServiceBestPriceHelp"></a><a href="http://www.mvideo.ru/ppc" target="_blank">Правила</a>
@@ -330,12 +226,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                           <p>
                             Для участия в программе вы должны быть авторизованы.
                           </p>
-                          <!--noindex-->
-                          <ul class="header-login-options-list">
-                            <li class="header-login-option"><a href="http://www.mvideo.ru/login/?bpg=true" class="header-login-option-link">Войти</a></li>
-                            <li class="header-login-option"><a href="http://www.mvideo.ru/register?sn=false&amp;bpg=true" class="header-login-option-link">Регистрация</a></li>
-                          </ul>
-                          <!--/noindex-->
+
                           <a class="btn btn-invers-deep-grey">Закрыть</a> </div>
                       </div>
                     </div>
@@ -351,8 +242,9 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                           <div class="product-price pricing-product-detail">
                             <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="product-price">
                               <strong itemprop="price" class="product-price-current">
-                    134990
-  </strong>
+                              134990
+                              </strong>
+
                               <meta itemprop="priceCurrency" content="RUB">
                             </div>
                           </div>
@@ -363,11 +255,13 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                           <div>
                             <div class="product-details-summary-bonus-lable pull-left">
                               <strong>
-            Бонусных рублей <br> за покупку
-  </strong> </div>
+                              Бонусных рублей <br> за покупку
+                              </strong>
+                              </div>
+
                             <div class="product-details-summary-bonus-help pull-left">
                               <a href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" id="js-custom-tooltip" data-init="custom-tooltip" data-init-param="#js-custom-tooltip, top, body" data-tooltip-text="Начисление Бонусных рублей произойдёт после доставки или получения заказа в магазине.
-&lt;br&gt;Сумма Бонусных рублей определяется в соответствии с правилами программы «М.Видео-Бонус»." class="ico ico-help-small" data-original-title="" title="">
+                              &lt;br&gt;Сумма Бонусных рублей определяется в соответствии с правилами программы «М.Видео-Бонус»." class="ico ico-help-small" data-original-title="" title="">
                               </a>
                             </div>
                             <div class="product-details-summary-bonus-info pull-right highlighted-text-secondary">
@@ -377,10 +271,10 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                         </div>
                         <div class="product-details-summary-add-to-cart">
 
-                          <!--noindex-->
-                          <div id="gtmAddToBasketDiv10007781" style="display: none;"><span class="hidden" id="gtmAddToBasket10007781">{           "event": "OWOX",            "eventCategory": "Conversions",           "eventAction": "click",           "eventLabel": "AddToCart",            "eventValue": "134990",           "eventOneCart": "0",            "eventProductCategoryId": "cat2_cis_0000000001",            "eventProductId": "10007781"            }</span>
-                          </div>
-                          <!--/noindex-->
+                      <!--     noindex
+                      <div id="gtmAddToBasketDiv10007781" style="display: none;"><span class="hidden" id="gtmAddToBasket10007781">{           "event": "OWOX",            "eventCategory": "Conversions",           "eventAction": "click",           "eventLabel": "AddToCart",            "eventValue": "134990",           "eventOneCart": "0",            "eventProductCategoryId": "cat2_cis_0000000001",            "eventProductId": "10007781"            }</span>
+                      </div>
+                      /noindex -->
                           <div class="error text-error">
                           </div>
                           <form id="10007781" action="http://www.mvideo.ru/cart?productId=10007781&amp;skuId=10007781&amp;_DARGS=/sitebuilder/components/product/add-to-basket.jsp.10007781" class="" method="post">
@@ -412,18 +306,18 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                           </form>
                         </div>
 
-                        <!--noindex-->
-                        <div id="gtmSimilarProductsDiv" style="display: none;"><span class="hidden" id="gtmSimilarProducts">{                     "event": "OWOX",                      "eventCategory": "Interactions",                      "eventAction": "click",                     "eventLabel": "similarProducts",                      "eventContext": "productBlock"                      }</span>
-                        </div>
-                        <!--/noindex-->
+<!--                         noindex
+<div id="gtmSimilarProductsDiv" style="display: none;"><span class="hidden" id="gtmSimilarProducts">{                     "event": "OWOX",                      "eventCategory": "Interactions",                      "eventAction": "click",                     "eventLabel": "similarProducts",                      "eventContext": "productBlock"                      }</span>
+</div>
+/noindex -->
                         <a href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#overview" class="view-similar-products" data-holder="#gtmSimilarProducts" data-pushable="true" data-action="click" data-init="switchTab" data-init-param="{&quot;subTargetBlock&quot;: &quot;.similar-products-holder&quot;}">
                 Смотреть похожие товары
   </a>
 
-                        <!--noindex-->
-                        <div id="gmtAddToWishListDiv10007781" style="display: none;"><span class="hidden" id="gmtAddToWishList10007781">{         "event": "OWOX",          "eventCategory": "Conversions",         "eventAction": "add",         "eventLabel": "toWishlist",         "eventValue": "134990",         "eventProductCategoryId": "cat2_cis_0000000001",          "eventProductId": "10007781"          }</span>
-                        </div>
-                        <!--/noindex-->
+ <!--                        noindex
+ <div id="gmtAddToWishListDiv10007781" style="display: none;"><span class="hidden" id="gmtAddToWishList10007781">{         "event": "OWOX",          "eventCategory": "Conversions",         "eventAction": "add",         "eventLabel": "toWishlist",         "eventValue": "134990",         "eventProductCategoryId": "cat2_cis_0000000001",          "eventProductId": "10007781"          }</span>
+ </div>
+ /noindex -->
                         <form action="http://www.mvideo.ru/?_DARGS=/sitebuilder/components/product/wishlist/addToWishList.jsp" method="post">
                           <input name="_dyncharset" value="UTF-8" type="hidden">
                           <input name="_dynSessConf" value="-2688242646132088425" type="hidden">
@@ -484,12 +378,12 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
                         </div>
                       </div>
                     </div>
-                    <!--noindex-->
 
-                    <!--noindex-->
-                    <div id="gtmCompareDiv10007781" style="display: none;"><span class="hidden" id="gtmCompare10007781">{         "event": "OWOX",          "eventCategory": "Interactions",          "eventAction": "remove",          "eventLabel": "removeFromCompare",          "eventValue": "134990",         "eventProductCategoryId": "cat2_cis_0000000001",          "eventProductId": "10007781",         "mutable": "true",          "mutationFunction": "mvideo.Module._items.gtmCompareMutationFunction"         }</span>
-                    </div>
-                    <!--/noindex-->
+
+<!--                     noindex
+<div id="gtmCompareDiv10007781" style="display: none;"><span class="hidden" id="gtmCompare10007781">{         "event": "OWOX",          "eventCategory": "Interactions",          "eventAction": "remove",          "eventLabel": "removeFromCompare",          "eventValue": "134990",         "eventProductCategoryId": "cat2_cis_0000000001",          "eventProductId": "10007781",         "mutable": "true",          "mutationFunction": "mvideo.Module._items.gtmCompareMutationFunction"         }</span>
+</div>
+/noindex -->
                     <form action="http://www.mvideo.ru/sitebuilder/components/product-comparion/comparisonListJSON.jsp?_DARGS=/sitebuilder/components/product/product-detail-compare.jsp" method="post">
                       <input name="_dyncharset" value="UTF-8" type="hidden">
                       <input name="_dynSessConf" value="-2688242646132088425" type="hidden">
@@ -1975,7 +1869,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       </footer>
     </div>
   </div>
-  <iframe name="oauth2relay369446746" id="oauth2relay369446746" src="<?php echo get_template_directory_uri(); ?>/img/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+
 
   <div class="device-manager"></div>
   <div class="sticky-header sticky-header-product" style="display: none;">
@@ -2063,7 +1957,7 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       </div>
     </div>
   </div>
-<img src="<?php echo get_template_directory_uri(); ?>/img/hit" width="1" height="1" class="hidden" alt="">
+
   <span class="hidden" id="redHelperAction">
       {
         "Chat opened": {
@@ -2159,10 +2053,9 @@ ip" data-html="true" data-device="true" data-pushable="true" data-action="click"
       }
     </span>
   <!-- 126ms (4ms / 1ms / 121ms) | MStore-weblogic-test-prod-a -->
-  <iframe id="apiproxyed011dd507befb8911df97c5b6e12d219d8fef670.6080046305209756" name="apiproxyed011dd507befb8911df97c5b6e12d219d8fef670.6080046305209756" src="<?php echo get_template_directory_uri(); ?>/img/proxy.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
 
   <div id="netotiate-hub-container" class="" style="">
-    <iframe id="netotiate-hub" src="<?php echo get_template_directory_uri(); ?>/img/saved_resource(2).html" width="1px" height="1px" overflow="hidden" frameborder="0" class="netotiate-window-client"></iframe>
+
   </div>
 
   <div id="netotiate_plugin" style="display: none;" class="">
