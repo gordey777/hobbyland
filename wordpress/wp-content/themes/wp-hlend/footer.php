@@ -1,8 +1,3 @@
-    </div><!-- /.inner -->
-  </section><!-- /section -->
-
-</div><!-- /wrapper -->
-
   <footer class="footer grayLighter">
         <div class="footer-top">
           <div class="section">
@@ -43,6 +38,7 @@
                       <i class="font-icon icon-plus"></i><i class="font-icon icon-minus"></i>
                     </span>
                   </h3>
+
                 <div id="nav-part-0" class="nav-accordion-body">
                   <ul class="footer-nav-list">
                     <li class="footer-nav-item"><a href="http://www.mvideo.ru/news-hub" class="footer-nav-link">Новости</a></li>
@@ -59,6 +55,8 @@
                     <li class="footer-nav-item"><a href="http://www.mvideo.ru/contacts" class="footer-nav-link">Контакты</a></li>
                   </ul>
                 </div>
+
+
               </div>
               <div class="footer-col accordion-group">
                 <h3 class="accordion-heading">
@@ -262,17 +260,9 @@
   <div id="netotiate_plugin" style="display: none;" class="">
 
   </div>
+
+  <?php wp_footer(); ?>
+
 </body>
-
 </html>
-
-  <div class="inner">
-
-    <p class="copyright">
-      &copy; <?php echo date("Y"); ?> Собственность <?php bloginfo('name'); ?>.
-    </p><!-- /copyright -->
-
-  </div><!-- /.inner -->
-
-    <?php wp_footer(); ?>
 

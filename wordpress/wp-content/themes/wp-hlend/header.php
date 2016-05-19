@@ -73,7 +73,6 @@
 
                 </div>
 
-
               </div>
 
               <div class="header-area-right">
@@ -153,82 +152,18 @@
             </div>
           </div>
 
+
+
+
           <div class="header-nav-wrap">
-            <nav class="header-nav" data-init="mobileNavigation" data-device="true">
-              <ul data-tpl="navigation" class="header-section header-nav-list">
-                <li class="header-nav-item has-dropdown hni-actions">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/vse-akcii"><span class="header-nav-item-text">Акции</span></a>
-                </li>
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/televizory-i-video"><span class="header-nav-item-text">Телевизоры, видео и Hi-Fi</span></a>
-                </li>
-
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/audiotehnika"><span class="header-nav-item-text">Аудио техника</span></a>
-                </li>
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/noutbuki-planshety-i-kompyutery"><span class="header-nav-item-text">Ноутбуки, планшеты и компьютеры</span></a>
-                </li>
-
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/telefony"><span class="header-nav-item-text">Телефоны</span></a>
-
-                </li>
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/fotoapparaty-i-videotehnika"><span class="header-nav-item-text">Фото и видео</span></a>
-                </li>
-
-
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/tehnika-dlya-doma"><span class="header-nav-item-text">Техника для дома</span></a>
-                </li>
-
-
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/tehnika-dlya-kuhni"><span class="header-nav-item-text">Техника для кухни</span></a>
-                </li>
-
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/vstraivaemaya-tehnika"><span class="header-nav-item-text">Встраиваемая техника</span></a>
-                </li>
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/krasota-i-zdorove"><span class="header-nav-item-text">Красота и здоровье</span></a>
-                </li>
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/avtomobilnaya-elektronika-i-gps"><span class="header-nav-item-text">Авто техника</span></a>
-                </li>
-
-
-                <li class="header-nav-item has-dropdown ">
-                  <a class="header-nav-item-link" href="http://www.mvideo.ru/igry-i-razvlecheniya"><span class="header-nav-item-text">Игры и развлечения</span></a>
-                </li>
-
-
-              </ul>
-
-
+            <nav class="header-nav">
+              <?php wpeHeadNav(); ?>
             </nav>
           </div>
+
+
+
+
 
 
           <div class="autocomplete inactive" data-init="autocompleteHandler" data-init-param="{&quot;element&quot;: &quot;#alt-search-input&quot;,&quot;submitAfter&quot;: true,&quot;placement&quot;:&quot;append&quot;, &quot;timeout&quot;: 0}" style="display: none;">
