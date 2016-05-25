@@ -24,8 +24,9 @@
 
                   <ul class="main-toolbar-menu">
                     <li class="main-toolbar-menu-item share-link">
-                      <a data-init="social-sharing" data-placement="bottom" data-init-param=".share-link a, #social-sharing" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" data-toggle="toolt
-ip" data-html="true" data-device="true" data-pushable="true" data-action="click" data-holder="#socialSharingGoogleAnalytics" class="main-toolbar-menu-link show-share-popup" data-original-title="" title=""><i class="main-toolbar-menu-icon font-icon icon-share"></i><span class="link-text">Поделиться</span></a></li>
+                    <a data-init="social-sharing" data-placement="bottom" data-init-param=".share-link a, #social-sharing" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#" data-toggle="toolt
+                    ip" data-html="true" data-device="true" data-pushable="true" data-action="click" data-holder="#socialSharingGoogleAnalytics" class="main-toolbar-menu-link show-share-popup" data-original-title="" title=""><i class="main-toolbar-menu-icon font-icon icon-share"></i>
+                    <span class="link-text">Поделиться</span></a></li>
                     <li data-init="print" data-init-param=".js-print" class="main-toolbar-menu-item print-link visible-desktop">
                       <a class="main-toolbar-menu-link js-print" href="http://www.mvideo.ru/products/televizor-samsung-ultra-hd-ue55ju7500u-10007781#"><i class="main-toolbar-menu-icon font-icon icon-print"></i><span class="link-text">Печатать</span></a></li>
                   </ul>

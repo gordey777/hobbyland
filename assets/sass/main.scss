@@ -20,6 +20,7 @@
     text-align: center;
 
     border-left: 1px solid #e9eaec;
+
     a {
       display: block;
 
@@ -47,3 +48,32 @@
     }
   }
 }
+
+
+.footer-nav-myclass {
+  list-style-type: none;
+
+  li {
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.4rem;
+      padding: .7rem 0;
+      text-decoration: none;
+
+    a {
+      color: #333;
+      display: block;
+      text-decoration: none;
+      min-height: 1.6rem;
+      padding: 0 0rem;
+
+      &:hover {
+        text-decoration: underline;
+        color: #ed1c24;
+      }
+    }
+  }
+}
+
+
+

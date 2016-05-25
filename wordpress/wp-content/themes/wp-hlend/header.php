@@ -22,6 +22,8 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.js"></script>
   <![endif]-->
   <!-- css + javascript -->
+
+
   <?php wp_head(); ?>
 
 </head>
@@ -79,54 +81,113 @@
 
 
                 <div id="js-mini-basket" class="mini-basket-block ">
-                  <a href="http://www.mvideo.ru/cart" data-init="miniBasketBtn" data-url="/sitebuilder/blocks/minibasket/miniBasketNavigation.json.jsp" class="mini-basket-service-blocks mini-basket-link collapsed close-cart">
-                    <strong class="icon-trolley-cart font-icon">
-            <span class="mini-basket-amount">1</span>
-        </strong>
-                  </a>
-                  <div id="mini-basket" class="mini-basket-content">
-                    <div class="mini-basket-main-content">
-                      <div class="mini-basket-scrolling-panel">
-                        <form id="mini-basket-form" action="http://www.mvideo.ru/sitebuilder/blocks/cart/cart-mini.json.jsp?_DARGS=/sitebuilder/blocks/cart/fragments/mini-basket-filled.jsp" method="POST">
-                          <ul class="mini-basket-product-details">
-                            <li class="mini-basket-product">
-                              <div class="mini-basket-product-image">
-                                <div class="mini-basket-picture-holder">
-                                  <a href="http://www.mvideo.ru/products/radioupravlyaemaya-mashina-pilotage-buggy-stem-12-rd-ep-rc17514-40063842">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/40063842s.jpg" alt="Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514" class="">
-                                  </a>
-                                </div>
-                              </div>
-                              <div class="mini-basket-product-description">
-                                <h4 class="mini-basket-product-name">
-        <a href="http://www.mvideo.ru/products/radioupravlyaemaya-mashina-pilotage-buggy-stem-12-rd-ep-rc17514-40063842">Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514</a> </h4> </div>
-                            </li>
-                          </ul>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="mini-basket-buttons">
-                      <div class="mini-basket-action-btns">
-                        <div class="mini-basket-total-block">
-                          <strong class="mini-basket-total">Всего к оплате (р.)</strong>
-                          <strong class="mini-basket-total-price">6490</strong>
-                        </div>
+                  <a href="<?php echo WC()->cart->get_cart_url(); ?>" data-init="miniBasketBtn" data-url="/sitebuilder/blocks/minibasket/miniBasketNavigation.json.jsp" class="mini-basket-service-blocks mini-basket-link collapsed close-cart">
 
-                        <div class="mini-basket-buttons-holder" data-pushable="true" data-action="click" data-holder="#gtmMiniBasket">
-                          <a class="btn btn-fluid mini-basket-view-basket-button" href="http://www.mvideo.ru/cart">Перейти в корзину</a>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="http://www.mvideo.ru/exchange">
-                      <div class="slider-pict">
-                        <div class="slider-pict-center">
-                          <div class="lazy-load-image-holder">
-                            <img data-original="img/ex_ret.gif" alt="Гарантия и обмен по чеку" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+<!--                     КІЛЬКІСТЬ ТОВАРІВ В КОРЗИНІ-->
+                    <strong class="icon-trolley-cart font-icon">
+
+                        <span class="mini-basket-amount">
+
+                                <?php echo sprintf ('%d', WC()->cart->get_cart_contents_count()) ; ?>
+
+                        </span>
+
+                    </strong>
+
+
+                  </a>
+<style>
+
+
+.product_list_widget li:last-child {
+  display: none;
+}
+
+  .product_list_widget:hover li {
+    display: block;
+  }
+
+
+</style>
+
+
+                  <ul class="site-header-cart menu">
+      <li class="">
+                    <a class="cart-contents" href="http://wp.dev/cart/" title="Посмотреть вашу корзину">
+        <span class="amount">₴246</span> <span class="count">2 товара</span>
+      </a>
+
+          </li>
+      <li>
+        <div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content">
+
+<ul class="cart_list product_list_widget ">
+
+
+              <li class="mini_cart_item">
+            <a href="http://wp.dev/cart/?remove_item=c9f0f895fb98ab9159f51fd0297e236d&amp;_wpnonce=22caa03430" class="remove" title="Удалить эту позицию" data-product_id="8" data-product_sku="1122121">×</a>                          <a href="http://wp.dev/product/product/">
+                <img src="//wp.dev/wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="Заполнитель" width="180" class="woocommerce-placeholder wp-post-image" height="180">product&nbsp;             </a>
+
+            <span class="quantity">2 × <span class="amount">₴123</span></span>          </li>
+
+
+</ul><!-- end product list -->
+
+
+  <p class="total"><strong>Подытог:</strong> <span class="amount">₴246</span></p>
+
+
+  <p class="buttons">
+    <a href="http://wp.dev/cart/" class="button wc-forward">Перейти в корзину</a>
+    <a href="http://wp.dev/checkout/" class="button checkout wc-forward">Оформление заказа</a>
+  </p>
+
+
+</div></div>      </li>
+    </ul>
+<!--                   <div id="mini-basket" class="mini-basket-content">
+  <div class="mini-basket-main-content">
+    <div class="mini-basket-scrolling-panel">
+      <form id="mini-basket-form" action="http://www.mvideo.ru/sitebuilder/blocks/cart/cart-mini.json.jsp?_DARGS=/sitebuilder/blocks/cart/fragments/mini-basket-filled.jsp" method="POST">
+        <ul class="mini-basket-product-details">
+          <li class="mini-basket-product">
+            <div class="mini-basket-product-image">
+              <div class="mini-basket-picture-holder">
+                <a href="http://www.mvideo.ru/products/radioupravlyaemaya-mashina-pilotage-buggy-stem-12-rd-ep-rc17514-40063842">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/40063842s.jpg" alt="Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514" class="">
+                </a>
+              </div>
+            </div>
+            <div class="mini-basket-product-description">
+              <h4 class="mini-basket-product-name">
+        <a href="http://www.mvideo.ru/products/radioupravlyaemaya-mashina-pilotage-buggy-stem-12-rd-ep-rc17514-40063842">Радиоуправляемая машина Pilotage Buggy Stem 12 RD EP RC17514</a> </h4> </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <div class="mini-basket-buttons">
+    <div class="mini-basket-action-btns">
+      <div class="mini-basket-total-block">
+        <strong class="mini-basket-total">Всего к оплате (р.)</strong>
+        <strong class="mini-basket-total-price">6490</strong>
+      </div>
+
+      <div class="mini-basket-buttons-holder" data-pushable="true" data-action="click" data-holder="#gtmMiniBasket">
+        <a class="btn btn-fluid mini-basket-view-basket-button" href="http://hlend.dev/cart">Перейти в корзину</a>
+      </div>
+    </div>
+  </div>
+  <a href="http://www.mvideo.ru/exchange">
+    <div class="slider-pict">
+      <div class="slider-pict-center">
+        <div class="lazy-load-image-holder">
+          <img data-original="img/ex_ret.gif" alt="Гарантия и обмен по чеку" class="lazy " src="<?php echo get_template_directory_uri(); ?>/img/stub.gif">
+        </div>
+      </div>
+    </div>
+  </a>
+</div> -->
                 </div>
                 <div class="wishlist-block">
                   <a href="http://www.mvideo.ru/wish-list" data-device="true" class="wishlist-link default">

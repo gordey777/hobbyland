@@ -130,7 +130,7 @@ function wpeFootNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="footernav">%3$s</ul>',
+    'items_wrap'      => '<ul data-tpl="navigation" class="footer-nav-myclass">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -154,12 +154,65 @@ function wpeFootNavTwo() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="footernav">%3$s</ul>',
+    'items_wrap'      => '<ul data-tpl="navigation" class="footer-nav-myclass">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
   );
 }
+
+// WPE footer navigation
+function wpeFootNavThree() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'footer-menu-three',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul data-tpl="navigation" class="footer-nav-myclass">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+
+
+}// WPE footer navigation
+function wpeFootNavFor() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'footer-menu-for',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul data-tpl="navigation" class="footer-nav-myclass">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+}
+
+
+
+
+
 // WPE sidebar navigation
 function wpeSideNav() {
   wp_nav_menu(
@@ -191,6 +244,8 @@ function register_html5_menu() {
     'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
     'footer-menu' => __('Меню в подвал', 'wpeasy'),
     'footer-menu-two' => __('Меню в подвал 2', 'wpeasy'),
+    'footer-menu-three' => __('Меню в подвал 3', 'wpeasy'),
+    'footer-menu-for' => __('Меню в подвал 4', 'wpeasy'),
   ));
 }
 //  If Dynamic Sidebar Existsов
@@ -679,7 +734,19 @@ function disable_emojicons_tinymce( $plugins ) {
 }
 
 
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '<section id="main" class="section">';
+}
+
+function my_theme_wrapper_end() {
+  echo '</section>';
+}
 
 
 

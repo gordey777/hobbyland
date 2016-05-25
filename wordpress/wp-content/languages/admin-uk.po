@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-05-03 13:19:01+0000\n"
+"PO-Revision-Date: 2016-05-23 09:33:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3907,7 +3907,7 @@ msgstr "Керування <a href=\"%1$s\">віджетами</a> та <a href=
 
 #: wp-admin/custom-background.php:93
 msgid "To use a background image, simply upload it or choose an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button. You can display a single instance of your image, or tile it to fill the screen. You can have your background fixed in place, so your site content moves on top of it, or you can have it scroll with your site."
-msgstr "Щоб використовувати фонове зображення, просто завантажте його або виберіть раніше завантажене зображення з бібліотеки файлів, натиснувши кнопку &laquo;Вибрати зображення&raquo;. Можна показувати зображення в одному екземплярі, або замостити екран. Можна зробити фон фіксованим, щоб вміст сайту переміщався зверху нього, або прокручувати його разом з сайтом."
+msgstr "Щоби використовувати фонове зображення, просто завантажте його чи оберіть вже завантажене зображення з Медіа бібліотеки, натиснувши кнопку \"Обрати зображення\". Ви можете відображати зображення в одному екземплярі, або вкрити екран сіткою. Можна зробити фон фіксованим, щоби вміст сайту прокручувався над ним, також фон може прокручуватися разом із вмістом."
 
 #: wp-admin/custom-header.php:122
 msgid "Don&#8217;t forget to click &#8220;Save Changes&#8221; when you&#8217;re done!"
@@ -9690,7 +9690,7 @@ msgstr "Форма пошуку"
 
 #: wp-admin/includes/file.php:36
 msgid "Single Post"
-msgstr "Перегляд публікації"
+msgstr "Окремий запис"
 
 #: wp-admin/includes/file.php:22
 msgid "404 Template"
