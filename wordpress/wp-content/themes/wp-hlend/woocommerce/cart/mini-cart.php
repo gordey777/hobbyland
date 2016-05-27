@@ -40,6 +40,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$thumbnail     = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 					$product_price = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 					?>
+
+
 					<li class="<?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 						<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
@@ -76,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
-	<p class="total"><strong><?php _e( 'Subtotal', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 

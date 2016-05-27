@@ -35,7 +35,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
 			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+
 		</tr>
 	</thead>
 	<tbody>
@@ -115,11 +115,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 					</td>
 
-					<td class="product-subtotal" data-title="<?php _e( 'Total', 'woocommerce' ); ?>">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
-						?>
-					</td>
+
 				</tr>
 				<?php
 			}
