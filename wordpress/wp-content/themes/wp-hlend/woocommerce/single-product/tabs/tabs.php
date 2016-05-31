@@ -37,8 +37,15 @@ if ( ! empty( $tabs ) ) : ?>
 				</li>
 
 			<?php endforeach; ?>
-<li class="<?php echo esc_attr( $key ); ?>_tab">
-          ffffffffuuuuuuuuunnnyy
+<li class="<tab">
+          <a href="#tab-<?php echo esc_attr( $key ); ?>">afdhsdfhzdfh</a>
+        </li>
+
+<li class="tab">
+          <a href="">afdhsdfhzdfh</a>
+        </li>
+        <li class="<?php echo esc_attr( $key ); ?>_tab">
+          <a href="#tab-<?php echo esc_attr( $key ); ?>">afdhsdfhzdfh</a>
         </li>
 
 		</ul>

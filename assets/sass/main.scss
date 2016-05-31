@@ -78,11 +78,24 @@
 
 .site-main,
 .widget-area {
- padding: 10px;
- background: rgba(162, 118, 83, .5);
+ padding: 15px;
+ background: rgba(255, 255, 255, .7);
 
 }
 
 .storefront-primary-navigation {
  background: rgba(162, 118, 83, .5);
+}
+
+
+.woocommerce-checkout-review-order {
+  padding: 15px;
+
+}
+
+
+.woocommerce-breadcrumb {
+
+   background: rgba(162, 118, 83, .5);
+    line-height: 0.618;
 }
