@@ -17,14 +17,14 @@ if (htmlOWp === true) {
 } else {
   var basePaths = {
     src: 'assets/',
-    dest: './wordpress/wp-content/themes/' + wpThemeName + '/'
+    dest: './wordpress/wp-content/themes/' + wpThemeName + '/assets/'
   };
 }
 var paths = {
   images: {
     src: basePaths.src + 'img/',
     srcimg: basePaths.src + 'img/**/*.{png,jpg,jpeg,gif,svg}',
-    dest: basePaths.dest + 'img/'
+    dest: basePaths.dest + 'images/'
   },
   scripts: {
     src: basePaths.src + 'js/**',
@@ -33,7 +33,7 @@ var paths = {
   },
   styles: {
     src: basePaths.src + 'sass/',
-    dest: basePaths.dest + 'css/'
+    dest: basePaths.dest + 'sass/'
   },
   fonts: {
     src: basePaths.src + 'fonts/**',
