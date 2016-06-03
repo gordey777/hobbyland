@@ -1,9 +1,5 @@
-/*  @import 'import/libs';
-@import 'import/mvid-common';
-@import 'import/mvid-blocks';
-@import 'import/mvid-pages';
-@import 'import/mvid-print'; */
-/*  @import 'import/sp-style'; */
+
+@import '_style_mainstyle';
 
 
 
@@ -20,7 +16,6 @@
     text-align: center;
 
     border-left: 1px solid #e9eaec;
-
     a {
       display: block;
 
@@ -52,23 +47,26 @@
 
 .footer-nav-myclass {
   list-style-type: none;
-
   li {
-      font-size: 1.3rem;
-      font-weight: 700;
-      line-height: 1.4rem;
-      padding: .7rem 0;
-      text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4rem;
 
+    padding: .7rem 0;
+
+    text-decoration: none;
     a {
-      color: #333;
       display: block;
-      text-decoration: none;
+
       min-height: 1.6rem;
       padding: 0 0rem;
 
+      text-decoration: none;
+
+      color: #333;
       &:hover {
         text-decoration: underline;
+
         color: #ed1c24;
       }
     }
@@ -78,24 +76,99 @@
 
 .site-main,
 .widget-area {
- padding: 15px;
- background: rgba(255, 255, 255, .7);
+  padding: 15px;
 
+  background: rgba(255, 255, 255, .9);
 }
 
 .storefront-primary-navigation {
- background: rgba(162, 118, 83, .5);
+  line-height: 0;
+
+  background: rgba(162, 118, 83, .9);
 }
 
 
 .woocommerce-checkout-review-order {
   padding: 15px;
-
 }
 
 
 .woocommerce-breadcrumb {
+  line-height: .618;
 
-   background: rgba(162, 118, 83, .5);
-    line-height: 0.618;
+  background: rgba(162, 118, 83, .5);
+}
+
+.col-full {
+  max-width: 80%;
+}
+
+.sub-menu {
+  width: 410px;
+}
+
+#menu-glavnoe-menyu {
+
+  li {
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1.15rem;
+    display: table-cell;
+    box-sizing: border-box;
+    text-align: left;
+
+    &:hover {
+      background: #743f00;
+    }
+
+    &:last-child {
+      ul {
+        border: none;
+      }
+    }
+
+    ul {
+      text-align: left;
+      li {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.3rem;
+
+        display: inline-block;
+
+        text-align: left;
+
+        border: none;
+      }
+    }
+  }
+}
+
+.site-header-cart {
+    width: 410px;
+    &:hover {
+      background: #743f00;
+    }
+li{
+   font-size: .9rem;
+  font-weight: 400;
+  line-height: 1rem;
+
+/*   display: table-cell; */
+
+  box-sizing: border-box;
+  }
+}
+
+
+
+
+
+header{
+   height:209px;
+}
+.storefront-primary-navigation{
+top: 150px;
+   position: fixed;
+   z-index: 1000;
 }

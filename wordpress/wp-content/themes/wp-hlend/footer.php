@@ -209,5 +209,34 @@
 
 <?php wp_footer(); ?>
 
+<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+<script>
+    var h_hght = 150; // высота шапки
+    var h_mrg = 10;    // отступ когда шапка уже не видна
+
+    $(function(){
+
+
+
+      var elem = $('.storefront-primary-navigation');
+      var top = $(this).scrollTop();
+
+      if(top > h_hght){
+        elem.css('top', h_mrg);
+      }
+
+      $(window).scroll(function(){
+        top = $(this).scrollTop();
+
+        if (top+h_mrg < h_hght) {
+          elem.css('top', (h_hght-top));
+        } else {
+          elem.css('top', h_mrg);
+        }
+      });
+
+    });
+    </script>
+
 </body>
 </html>

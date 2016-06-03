@@ -14,17 +14,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/libs.css">
+<!-- <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/libs.css">
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-common.css">
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-blocks.css">
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-pages.css">
-  <link media="print" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-print.css">
-  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/main.css">
+  <link media="print" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-print.css"> -->
 
-<?php wp_head(); ?>
+
+
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php wp_head(); ?>
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/main.css">
+
 <div id="page" class="hfeed site">
   <?php do_action( 'storefront_before_header' ); ?>
 
