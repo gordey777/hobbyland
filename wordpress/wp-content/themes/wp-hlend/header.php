@@ -78,4 +78,9 @@
      *
      * @hooked woocommerce_breadcrumb - 10
      */
-    do_action( 'storefront_content_top' );
+    do_action( 'storefront_content_top' ); ?>
+
+  <?php if ( is_page_template( 'front-page.php' ) ) { ?>
+    </div>
+<?php } ?>
+

@@ -86,6 +86,7 @@
 .site-main,
 .widget-area {
   padding: 15px;
+
   background: rgba(255, 255, 255, .9);
 }
 
@@ -257,10 +258,10 @@ header {
  */
 
 
-#owl-demo .item {
+#owl-top-slider .item {
   margin: 3px;
 }
-#owl-demo .item img {
+#owl-top-slider .item img {
   display: block;
 
   width: 100%;
@@ -268,11 +269,11 @@ header {
 }
 
 
-.widget1 {
+.widget-footer {
   padding: 15px;
 
   background: rgba(255, 255, 255, .9);
-    li {
+  li {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.4rem;
@@ -282,7 +283,6 @@ header {
     box-sizing: border-box;
 
     text-align: center;
-
     a {
       display: block;
 
@@ -291,8 +291,6 @@ header {
 
       vertical-align: middle;
       text-decoration: none;
-
     }
   }
 }
-
