@@ -242,13 +242,13 @@ button.menu-toggle {
 	.main-navigation {
 		ul.menu,
 		ul.nav-menu {
-			max-height: none;
+
 			overflow: visible;
 
 			> li {
 				// The first level menu item
 				> a {
-					padding: 1.618em 1em;
+					padding: .618em 1em;
 				}
 
 				&:first-child {

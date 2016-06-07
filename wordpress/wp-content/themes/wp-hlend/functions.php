@@ -152,10 +152,6 @@ function wpeFootNavFor() {
   );
 }
 
-
-
-
-
 // WPE sidebar navigation
 function wpeSideNav() {
   wp_nav_menu(
@@ -197,5 +193,30 @@ function register_html5_menu() {
  */
 
 
+//  If Dynamic Sidebar Existsов
+if (function_exists('register_sidebar')) {
+  //  Define Sidebar Widget Area 1
+  register_sidebar(array(
+    'name' => __('Блок виджетов #1', 'wpeasy'),
+    'description' => __('Description for this widget-area...', 'wpeasy'),
+    'id' => 'widgetarea1',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h6>',
+    'after_title' => '</h6>'
+  ));
+  //  Define Sidebar Widget Area 2. If your want to display more widget - uncoment this
+
+  register_sidebar(array(
+    'name' => __('Блок виджетов #2', 'wpeasy'),
+    'description' => __('Description for this widget-area...', 'wpeasy'),
+    'id' => 'widgetarea2',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h6>',
+    'after_title' => '</h6>'
+  ));
+
+}
 
 
