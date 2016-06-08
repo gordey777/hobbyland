@@ -6,68 +6,64 @@
  *
  * @package storefront
  */
-
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> <?php storefront_html_tag_schema(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<!-- <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/libs.css">
-  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-common.css">
-  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-blocks.css">
-  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-pages.css">
-  <link media="print" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mvid-print.css"> -->
+
+  <?php wp_head(); ?>
+
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.carousel.css">
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.theme.css">
-
-
-
 
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php wp_head(); ?>
-  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/main.css">
+  <div id="page" class="hfeed site">
 
-
-
-<div id="page" class="hfeed site">
-<div id="top-nav" class="header-nav-myclass">    <?php wpeHeadNav(); ?></div>
-  <?php do_action( 'storefront_before_header' ); ?>
-
-  <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-    <div class="col-full">
-
-      <?php
-      /**
-       * Functions hooked into storefront_header action
-       *
-       * @hooked storefront_skip_links                       - 0
-       * @hooked storefront_social_icons                     - 10
-       * @hooked storefront_site_branding                    - 20
-       * @hooked storefront_secondary_navigation             - 30
-       * @hooked storefront_product_search                   - 40
-       * @hooked storefront_primary_navigation_wrapper       - 42
-       * @hooked storefront_primary_navigation               - 50
-       * @hooked storefront_header_cart                      - 60
-       * @hooked storefront_primary_navigation_wrapper_close - 68
-       */
-      do_action( 'storefront_header' ); ?>
-
+    <div id="top-nav" class="header-nav-myclass">
+      <?php wpeHeadNav(); ?>
     </div>
-  </header><!-- #masthead -->
+
+    <?php do_action( 'storefront_before_header' ); ?>
+
+    <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+      <div class="col-full">
+
+        <?php
+        /**
+         * Functions hooked into storefront_header action
+         *
+         * @hooked storefront_skip_links                       - 0
+         * @hooked storefront_social_icons                     - 10
+         * @hooked storefront_site_branding                    - 20
+         * @hooked storefront_secondary_navigation             - 30
+         * @hooked storefront_product_search                   - 40
+         * @hooked storefront_primary_navigation_wrapper       - 42
+         * @hooked storefront_primary_navigation               - 50
+         * @hooked storefront_header_cart                      - 60
+         * @hooked storefront_primary_navigation_wrapper_close - 68
+         */
+        do_action( 'storefront_header' ); ?>
+
+      </div>
+    </header><!-- #masthead -->
 
 
-  <?php
-  /**
-   * Functions hooked in to storefront_before_content
-   *
-   * @hooked storefront_header_widget_region - 10
-   */
-  do_action( 'storefront_before_content' ); ?>
+    <?php
+    /**
+     * Functions hooked in to storefront_before_content
+     *
+     * @hooked storefront_header_widget_region - 10
+     */
+    do_action( 'storefront_before_content' ); ?>
 
   <div id="content" class="site-content" tabindex="-1">
     <div class="col-full">
@@ -80,7 +76,7 @@
      */
     do_action( 'storefront_content_top' ); ?>
 
-  <?php if ( is_page_template( 'front-page.php' ) ) { ?>
-    </div>
-<?php } ?>
+    <?php if ( is_page_template( 'front-page.php' ) ) { ?>
+      </div><!-- /.col-full -->
+    <?php } ?>
 
