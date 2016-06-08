@@ -21,6 +21,7 @@
 
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.carousel.css">
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.theme.css">
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/main.css">
 
 </head>
 

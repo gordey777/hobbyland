@@ -1,4 +1,4 @@
-  <?php
+<?php
 /**
  * The template for displaying the footer.
  *
@@ -6,64 +6,31 @@
  *
  * @package storefront
  */
-
 ?>
-
-
-
-
-
     </div><!-- .col-full -->
 
-
-
-
-<div class="col-full">
-
-    <div class="widget-footer">
-
-  <?php if ( is_active_sidebar('widgetarea1') ) : ?>
-    <?php dynamic_sidebar( 'widgetarea1' ); ?>
-  <?php else : ?>
-
-    <!-- If you want display static widget content - write code here
-    RU: Здесь код вывода того, что необходимо для статического контента виджетов -->
-
-  <?php endif; ?>
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-
+    <div class="col-full">
+      <div class="widget-footer">
+        <?php if ( is_active_sidebar('widgetarea1') ) : ?>
+          <?php dynamic_sidebar( 'widgetarea1' ); ?>
+        <?php endif; ?>
+      </div>
+    </div>
 
   </div><!-- #content -->
-
-
-
-
-
-
-
-
 
   <?php do_action( 'storefront_before_footer' ); ?>
 
   <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="col-full">
 
+      <?php wpeFootNav(); ?>
 
-    <?php wpeFootNav(); ?>
-    <?php wpeFootNavTwo(); ?>
-    <?php wpeFootNavThree(); ?>
-    <?php wpeFootNavFor(); ?>
+      <?php wpeFootNavTwo(); ?>
 
+      <?php wpeFootNavThree(); ?>
+
+      <?php wpeFootNavFor(); ?>
 
       <?php
       /**
@@ -82,16 +49,13 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
-<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
-<!--  MAIN NAV -->
-<script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
+  <!--  MAIN NAV -->
+  <script>
     var h_hght = 115;
     var h_mrg = 0;
     $(function(){
-
-
 
       var elem = $('.my-nav');
       var top = $(this).scrollTop();
@@ -111,39 +75,34 @@
       });
 
     });
-    </script>
-
-<!-- TOP SLIDER -->
-
-
-<script type="text/javascript">
+  </script>
+  <!-- TOP SLIDER -->
+  <script type="text/javascript">
     $(document).ready(function() {
 
-  $("#owl-top-slider").owlCarousel({
+      $("#owl-top-slider").owlCarousel({
+          navigation : true,
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true,
+          autoPlay:true,
+          items:5,
+          stopOnHover: true,
+          loop: true,
+      });
 
-      navigation : true,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay:true,
-      items:5,
-      stopOnHover: true,
-      loop: true,
-  });
+       $("#owl-brand-slider").owlCarousel({
+          navigation : true,
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true,
+          autoPlay:true,
+          items:3,
+          stopOnHover: true,
+          loop: true,
+      });
 
-   $("#owl-brand-slider").owlCarousel({
-
-      navigation : true,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay:true,
-      items:3,
-      stopOnHover: true,
-      loop: true,
-  });
-
-});
-    </script>
+    });
+  </script>
 </body>
 </html>
