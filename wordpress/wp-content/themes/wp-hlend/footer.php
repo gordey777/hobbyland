@@ -81,25 +81,28 @@
     $(document).ready(function() {
 
       $("#owl-top-slider").owlCarousel({
-          navigation : true,
+          navigation : false,
           slideSpeed : 300,
           paginationSpeed : 400,
           singleItem:true,
           autoPlay:true,
-          items:5,
           stopOnHover: true,
           loop: true,
+          rewindSpeed: 1000,
+          rewindNav: true,
       });
 
        $("#owl-brand-slider").owlCarousel({
-          navigation : true,
-          slideSpeed : 300,
-          paginationSpeed : 400,
+          navigation : false,
+          slideSpeed : 200,
+          paginationSpeed : 500,
           singleItem:false,
           autoPlay:true,
-          items:3,
+          items:4,
           stopOnHover: true,
           loop: true,
+          rewindSpeed: 1000,
+          rewindNav: true,
       });
 
     });

@@ -42,7 +42,7 @@ get_header(); ?>
       <div id="owl-brand-slider" class="owlCarousel">
         <?php $images = get_field('brand_slider'); if( $images ):
          foreach( $images as $image ): ?>
-            <div class="item">
+            <div class="item  brand">
             <a href="<?php the_permalink() ?>">
             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
             </a></div>
@@ -52,6 +52,40 @@ get_header(); ?>
   </div>
 
 
+
+
+<?php
+
+
+if( have_rows('test') ):
+
+    while ( have_rows('test') ) : the_row(); ?>
+
+
+        <a href="<?php the_sub_field('sub_test'); ?>">
+
+        <?php
+
+$image = get_sub_field('sub_image');
+
+if( !empty($image) ): ?>
+
+  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+<?php endif; ?>
+
+</a>
+
+
+   <?php  endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
 
 
   <div id="primary" class="content-area">
