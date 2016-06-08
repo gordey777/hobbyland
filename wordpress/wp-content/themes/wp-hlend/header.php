@@ -77,7 +77,7 @@
      */
     do_action( 'storefront_content_top' ); ?>
 
-    <?php if ( is_page_template( 'front-page.php' ) ) { ?>
-      </div><!-- /.col-full -->
-    <?php } ?>
+<!--     <?php if ( is_page_template( 'front-page.php' ) ) { ?>
+  </div>/.col-full
+<?php } ?> -->
 
