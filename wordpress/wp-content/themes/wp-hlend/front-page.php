@@ -29,24 +29,43 @@ get_header(); ?>
           </div>
 
 
-          <div class="main-slider">
-              <?php $posts = get_field('brand_slider');
-              if( $posts ): ?>
-                  <div id="owl-brand-slider" class="owlCarousel">
-                  <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-                      <?php setup_postdata($post); ?>
-                      <div class="item"><a href="<?php the_permalink() ?>">
-                        <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); endif; ?>
-                      </a></div>
-                  <?php endforeach; ?>
-                  </div>
-                  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-              <?php endif; ?>
-          </div>
+<!--           <div class="main-slider">
+    <?php $posts = get_field('brand_slider');
+    if( $posts ): ?>
+        <div id="owl-brand-slider" class="owlCarousel">
+        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+            <?php setup_postdata($post); ?>
+            <div class="item"><a href="<?php the_permalink() ?>">
+              <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); endif; ?>
+            </a></div>
+        <?php endforeach; ?>
+        </div>
+        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+    <?php endif; ?>
+</div>
 
+ -->
 
+<?php
 
+// check if the repeater field has rows of data
+if( have_rows('brand_slider') ):
 
+  // loop through the rows of data
+    while ( have_rows('brand_slider') ) : the_row();
+
+        // display a sub field value
+        the_sub_field('brend_image');
+
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
 
 <div class="col-full">
 
