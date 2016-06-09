@@ -13,79 +13,57 @@
 
 get_header(); ?>
 
-
-
 <!--
 <div class="col-full"> -->
+<!-- CODE FOR FUL SIZE SLIDERS -->
+
+
+
+                <!--PRODUCT SLIDER -->
+
+            <div class="main-slider">
+              <?php if( have_rows('product_slider') ): ?>
+                <div id="owl-product-slider" class="owlCarousel">
+                  <?php while ( have_rows('product_slider') ) : the_row(); ?>
+                    <div class="item">
+                     <a href="<?php the_sub_field('product_link'); ?>">
+                      <?php $image = get_sub_field('product_image');
+                      if( !empty($image) ): ?>
+                      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      <?php endif; ?>
+                      </a>
+                    </div>
+                  <?php  endwhile;
+                  else : ?>
+                </div>
+              <?php endif; ?>
+            </div>
+
+
+
+                <!-- BRAND SLIDER -->
+
+            <div class="main-slider">
+              <?php if( have_rows('brend_slider') ): ?>
+                <div id="owl-brand-slider" class="owlCarousel">
+                 <?php while ( have_rows('brend_slider') ) : the_row(); ?>
+                  <div class="item  brand">
+                   <a href="<?php the_sub_field('brand_link'); ?>">
+                    <?php $image = get_sub_field('brand_image');
+                    if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <?php endif; ?>
+                    </a>
+                  </div>
+                 <?php  endwhile;
+                 else : ?>
+                </div>
+             <?php endif;?>
+            </div>
 
 
 
 
-  <div class="main-slider">
-    <?php $images = get_field('product_slider');
-    if( $images ): ?>
-      <div id="owl-top-slider" class="owlCarousel">
-        <?php $images = get_field('product_slider'); if( $images ):
-         foreach( $images as $image ): ?>
-            <div class="item">
-            <a href="<?php the_permalink() ?>">
-            <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-            </a></div>
-          <?php endforeach; endif; ?>
-      </div>
-      <?php endif; ?>
-  </div>
-
-  <div class="main-slider">
-    <?php $images = get_field('brand_slider');
-    if( $images ): ?>
-      <div id="owl-brand-slider" class="owlCarousel">
-        <?php $images = get_field('brand_slider'); if( $images ):
-         foreach( $images as $image ): ?>
-            <div class="item  brand">
-            <a href="<?php the_permalink() ?>">
-            <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-            </a></div>
-          <?php endforeach; endif; ?>
-      </div>
-      <?php endif; ?>
-  </div>
-
-
-
-
-<?php
-
-
-if( have_rows('test') ):
-
-    while ( have_rows('test') ) : the_row(); ?>
-
-
-        <a href="<?php the_sub_field('sub_test'); ?>">
-
-        <?php
-
-$image = get_sub_field('sub_image');
-
-if( !empty($image) ): ?>
-
-  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-<?php endif; ?>
-
-</a>
-
-
-   <?php  endwhile;
-
-else :
-
-    // no rows found
-
-endif;
-
-?>
 
 
   <div id="primary" class="content-area">

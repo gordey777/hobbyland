@@ -80,7 +80,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $("#owl-top-slider").owlCarousel({
+      $("#owl-product-slider").owlCarousel({
           navigation : false,
           slideSpeed : 300,
           paginationSpeed : 400,
