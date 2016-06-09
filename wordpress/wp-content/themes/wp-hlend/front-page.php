@@ -13,10 +13,6 @@
 
 get_header(); ?>
 
-<!--
-<div class="col-full"> -->
-<!-- CODE FOR FUL SIZE SLIDERS -->
-
 
 
                 <!--PRODUCT SLIDER -->
@@ -47,7 +43,7 @@ get_header(); ?>
               <?php if( have_rows('brend_slider') ): ?>
                 <div id="owl-brand-slider" class="owlCarousel">
                  <?php while ( have_rows('brend_slider') ) : the_row(); ?>
-                  <div class="item  brand">
+                  <div class="item brand">
                    <a href="<?php the_sub_field('brand_link'); ?>">
                     <?php $image = get_sub_field('brand_image');
                     if( !empty($image) ): ?>
@@ -86,6 +82,7 @@ get_header(); ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->
+  </div>
 
 <?php do_action( 'storefront_sidebar' ); get_footer();
 
