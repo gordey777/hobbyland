@@ -27,49 +27,41 @@
 
 <body <?php body_class(); ?>>
 
-    <form id="login" action="login" method="post">
-        <h1>Site Login</h1>
-        <p class="status"></p>
-        <label for="username">Username</label>
-        <input id="username" type="text" name="username">
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password">
-        <a class="lost" href="<?php echo wp_lostpassword_url(); ?>">Lost your password?</a>
-        <input class="submit_button" type="submit" value="Login" name="submit">
-        <a class="close" href="">(close)</a>
-        <?php wp_nonce_field( 'ajax-login-nonce', 'security' ); ?>
-    </form>
 
 
 
+      <div class="col-full">
+
+        <div id="top-nav" class="header-nav-myclass col-10">
+
+          <?php wpeHeadNav(); ?>
+
+        </div>
+        <div class="col-2">
+          <a class="top-modal-button" href="#openModal"><?php helloUser() ?></a>
+
+          <div id="openModal" class="modalDialog">
+              <div>
+                 <a href="#close" title="Закрыть" class="close">X</a>
+                   <?php get_ajaxlogin(); ?>
+              </div>
+          </div>
+        </div>
+      </div> <!-- .coll-full -->
 
   <div id="page" class="hfeed site">
 
-
-
-
-
     <?php do_action( 'storefront_before_header' ); ?>
 
+
+
+
     <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+
       <div class="col-full">
-<section>
-    <div id="top-nav" class="header-nav-myclass">
-      <?php wpeHeadNav(); ?>
 
-</div>
-<div class="header-login">
-        <button class="login">
 
-          <?php if (is_user_logged_in()) { ?>
-          <a class="login_button" href="<?php echo wp_logout_url( home_url() ); ?>">Logout</a>
-          <?php } else { ?>
-          <a class="login_button" id="show_login" href="">Login</a>
-          <?php } ?>
 
-          </button>
-</div>
-</section>
 
         <?php
         /**

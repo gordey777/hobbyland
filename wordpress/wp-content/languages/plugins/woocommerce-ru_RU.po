@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-05-17 20:01:40+0000\n"
+"PO-Revision-Date: 2016-06-13 16:50:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3691,7 +3691,7 @@ msgstr "Этот товар не может быть куплен."
 
 #: includes/class-wc-cart.php:943
 msgid "You cannot add &quot;%s&quot; to the cart because the product is out of stock."
-msgstr "Нельзя добавить &quot;%s&quot; в корзину, так как этого товара нет в наличии."
+msgstr "&quot;%s&quot; не помещается в корзину, так как этого товара нет в наличии."
 
 #: includes/class-wc-cart.php:947
 msgid "You cannot add that amount of &quot;%s&quot; to the cart because there is not enough stock (%s remaining)."
@@ -6222,11 +6222,11 @@ msgstr "Позволяет клиентам оформлять заказы бе
 
 #: includes/admin/settings/class-wc-settings-checkout.php:107
 msgid "Force secure checkout"
-msgstr "Принудительный режим езопасности при оформлении заказа"
+msgstr "Принудительная защита оформления заказа"
 
 #: includes/admin/settings/class-wc-settings-checkout.php:113
 msgid "Force SSL (HTTPS) on the checkout pages (an SSL Certificate is required)."
-msgstr "Принудительный SSL (HTTPS) на страницах оформления заказа (требуется наличие SSL сертификата)."
+msgstr "Принудительный SSL (HTTPS) на страницах оформления заказа (требуется наличие SSL-сертификата)."
 
 #: includes/admin/settings/class-wc-settings-checkout.php:117
 msgid "Force HTTP when leaving the checkout"
@@ -6298,7 +6298,7 @@ msgstr "Платежные шлюзы"
 
 #: includes/admin/settings/class-wc-settings-checkout.php:212
 msgid "Installed gateways are listed below. Drag and drop gateways to control their display order on the frontend."
-msgstr "Установленные платежные шлюзы перечислены ниже. Перетаскивайте шлюзы для определения их порядка в пользовательском интерфейсе."
+msgstr "Установленные платежные шлюзы перечислены ниже. Перетаскивайте шлюзы для определения их порядка во фронтэнде."
 
 #: includes/admin/settings/class-wc-settings-checkout.php:266
 msgid "Gateway Display Order"
@@ -6658,7 +6658,7 @@ msgstr "Включить оповещения о низких запасах"
 
 #: includes/admin/settings/class-wc-settings-products.php:283
 msgid "Enable out of stock notifications"
-msgstr "Включить оповещения о нулевых остатках"
+msgstr "Включить оповещения об окончании запасов"
 
 #: includes/admin/settings/class-wc-settings-products.php:292
 msgid "Notification Recipient(s)"
@@ -6670,11 +6670,11 @@ msgstr "Граница низких остатков"
 
 #: includes/admin/settings/class-wc-settings-products.php:317
 msgid "Out Of Stock Threshold"
-msgstr "Граница \"Нет на складе\""
+msgstr "Порог значений \"Нет на складе\""
 
 #: includes/admin/settings/class-wc-settings-products.php:331
 msgid "Out Of Stock Visibility"
-msgstr "Видимость отсутствующих товаров"
+msgstr "Видимость закончившихся товаров"
 
 #: includes/admin/settings/class-wc-settings-products.php:332
 msgid "Hide out of stock items from the catalog"
@@ -6686,7 +6686,7 @@ msgstr "Формат отображения остатков"
 
 #: includes/admin/settings/class-wc-settings-products.php:340
 msgid "This controls how stock is displayed on the frontend."
-msgstr "Эти настройки позволяют задать параметры отображения остатков на пользовательском интерфейсе."
+msgstr "Эти настройки позволяют задать параметры отображения остатков во фронтэнде."
 
 #: includes/admin/settings/class-wc-settings-products.php:347
 msgid "Always show stock e.g. \"12 in stock\""
@@ -6974,7 +6974,7 @@ msgstr "Приоритет"
 
 #: includes/admin/settings/views/html-settings-tax.php:25
 msgid "Choose a priority for this tax rate. Only 1 matching rate per priority will be used. To define multiple tax rates for a single area you need to specify a different priority per rate."
-msgstr "Выберите приоритет для этой налоговой ставки. Используется только 1 подходящая ставка на приоритет. Чтобы определить разные налоговые ставки для одной зоны, вам нужно указать разные приоритеты на каждую ставку."
+msgstr "Выберите приоритет для этой налоговой ставки. Используется только 1 подходящая ставка для каждого приоритета. Чтобы определить разные налоговые ставки для одной зоны, нужно указать разные приоритеты для каждой ставки."
 
 #: includes/admin/settings/class-wc-settings-tax.php:173
 #: includes/admin/settings/views/html-settings-tax.php:26
@@ -7346,7 +7346,7 @@ msgstr "Статус остатка"
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:341
 #: includes/admin/meta-boxes/views/html-variation-admin.php:160
 msgid "Controls whether or not the product is listed as \"in stock\" or \"out of stock\" on the frontend."
-msgstr "Контролирует, будет ли товар учитываться как \"В наличии\" или \"Нет в наличии\" в пользовательском интерфейсе."
+msgstr "Контролирует, будет ли товар отмечен как \"В наличии\" или \"Нет в наличии\" во фронтэнде."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:350
 msgid "Sold Individually"
@@ -8853,7 +8853,7 @@ msgstr "Установить страницы"
 
 #: includes/admin/class-wc-admin-status.php:183
 msgid "<strong class=\"red\">Note:</strong> This tool will install all the missing WooCommerce pages. Pages already defined and set up will not be replaced."
-msgstr "<strong class=\"red\">Примечание:</strong> Этот инструмент установит все отсутствующие страницы, необходимые WooCommerce. Страницы которые уже существуют и опубликованы не будут заменены."
+msgstr "<strong class=\"red\">Внимание:</strong> Этот инструмент установит все отсутствующие страницы, необходимые WooCommerce. Страницы которые уже существуют и опубликованы не будут заменены."
 
 #: includes/admin/class-wc-admin-status.php:186
 msgid "Delete all WooCommerce tax rates"
@@ -11898,7 +11898,7 @@ msgstr "ID значения"
 #: includes/admin/class-wc-admin-attributes.php:326
 #: includes/admin/class-wc-admin-attributes.php:480
 msgid "Determines the sort order of the terms on the frontend shop product pages. If using custom ordering, you can drag and drop the terms in this attribute."
-msgstr "Определяет порядок сортировки значений на страницах товаров внешней части магазина. При использовании произвольного порядка, можно перетаскивать значения в атрибутах."
+msgstr "Определяет порядок сортировки значений на страницах товаров во фронтэнде. При использовании произвольного порядка, можно перетаскивать значения в этом атрибуте."
 
 #: includes/admin/class-wc-admin-attributes.php:331
 msgid "Update"

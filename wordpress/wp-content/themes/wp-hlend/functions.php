@@ -126,9 +126,10 @@ function wpeFootNavThree() {
     'walker'          => ''
     )
   );
+}
 
 
-}// WPE footer navigation
+// WPE footer navigation
 function wpeFootNavFor() {
   wp_nav_menu(
   array(
@@ -219,36 +220,26 @@ if (function_exists('register_sidebar')) {
 
 }
 
+function helloUser(){
+$current_user = wp_get_current_user();
+if (is_user_logged_in()){
+    echo ("Привет, " . $current_user->user_login . "!");
+  }
+else {
+    echo "ВХОД\РЕГИСТРАЦИЯ";
+  }
+}
+
+
 //Меняем местами краткое описание товара и цену
 /*remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);*/
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);
 function HB_woocommerce_template_dimensions(){ //Добавим функцию вызова панельки с размерами и весом
 global $woocommerce, $post, $product;
 $product->list_attributes();
 }
-add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);
+add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);*/
 
-
-
-function ajax_login(){
-
-    // First check the nonce, if it fails the function will break
-    check_ajax_referer( 'ajax-login-nonce', 'security' );
-
-    // Nonce is checked, get the POST data and sign user on
-    $info = array();
-    $info['user_login'] = $_POST['username'];
-    $info['user_password'] = $_POST['password'];
-    $info['remember'] = true;
-
-    $user_signon = wp_signon( $info, false );
-    if ( is_wp_error($user_signon) ){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('Wrong username or password.')));
-    } else {
-        echo json_encode(array('loggedin'=>true, 'message'=>__('Login successful, redirecting...')));
-    }
-
-    die();
-}
+include_once( get_stylesheet_directory() . '/ajax-login/ajax-login.php' );

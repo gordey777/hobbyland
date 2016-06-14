@@ -52,7 +52,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-page-sliders.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/ajax-login-script.js"></script>
 
   <!--  MAIN NAV -->
   <script>
