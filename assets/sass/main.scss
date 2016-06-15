@@ -4,7 +4,7 @@
 //TOP HEADER NAV BAR
 
 .header-nav-myclass {
-  float:left;
+  float: left;
   ul {
     height: 25px;
     margin-bottom: 0;
@@ -364,3 +364,41 @@ header {
   float: right;
 }
 
+// related products
+
+div.related.products {
+  float: left;
+  width: 100%;
+  ul.product_list_widget {
+    width: 100%;
+  float: left;
+    li {
+      font-size: .9em;
+
+      display: block;
+      float: left;
+
+      width: 33%;
+    }
+  }
+}
+
+
+// Prosmotrenye tovary
+.widget-footer {
+  float: left;
+
+  margin-bottom: 4em;
+  ul.product_list_widget {
+    width: 100%;
+    height: auto;
+    li {
+      font-size: .8em;
+
+      display: block;
+      float: left;
+
+      width: 33%;
+    }
+  }
+}

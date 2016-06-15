@@ -31,6 +31,10 @@ if ( is_woocommerce_activated() ) {
 if ( is_admin() ) {
 	require 'inc/admin/class-storefront-admin.php';
 }
+/**
+ * Note: Bla bla bla Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
+ * https://github.com/woothemes/theme-customisations
+ */
 
 
 // WPE head navigation
@@ -188,10 +192,6 @@ function register_html5_menu() {
     'footer-menu-for' => __('Меню в подвал 4', 'wpeasy'),
   ));
 }
-/**
- * Note: Bla bla bla Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
- * https://github.com/woothemes/theme-customisations
- */
 
 
 //  If Dynamic Sidebar Existsов
@@ -203,12 +203,14 @@ if (function_exists('register_sidebar')) {
     'id' => 'widgetarea1',
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h6>',
-    'after_title' => '</h6>'
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
   ));
+
+
   //  Define Sidebar Widget Area 2. If your want to display more widget - uncoment this
 
-  register_sidebar(array(
+/*  register_sidebar(array(
     'name' => __('Блок виджетов #2', 'wpeasy'),
     'description' => __('Description for this widget-area...', 'wpeasy'),
     'id' => 'widgetarea2',
@@ -216,7 +218,7 @@ if (function_exists('register_sidebar')) {
     'after_widget' => '</div>',
     'before_title' => '<h6>',
     'after_title' => '</h6>'
-  ));
+  ));*/
 
 }
 
