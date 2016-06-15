@@ -220,6 +220,7 @@ if (function_exists('register_sidebar')) {
 
 }
 
+// DISPLEY USER NAME
 function helloUser(){
 $current_user = wp_get_current_user();
 if (is_user_logged_in()){
@@ -243,3 +244,20 @@ $product->list_attributes();
 add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);*/
 
 include_once( get_stylesheet_directory() . '/ajax-login/ajax-login.php' );
+
+
+// ADD UKRNIAN MONEY
+add_filter( 'woocommerce_currencies', 'add_my_currency' );
+function add_my_currency( $currencies ) {
+$currencies['ABC'] = __( 'Українська гривня', 'woocommerce' );
+return $currencies;
+}
+add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
+function add_my_currency_symbol( $currency_symbol, $currency ) {
+switch( $currency ) {
+case 'ABC': $currency_symbol = 'грн'; break;
+}
+return $currency_symbol;
+}
+
+
