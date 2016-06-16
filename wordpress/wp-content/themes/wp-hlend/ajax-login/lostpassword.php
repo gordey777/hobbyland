@@ -37,7 +37,7 @@ if ( $_POST ) {
 			$message .= get_option('siteurl') . "\r\n\r\n";
 			$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
 			$message .= __('To reset your password visit the following address, otherwise just ignore this email and nothing will happen.') . "\r\n\r\n";
-			$message .= get_option('siteurl') . "/wp-content/themes/hlend/ajax-login/resetpassword.php?key=$key\r\n";
+			$message .= get_option('siteurl') . "/wp-content/themes/wp-hlend/ajax-login/resetpassword.php?key=$key\r\n";
 
 			if (FALSE == wp_mail($user_email, sprintf(__('[%s] Password Reset'), get_option('blogname')), $message)) {
 				echo AL_FAILURE;

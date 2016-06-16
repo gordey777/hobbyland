@@ -157,12 +157,13 @@ header {
   height: 60px;
 
   background: rgba(162, 118, 83, .9);
+  li {
+    height: 60px;
+  }
   .sub-menu {
     width: 410px;
   }
 }
-
-
 
 
 @media (max-width:768px) {
@@ -182,16 +183,6 @@ header {
   }
 }
 
-@media (min-width: 768px) {
-  .site-header-cart {
-    width: 15%;
-    .widget_shopping_cart {
-      float: right;
-
-      width: 410px;
-    }
-  }
-}
 
 @media (max-width: 1170px) {
   .my-nav {
@@ -211,8 +202,29 @@ header {
 
 //HEADER CART
 
+@media (min-width: 768px) {
+  .woocommerce-active .site-header .site-header-cart {
+    float: right;
+
+    width: 160px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header-cart {
+
+    height: 60px;
+    .widget_shopping_cart {
+      float: right;
+
+      width: 410px;
+    }
+  }
+}
+
 .site-header-cart {
-  width: 410px;
   li {
     font-size: .9rem;
     font-weight: 400;
@@ -231,17 +243,9 @@ header {
   }
 }
 
-@media (min-width: 768px) {
-  .woocommerce-active .site-header .site-header-cart {
-    float: right;
 
-    width: 15%;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-}
 
-// HOME PAGE SLIDER
+// HOME PAGE SLIDERS
 #owl-product-slider,
 .item {
   margin: 3px;
@@ -266,32 +270,6 @@ header {
   background: rgba(255, 255, 255, .3);
 }
 
-//   FOOTER WIDGET
-.widget-footer {
-  padding: 15px;
-
-  background: rgba(255, 255, 255, .9);
-  li {
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 1.4rem;
-
-    display: table-cell;
-
-    box-sizing: border-box;
-
-    text-align: center;
-    a {
-      display: block;
-
-      min-height: 5.7rem;
-      padding: 0 .5rem;
-
-      vertical-align: middle;
-      text-decoration: none;
-    }
-  }
-}
 
 //   modal window header
 .modalDialog {
@@ -364,41 +342,38 @@ header {
   float: right;
 }
 
-// related products
-
-div.related.products {
-  float: left;
-  width: 100%;
-  ul.product_list_widget {
-    width: 100%;
-  float: left;
-    li {
-      font-size: .9em;
-
-      display: block;
-      float: left;
-
-      width: 33%;
-    }
-  }
-}
 
 
-// Prosmotrenye tovary
+
+//   FOOTER WIDGET
+
 .widget-footer {
   float: left;
 
   margin-bottom: 4em;
+  padding: 15px;
+
+  background: rgba(255, 255, 255, .9);
   ul.product_list_widget {
     width: 100%;
     height: auto;
     li {
-      font-size: .8em;
-
       display: block;
       float: left;
 
       width: 33%;
+      a {
+        font-size: .8em;
+
+        display: block;
+
+        min-height: 5.7rem;
+        padding: 0 .5rem;
+
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+      }
     }
   }
 }

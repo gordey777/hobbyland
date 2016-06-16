@@ -27,7 +27,8 @@ function ajaxlogin_head() {
 ?>
 	<script type="text/javascript">
 	// ajaxlogin settings
-	var al_timeout = <?php echo get_option('al_loadingtimeout'); ?>;
+  // var al_timeout = <?php echo get_option('al_loadingtimeout'); ?>;
+	var al_timeout = '';
 	var al_redirectOnLogin = '<?php echo get_option('al_loginredirect'); ?>';
 
 	// constants
