@@ -111,7 +111,7 @@ function al_login() {
 	al_sack.setVar("pwd", al_loginForm.pwd.value);
 	al_sack.setVar("rememberme", al_loginForm.rememberme.value);
 
-	al_sack.requestFile = al_base_uri + "/wp-content/themes/wp-putana/ajax-login/login.php";
+	al_sack.requestFile = al_base_uri + "/wp-content/themes/wp-hlend/ajax-login/login.php";
 	al_sack.method = "POST";
 	al_sack.onError = al_ajaxError;
 	al_sack.onCompletion = al_loginHandleResponse;
