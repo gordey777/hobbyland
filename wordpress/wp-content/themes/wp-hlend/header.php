@@ -27,16 +27,41 @@
 
 <body <?php body_class(); ?>>
 
-  <div id="page" class="hfeed site">
 
-    <div id="top-nav" class="header-nav-myclass">
-      <?php wpeHeadNav(); ?>
-    </div>
+
+
+      <div class="col-full">
+
+        <div id="top-nav" class="header-nav-myclass col-10">
+
+          <?php wpeHeadNav(); ?>
+
+        </div>
+        <div class="col-2">
+          <a class="top-modal-button" href="#openModal"><?php helloUser() ?></a>
+
+          <div id="openModal" class="modalDialog">
+              <div>
+                 <a href="#close" title="Закрыть" class="close">X</a>
+                   <?php get_ajaxlogin(); ?>
+              </div>
+          </div>
+        </div>
+      </div> <!-- .coll-full -->
+
+  <div id="page" class="hfeed site">
 
     <?php do_action( 'storefront_before_header' ); ?>
 
+
+
+
     <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+
       <div class="col-full">
+
+
+
 
         <?php
         /**
@@ -77,7 +102,5 @@
      */
     do_action( 'storefront_content_top' ); ?>
 
-    <?php if ( is_page_template( 'front-page.php' ) ) { ?>
-      </div><!-- /.col-full -->
-    <?php } ?>
+
 

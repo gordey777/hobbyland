@@ -31,6 +31,10 @@ if ( is_woocommerce_activated() ) {
 if ( is_admin() ) {
 	require 'inc/admin/class-storefront-admin.php';
 }
+/**
+ * Note: Bla bla bla Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
+ * https://github.com/woothemes/theme-customisations
+ */
 
 
 // WPE head navigation
@@ -126,9 +130,10 @@ function wpeFootNavThree() {
     'walker'          => ''
     )
   );
+}
 
 
-}// WPE footer navigation
+// WPE footer navigation
 function wpeFootNavFor() {
   wp_nav_menu(
   array(
@@ -187,10 +192,6 @@ function register_html5_menu() {
     'footer-menu-for' => __('Меню в подвал 4', 'wpeasy'),
   ));
 }
-/**
- * Note: Bla bla bla Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
- * https://github.com/woothemes/theme-customisations
- */
 
 
 //  If Dynamic Sidebar Existsов
@@ -202,12 +203,14 @@ if (function_exists('register_sidebar')) {
     'id' => 'widgetarea1',
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h6>',
-    'after_title' => '</h6>'
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
   ));
+
+
   //  Define Sidebar Widget Area 2. If your want to display more widget - uncoment this
 
-  register_sidebar(array(
+/*  register_sidebar(array(
     'name' => __('Блок виджетов #2', 'wpeasy'),
     'description' => __('Description for this widget-area...', 'wpeasy'),
     'id' => 'widgetarea2',
@@ -215,8 +218,48 @@ if (function_exists('register_sidebar')) {
     'after_widget' => '</div>',
     'before_title' => '<h6>',
     'after_title' => '</h6>'
-  ));
+  ));*/
 
+}
+
+// DISPLEY USER NAME
+function helloUser(){
+$current_user = wp_get_current_user();
+if (is_user_logged_in()){
+    echo ("Привет, " . $current_user->user_login . "!");
+  }
+else {
+    echo "ВХОД\РЕГИСТРАЦИЯ";
+  }
+}
+
+
+//Меняем местами краткое описание товара и цену
+/*remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);
+function HB_woocommerce_template_dimensions(){ //Добавим функцию вызова панельки с размерами и весом
+global $woocommerce, $post, $product;
+$product->list_attributes();
+}
+add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);*/
+
+include_once( get_stylesheet_directory() . '/ajax-login/ajax-login.php' );
+
+
+// ADD UKRNIAN MONEY
+add_filter( 'woocommerce_currencies', 'add_my_currency' );
+function add_my_currency( $currencies ) {
+$currencies['ABC'] = __( 'Українська гривня', 'woocommerce' );
+return $currencies;
+}
+add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
+function add_my_currency_symbol( $currency_symbol, $currency ) {
+switch( $currency ) {
+case 'ABC': $currency_symbol = 'грн'; break;
+}
+return $currency_symbol;
 }
 
 

@@ -13,52 +13,54 @@
 
 get_header(); ?>
 
-  <div class="main-slider">
-    <?php $images = get_field('my-fild');
-    if( $images ): ?>
-      <div id="owl-top-slider" class="owlCarousel">
-        <?php $images = get_field('my-fild'); if( $images ):
-         foreach( $images as $image ): ?>
-            <div class="item">
-            <a href="<?php the_permalink() ?>">\
-            <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-            </a></div>
-          <?php endforeach; endif; ?>
-      </div>
-      <?php endif; ?>
-  </div>
 
 
-<!--           <div class="main-slider">
-    <?php $posts = get_field('brand_slider');
-    if( $posts ): ?>
-        <div id="owl-brand-slider" class="owlCarousel">
-        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-            <?php setup_postdata($post); ?>
-            <div class="item"><a href="<?php the_permalink() ?>">
-              <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); endif; ?>
-            </a></div>
-        <?php endforeach; ?>
-        </div>
-        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-    <?php endif; ?>
-</div>
+                <!--PRODUCT SLIDER -->
 
- -->
+            <div class="main-slider">
+              <?php if( have_rows('product_slider') ): ?>
+                <div id="owl-product-slider" class="owlCarousel">
+                  <?php while ( have_rows('product_slider') ) : the_row(); ?>
+                    <div class="item">
+                     <a href="<?php the_sub_field('product_link'); ?>">
+                      <?php $image = get_sub_field('product_image');
+                      if( !empty($image) ): ?>
+                      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      <?php endif; ?>
+                      </a>
+                    </div>
+                  <?php  endwhile;
+                  else : ?>
+                </div>
+              <?php endif; ?>
+            </div>
 
-<?php
-  if( have_rows('brand_slider') ):
-    // loop through the rows of data
-      while ( have_rows('brand_slider') ) : the_row();
 
-          // display a sub field value
-          the_sub_field('brend_image');
 
-      endwhile;
-  endif;
-?>
+                <!-- BRAND SLIDER -->
 
-<div class="col-full">
+            <div class="main-slider">
+              <?php if( have_rows('brend_slider') ): ?>
+                <div id="owl-brand-slider" class="owlCarousel">
+                 <?php while ( have_rows('brend_slider') ) : the_row(); ?>
+                  <div class="item brand">
+                   <a href="<?php the_sub_field('brand_link'); ?>">
+                    <?php $image = get_sub_field('brand_image');
+                    if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <?php endif; ?>
+                    </a>
+                  </div>
+                 <?php  endwhile;
+                 else : ?>
+                </div>
+             <?php endif;?>
+            </div>
+
+
+
+
+
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -80,6 +82,7 @@ get_header(); ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->
+  </div>
 
 <?php do_action( 'storefront_sidebar' ); get_footer();
 

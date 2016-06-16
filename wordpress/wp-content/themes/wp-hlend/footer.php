@@ -8,16 +8,15 @@
  */
 ?>
     </div><!-- .col-full -->
+  </div><!-- #content -->
 
-    <div class="col-full">
+      <div class="col-full">
       <div class="widget-footer">
         <?php if ( is_active_sidebar('widgetarea1') ) : ?>
           <?php dynamic_sidebar( 'widgetarea1' ); ?>
         <?php endif; ?>
       </div>
     </div>
-
-  </div><!-- #content -->
 
   <?php do_action( 'storefront_before_footer' ); ?>
 
@@ -49,8 +48,11 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-page-sliders.js"></script>
+
   <!--  MAIN NAV -->
   <script>
     var h_hght = 115;
@@ -76,33 +78,8 @@
 
     });
   </script>
-  <!-- TOP SLIDER -->
-  <script type="text/javascript">
-    $(document).ready(function() {
 
-      $("#owl-top-slider").owlCarousel({
-          navigation : true,
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem:true,
-          autoPlay:true,
-          items:5,
-          stopOnHover: true,
-          loop: true,
-      });
 
-       $("#owl-brand-slider").owlCarousel({
-          navigation : true,
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem:true,
-          autoPlay:true,
-          items:3,
-          stopOnHover: true,
-          loop: true,
-      });
 
-    });
-  </script>
 </body>
 </html>
