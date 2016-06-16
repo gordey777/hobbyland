@@ -262,11 +262,4 @@ case 'ABC': $currency_symbol = 'грн'; break;
 return $currency_symbol;
 }
 
-add_filter('loop_shop_columns', 'loop_columns');
-if (!function_exists('loop_columns')) {
-function loop_columns() {
-return 6;
-}
-}
 
-add_filter('loop_shop_per_page', create_function('$cols', 'return 30;'));
