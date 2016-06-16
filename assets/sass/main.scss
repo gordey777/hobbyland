@@ -3,15 +3,20 @@
 
 //TOP HEADER NAV BAR
 
+
+.top-nav-col {
+  background: #fff;
+}
+
 .header-nav-myclass {
   float: left;
   ul {
     height: 25px;
     margin-bottom: 0;
     li {
-      font-size: .5rem;
+      font-size: .8rem;
       font-weight: 400;
-      line-height: .6rem;
+      line-height: .9rem;
 
       display: table-cell;
 
@@ -87,6 +92,8 @@
 /* .col-full {
   max-width: 80%;
 } */
+
+
 // CONTENT BG
 .site-main,
 .widget-area {
@@ -106,7 +113,6 @@
 }
 
 
-
 // MAIN MENU
 #menu-glavnoe-menyu {
   li {
@@ -119,6 +125,7 @@
     box-sizing: border-box;
 
     text-align: left;
+    vertical-align: middle;
     &:hover {
       background: #743f00;
     }
@@ -152,7 +159,7 @@ header {
 .my-nav {
   position: fixed;
   z-index: 1000;
-  top: 140px;
+  top: 142px;
 
   height: 60px;
 
@@ -210,12 +217,25 @@ header {
     margin-right: 0;
     margin-bottom: 0;
   }
-}
 
-@media (min-width: 768px) {
   .site-header-cart {
-
     height: 60px;
+    li {
+      font-size: .9rem;
+      font-weight: 400;
+      line-height: 1rem;
+
+      box-sizing: border-box;
+    }
+    &:hover {
+      background: #743f00;
+      &:hover,
+      &.focus {
+        .widget_shopping_cart {
+          left: -230px;
+        }
+      }
+    }
     .widget_shopping_cart {
       float: right;
 
@@ -224,25 +244,25 @@ header {
   }
 }
 
-.site-header-cart {
-  li {
-    font-size: .9rem;
-    font-weight: 400;
-    line-height: 1rem;
+//            HEADER SEARCH
+/* .site-search .widget_product_search input,
+.site-search .widget_product_search input {
+  line-height: 0;
 
-    box-sizing: border-box;
-  }
-  &:hover {
-    background: #743f00;
-    &:hover,
-    &.focus {
-      .widget_shopping_cart {
-        left: -230px;
-      }
-    }
+  padding: 1.387em 1.618em;
+  padding-left: 3.631em;
+} */
+.site-search {
+
+
+  display: block;
+
+  height: 30px;
+  .widget_product_search input {
+
+    border-radius: 20px;
   }
 }
-
 
 
 // HOME PAGE SLIDERS
@@ -377,3 +397,6 @@ header {
     }
   }
 }
+
+
+

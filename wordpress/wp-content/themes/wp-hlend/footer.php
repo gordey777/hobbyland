@@ -55,7 +55,7 @@
 
   <!--  MAIN NAV -->
   <script>
-    var h_hght = 115;
+    var h_hght = 142;
     var h_mrg = 0;
     $(function(){
 
