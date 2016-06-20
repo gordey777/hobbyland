@@ -4,7 +4,8 @@
 //TOP HEADER NAV BAR
 
 
-.top-nav-col {
+.top-nav-col,
+.top-modal-button {
   background: #fff;
 }
 
@@ -55,7 +56,7 @@
 }
 
 @media (max-width:768px) {
-  .header-nav-myclass {
+  .top-nav-col {
     display: none;
   }
 }
@@ -253,13 +254,10 @@ header {
   padding-left: 3.631em;
 } */
 .site-search {
-
-
   display: block;
 
   height: 30px;
   .widget_product_search input {
-
     border-radius: 20px;
   }
 }
@@ -282,7 +280,7 @@ header {
   img {
     display: block;
 
-    height: auto;
+    height: 75px;
   }
 }
 
@@ -394,9 +392,49 @@ header {
         vertical-align: middle;
         text-decoration: none;
       }
+      img {
+        max-width: 150px;
+      }
     }
   }
 }
 
 
+// FONT SIZE
 
+//Product cart
+.summary,
+.entry-summary {
+  h1 {
+    font-size: 1.5em;
+  }
+  .price {
+    font-size: 1.6em;
+    .woocommerce-Price-currencySymbol {
+      font-size: .8em;
+    }
+  }
+}
+
+// Shop
+
+.woocommerce-LoopProduct-link {
+  h3 {
+    height: 100px; // висота блоку назви товару під іконкою
+  }
+  .price {
+    font-size: 2em;
+    .woocommerce-Price-currencySymbol {
+      font-size: .8em;
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'MVideo_regular_webkit';
+
+  src: url('MVideo_regular_webkit.woff') format('woff'),
+  url('MVideo_regular_webkit.ttf') format('truetype'),
+  url('MVideo_regular_webkit.svg') format('svg');
+}
