@@ -284,3 +284,6 @@ woocommerce_related_products(6,6); // Показать 4 товара а 4 ко�
 //img in div
 add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "<div class=\"img-wrap-product-list-parent\"><div class=\"img-wrap-product-list-child\">";'), 5, 2);
 add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "</div></div>";'), 12, 2);
+
+
+//show_admin_bar( false );

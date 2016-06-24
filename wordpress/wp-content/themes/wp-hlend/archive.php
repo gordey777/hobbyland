@@ -9,6 +9,11 @@
  */
 
 get_header(); ?>
+      <div class="widget-footer">
+        <?php if ( is_active_sidebar('widgetarea2') ) : ?>
+          <?php dynamic_sidebar( 'widgetarea2' ); ?>
+        <?php endif; ?>
+      </div>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

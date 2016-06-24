@@ -18,13 +18,7 @@
       </div>
     </div>
 
-          <div class="col-full">
-      <div class="widget-footer">
-        <?php if ( is_active_sidebar('widgetarea2') ) : ?>
-          <?php dynamic_sidebar( 'widgetarea2' ); ?>
-        <?php endif; ?>
-      </div>
-    </div>
+
 
   <?php do_action( 'storefront_before_footer' ); ?>
 

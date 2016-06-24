@@ -61,7 +61,14 @@
       <div class="col-full">
 
 
+<div class="header-content">
+  <ul>
+    <li>телефон</li>
+    <li>телефон</li>
+    <li>телефон</li>
+  </ul>
 
+</div>
 
         <?php
         /**
