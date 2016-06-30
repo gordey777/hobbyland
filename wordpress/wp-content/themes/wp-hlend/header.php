@@ -30,9 +30,9 @@
 
 
 
-      <div class="col-full">
+      <div class="col-full top-nav-col">
 
-        <div id="top-nav" class="header-nav-myclass col-10">
+        <div id="top-nav" class="header-nav-myclass">
 
           <?php wpeHeadNav(); ?>
 
@@ -61,7 +61,10 @@
       <div class="col-full">
 
 
+<div class="header-content">
+ <?php wpeHeadCont(); ?>
 
+</div>
 
         <?php
         /**

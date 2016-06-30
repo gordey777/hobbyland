@@ -19,11 +19,12 @@
           paginationSpeed : 500,
           singleItem:false,
           autoPlay:true,
-          items:5,
+          items:6,
           stopOnHover: true,
           loop: true,
           rewindSpeed: 1000,
           rewindNav: true,
+          pagination: false,
       });
 
     });

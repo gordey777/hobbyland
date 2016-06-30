@@ -14,7 +14,14 @@
 get_header(); ?>
 
 
-  <div id="primary" class="content-area">
+      <div class="widget-footer">
+        <?php if ( is_active_sidebar('widgetarea2') ) : ?>
+          <?php dynamic_sidebar( 'widgetarea2' ); ?>
+        <?php endif; ?>
+      </div>
+
+
+  <div id="primary" class="no-sid-bar">
     <main id="main" class="site-main" role="main">
 
       <?php while ( have_posts() ) : the_post();
@@ -36,7 +43,7 @@ get_header(); ?>
   </div><!-- #primary -->
   </div>
 
-<?php do_action( 'storefront_sidebar' ); get_footer();
+<?php get_footer();
 
 
 

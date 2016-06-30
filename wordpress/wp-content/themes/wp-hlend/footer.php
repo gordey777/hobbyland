@@ -18,6 +18,8 @@
       </div>
     </div>
 
+
+
   <?php do_action( 'storefront_before_footer' ); ?>
 
   <footer id="colophon" class="site-footer" role="contentinfo">
@@ -55,7 +57,7 @@
 
   <!--  MAIN NAV -->
   <script>
-    var h_hght = 115;
+    var h_hght = 142;
     var h_mrg = 0;
     $(function(){
 
