@@ -62,11 +62,7 @@
 
 
 <div class="header-content">
-  <ul>
-    <li>телефон</li>
-    <li>телефон</li>
-    <li>телефон</li>
-  </ul>
+ <?php wpeHeadCont(); ?>
 
 </div>
 

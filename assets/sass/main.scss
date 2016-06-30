@@ -1,9 +1,14 @@
-
 @import '_style_mainstyle';
 
+// MAIN MENU
+$main-menu-color: rgba(0, 0, 0, .5);
+$main-menu-hover: #743f00;;
+//rgba(162, 118, 83, .9)
+
+$content-background: rgba(255, 255, 255, .8);
+$breadcrumb-background: rgba(162, 118, 83, .5);
+
 //TOP HEADER NAV BAR
-
-
 .top-nav-col,
 .top-modal-button {
   background: #fff;
@@ -101,7 +106,7 @@
 .widget-footer {
   padding: 15px;
 
-  background: rgba(255, 255, 255, .9);
+  background: $content-background;
 }
 
 .woocommerce-checkout-review-order {
@@ -111,7 +116,7 @@
 .woocommerce-breadcrumb {
   line-height: .618;
 
-  background: rgba(162, 118, 83, .5);
+  background: $breadcrumb-background;
 }
 
 
@@ -129,7 +134,7 @@
     text-align: left;
     vertical-align: middle;
     &:hover {
-      background: #743f00;
+      background: $main-menu-hover;
     }
     &:last-child {
       ul {
@@ -153,8 +158,12 @@
   }
 }
 
-
-
+@media (min-width: 768px) {
+  .site-header {
+    padding-top: 1.618em;
+    padding-bottom: 0;
+  }
+}
 header {
   height: 175px;
 }
@@ -165,7 +174,7 @@ header {
 
   height: 60px;
 
-  background: rgba(162, 118, 83, .9);
+  background: $main-menu-color;
   li {
     height: 60px;
   }
@@ -187,7 +196,7 @@ header {
 
     background: transparent;
     .handheld-navigation {
-      background: rgba(162, 118, 83, .9);
+      background: $main-menu-color;
     }
   }
 }
@@ -227,6 +236,10 @@ header {
   }
 
   .site-header-cart {
+    position: relative;
+
+    display: right;
+
     height: 60px;
     li {
       font-size: .9rem;
@@ -236,11 +249,11 @@ header {
       box-sizing: border-box;
     }
     &:hover {
-      background: #743f00;
+      background: $main-menu-hover;
       &:hover,
       &.focus {
         .widget_shopping_cart {
-          left: -230px;
+          left: -250px;
         }
       }
     }
@@ -403,7 +416,7 @@ header {
     margin-bottom: 2.5em;
     padding: 15px;
 
-    background: rgba(255, 255, 255, .9);
+    background: $content-background;
     ul.product_list_widget {
       width: 100%;
       height: auto;
@@ -489,23 +502,43 @@ header {
   }
 }
 
+//    header content
+
 .header-content {
   position: absolute;
-  left: 220px;
+  left: 280px;
 
   display: inline-block;
-  ul {
+
+  background-color: transparent;
+  ul.header-content-nav {
+    margin: 0;
+
     list-style-type: none;
     li {
-      font-size: .8rem;
+      font-size: 1.2em;
       font-weight: 400;
-      line-height: .9rem;
+      line-height: 1.2em;
 
       display: table-cell;
 
       box-sizing: border-box;
 
       text-align: center;
+      a {
+        padding-right: 15px;
+
+        vertical-align: middle;
+
+        color: #fff;
+      }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    top: 70px;
+    left: 0;
   }
 }

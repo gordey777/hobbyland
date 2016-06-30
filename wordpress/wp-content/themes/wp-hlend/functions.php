@@ -54,7 +54,30 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul data-tpl="navigation" class="header-section header-nav-list header-nav-myclass">%3$s</ul>',
+    'items_wrap'      => '<ul data-tpl="navigation" class="header-nav-myclass">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+}
+
+function wpeHeadCont() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'header-content',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul data-tpl="navigation" class="header-content-nav">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -185,6 +208,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 function register_html5_menu() {
   register_nav_menus(array(
     'header-menu' => __('Меню в шапке', 'wpeasy'),
+    'header-content' => __('Header content', 'wpeasy'),
     'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
     'footer-menu' => __('Меню в подвал', 'wpeasy'),
     'footer-menu-two' => __('Меню в подвал 2', 'wpeasy'),
@@ -240,8 +264,8 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
 /*add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);*/
 function HB_woocommerce_template_dimensions(){ //Добавим функцию вызова панельки с размерами и весом
-global $woocommerce, $post, $product;
-$product->list_attributes();
+    global $woocommerce, $post, $product;
+    $product->list_attributes();
 }
 add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);
 
@@ -253,31 +277,31 @@ include_once( get_stylesheet_directory() . '/ajax-login/ajax-login.php' );
 // ADD UKRNIAN MONEY
 add_filter( 'woocommerce_currencies', 'add_my_currency' );
 function add_my_currency( $currencies ) {
-$currencies['ABC'] = __( 'Українська гривня', 'woocommerce' );
-return $currencies;
+  $currencies['ABC'] = __( 'Українська гривня', 'woocommerce' );
+  return $currencies;
 }
 add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
 function add_my_currency_symbol( $currency_symbol, $currency ) {
-switch( $currency ) {
-case 'ABC': $currency_symbol = 'грн'; break;
-}
-return $currency_symbol;
+  switch( $currency ) {
+      case 'ABC': $currency_symbol = 'грн'; break;
+    }
+  return $currency_symbol;
 }
 
 // PRODUCT NUMBER  ON PAGE
 add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
-function loop_columns() {
-return 6;
-}
+  function loop_columns() {
+  return 6;
+  }
 }
 
-add_filter('loop_shop_per_page', create_function('$cols', 'return 24;'));
+add_filter('loop_shop_per_page', create_function('$cols', 'return 18;'));
 
 
 //releted products
 function woocommerce_output_related_products() {
-woocommerce_related_products(6,6); // Показать 4 товара а 4 колонки
+woocommerce_related_products(6,6);
 }
 
 
@@ -287,3 +311,7 @@ add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo
 
 
 //show_admin_bar( false );
+
+
+
+
