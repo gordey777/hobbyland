@@ -1,12 +1,17 @@
+
+
+
+
+
 @import '_style_mainstyle';
 
 // MAIN MENU
 $main-menu-color: rgba(0, 0, 0, .5);
-$main-menu-hover: #743f00;;
-//rgba(162, 118, 83, .9)
+$main-menu-hover: rgba(50, 50, 50, .8);
+//rgba(162, 118, 83, .9) #743f00;
 
 $content-background: rgba(255, 255, 255, .8);
-$breadcrumb-background: rgba(162, 118, 83, .5);
+$breadcrumb-background: rgba(255, 255, 255, .5);
 
 //TOP HEADER NAV BAR
 .top-nav-col,
@@ -130,6 +135,7 @@ $breadcrumb-background: rgba(162, 118, 83, .5);
     display: table-cell;
 
     box-sizing: border-box;
+    width: 10%;
 
     text-align: left;
     vertical-align: middle;
@@ -143,12 +149,16 @@ $breadcrumb-background: rgba(162, 118, 83, .5);
     }
     ul {
       text-align: left;
+
+      background: $main-menu-hover;
       li {
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.3rem;
 
         display: inline-block;
+
+        width: auto;
 
         text-align: left;
 
@@ -236,11 +246,13 @@ header {
   }
 
   .site-header-cart {
-    position: relative;
-
-    display: right;
+    float: right;
 
     height: 60px;
+    .cart-contents {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
     li {
       font-size: .9rem;
       font-weight: 400;
@@ -254,6 +266,8 @@ header {
       &.focus {
         .widget_shopping_cart {
           left: -250px;
+
+          background: $main-menu-hover;
         }
       }
     }
