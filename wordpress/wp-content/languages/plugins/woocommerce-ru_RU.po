@@ -2,13 +2,49 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-06-18 13:35:05+0000\n"
+"PO-Revision-Date: 2016-07-09 12:32:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: GlotPress/2.1.0-alpha\n"
 "Project-Id-Version: Stable (latest release)\n"
+
+#: includes/admin/settings/class-wc-settings-accounts.php:110
+msgid "Endpoints are appended to your page URLs to handle specific actions on the accounts pages. They should be unique and can be left blank to disable the endpoint."
+msgstr "Конечные точки добавляются к URL'ам вашей страницы для обработки определённых действий на страницах аккаунтов. Они должны быть уникальными и могут быть пустым, чтобы отключить конечной точки."
+
+#: includes/admin/settings/class-wc-settings-shipping.php:244
+#: includes/admin/settings/views/html-admin-page-shipping-zones.php:52
+msgid "No shipping methods offered to this zone."
+msgstr "Нет методов доставки, предлагаемых в данной зоне."
+
+#: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:101
+#: includes/admin/settings/views/html-admin-page-shipping-zones.php:149
+msgid "Choose the shipping method you wish to add. Only shipping methods which support zones are listed."
+msgstr "Выберите методы доставки, которые вы хотите добавить. Перечислены лишь методы, поддерживающие зоны."
+
+#: includes/admin/settings/views/html-admin-page-shipping-zones.php:39
+msgid "This zone is used for shipping addresses that aren&lsquo;t included in any other shipping zone. Adding shipping methods to this zone is optional."
+msgstr "Эта зона используется для доставки по адресам, не соответствующим иным зонам доставки. Добавление методов доставки для этой зоны опционально."
+
+#: includes/admin/views/html-admin-page-status-tools.php:34
+msgid "Enable Shipping Debug Mode to show matching shipping zones and to bypass shipping rate cache."
+msgstr "Включить режим отладки доставки для отображение подходящих зон доставки и обхода кэша тарифа доставки."
+
+#: includes/admin/views/html-admin-page-status-tools.php:45
+msgid "Enable Template Debug Mode to bypass all theme and plugin template overrides for logged-in administrators. Used for debugging purposes."
+msgstr "Включить режим отладки шаблона для обхода всех переопределений шаблонов тем и плагинов для авторизованных администраторов. Используется для целей отладки."
+
+#: includes/api/legacy/v2/class-wc-api-products.php:1802
+#: includes/api/legacy/v3/class-wc-api-products.php:2358
+#: includes/cli/class-wc-cli-product.php:2022 includes/wc-rest-functions.php:68
+msgid "Error: %s."
+msgstr "Ошибка: %s."
+
+#: includes/class-wc-shipping-zone.php:226
+msgid "Everywhere"
+msgstr "Везде"
 
 #: includes/shipping/flat-rate/includes/settings-flat-rate.php:7
 msgid "Use <code>[qty]</code> for the number of items, <br/><code>[cost]</code> for the total cost of items, and <code>[fee percent=\"10\" min_fee=\"20\" max_fee=\"\"]</code> for percentage based fees."
@@ -4237,6 +4273,10 @@ msgstr[2] "%s загрузок осталась"
 msgid "Recent Orders"
 msgstr "Последние заказы"
 
+#: includes/api/class-wc-rest-orders-controller.php:1163
+msgid "Order number."
+msgstr "Номер заказа."
+
 #: templates/myaccount/my-orders.php:65 templates/myaccount/orders.php:61
 msgid "%s for %s item"
 msgid_plural "%s for %s items"
@@ -5517,9 +5557,9 @@ msgstr "Товаров, соответствующих вашему запрос
 #: templates/loop/result-count.php:39
 msgid "Showing the single result"
 msgid_plural "Showing all %d results"
-msgstr[0] "Показ единственного результата"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отображается единственный результат"
+msgstr[1] "Отображаются все %d результата"
+msgstr[2] "Отображаются все %d результатов"
 
 #: templates/loop/sale-flash.php:28 templates/single-product/sale-flash.php:28
 msgid "Sale!"
@@ -12421,6 +12461,10 @@ msgstr "Значение скидки купона."
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:73
 msgid "Allow free shipping"
 msgstr "Разрешить бесплатную доставку"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:73
+msgid "Check this box if the coupon grants free shipping. A <a href=\"%s\">free shipping method</a> must be enabled in your shipping zone and be set to require \"a valid free shipping coupon\" (see the \"Free Shipping Requires\" setting)."
+msgstr "Отметьте этот пункт, если купон обеспечивает бесплатную доставку. <a href=\"%s\">Бесплатная доставка</a> должна быть включена в соответствующей зоне доставки и настроена требовать \"действующий купон на бесплатную доставку\" (смотрите настройки \"Требования бесплатной доставки\")."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:76
 msgid "Coupon expiry date"
