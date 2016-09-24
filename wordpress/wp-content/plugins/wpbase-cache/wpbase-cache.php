@@ -3,7 +3,7 @@
   Plugin Name: WPBase-Cache
   Plugin URI: https://github.com/baseapp/wpbase-cache
   Description: A wordpress plugin for using all caches on varnish, nginx, php-fpm stack with php-apc. This plugin includes db-cache-reloaded-fix for dbcache.
-  Version: 5.0
+  Version: 5.1
   Author: Vikrant Datta
   Author URI: http://blog.wpoven.com
   License: GPL2
@@ -31,10 +31,6 @@ add_action('admin_enqueue_scripts', function() {
     wp_enqueue_style('style');
 });
 
-//$path = dirname(dirname(dirname(__FILE__)));
-//if(is_file($path.'/db.php')){
-//   rename($path.'/db.php',$path.'/db_old.php');
-//}
 function upon_activation() {
     $path = dirname(dirname(dirname(__FILE__)));
     if (is_file($path . '/db.php')) {
@@ -43,27 +39,18 @@ function upon_activation() {
 }
 
 function is_wpoven_site() {
-    
+
     $file = ABSPATH . 'wp-config.php';
     $content = file_get_contents($file);
     $match = '';
     preg_match('/define.*DB_NAME.*\'(.*)\'/', $content, $match);
     $dbname = $match[1];
     $sitename = substr($dbname, 2);
-    $check_cache = get_option('wpbase_check_site',NULL);
-    
+    $check_cache = get_option('wpbase_check_site', NULL);
+
     if (!isset($check_cache)) {
-        //echo "in";
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_URL, "https://wpoven.com/sites/check/wpbasecachecheck/" . $sitename);
-        $content = curl_exec($ch);
-        curl_close($ch);
-        
-        $content = (int)$content;
-        
+        $content = wp_remote_get("https://wpoven.com/sites/check/wpbasecachecheck/" . $sitename);
+        $content = (int) $content;
         update_option('wpbase_check_site', $content);
     } else {
         $content = $check_cache;
@@ -75,6 +62,7 @@ function check_wpoven_site() {
 
     $check_site = is_wpoven_site();
     if ($check_site == "1") {
+
         function custom_button_example($wp_admin_bar) {
             $file = ABSPATH . 'wp-config.php';
             $content = file_get_contents($file);
@@ -85,22 +73,13 @@ function check_wpoven_site() {
             $req_cache = get_option('wpbase_req_cache');
             $req_cache = json_decode($req_cache, true);
             if (!get_option('wpbase_req_cache')) {
-                //echo "here";
-                $ch = curl_init();
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-                curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-                curl_setopt($ch, CURLOPT_URL, "https://wpoven.com/sites/checksiteinfo/" . $sitename);
-                $content = curl_exec($ch);
-                curl_close($ch);
-                //var_dump($content);
-                //$return_array = explode(",", $content);
+                $content = wp_remote_get("https://wpoven.com/sites/checksiteinfo/" . $sitename);
                 $return_array = json_decode($content, true);
                 update_option('wpbase_req_cache', $content);
             } else {
                 $return_array = $req_cache;
             }
-            //var_dump($return_array);
+            
             if ($return_array['status'] == "true") {
                 $args = array(
                     'id' => 'Dashboard-button',
@@ -123,6 +102,7 @@ function check_wpoven_site() {
                 $wp_admin_bar->add_node($args);
             }
         }
+
         add_action('admin_bar_menu', 'custom_button_example', 100);
     }
 }
@@ -158,48 +138,29 @@ class WPBase_Cache {
             'varnish_cache' => '1',
             'send_as' => 'noreply',
             'admin_bar_button' => '1'
-                //'reject_url' => '',
-                //'reject_cookie' => '',
         );
 
         update_option('wpbase_cache_options', $options);
-
-        // activate and enable db-cache-reloaded-fix
-        // $this->activate_db_cache();
     }
 
     public function deactivate() {
-        //$this->deactivate_db_cache();
+
         $options = array(
             'db_cache' => '0',
             'varnish_cache' => '0',
             'send_as' => '0',
             'admin_bar_button' => ''
-                //'reject_url' => '',
-                //'reject_cookie' => '',
         );
 
         update_option('wpbase_cache_options', $options);
-        //delete_option('wpbase_cache_options');
     }
 
     public function activate_db_cache() {
-        /*    require_once(WPBASE_CACHE_INC_DIR.'/db-cache-reloaded-fix/db-cache-reloaded.php');
-          $this->wp_db_cache_reloaded = new DBCacheReloaded();
-          $options = array(
-          'enabled' => true,
-          'filter' => '_posts|_postmeta',
-          'loadstat' => '',
-          'wrapper' => false,
-          'save' => 1
-          );
-          $this->wp_db_cache_reloaded->options_page($options); */
+        
     }
 
     public function deactivate_db_cache() {
-        /*  if($this->wp_db_cache_reloaded != null){
-          $this->wp_db_cache_reloaded->dbcr_uninstall();
-          } */
+        
     }
 
     public function load_plugins() {
@@ -207,10 +168,6 @@ class WPBase_Cache {
 
         require_once(WPBASE_CACHE_INC_DIR . '/nginx-compatibility/nginx-compatibility.php');
 
-        /*    if(isset($options['db_cache']) && $options['db_cache'] == '1'){
-          require_once(WPBASE_CACHE_INC_DIR.'/db-cache-reloaded-fix/db-cache-reloaded.php');
-          $this->wp_db_cache_reloaded = new DBCacheReloaded();
-          } */
 
         if (!isset($options['varnish_cache']) || $options['varnish_cache'] != '1') {
             add_action('init', array($this, 'set_cookie'));
@@ -244,19 +201,16 @@ class WPBase_Cache {
 
     public function flush_all_cache() {
         $url = get_site_url();
-        $url = $url . '/';
+        //  $url = $url . '/';
         $this->flush_varnish_cache($url);
-
-        /* if($this->wp_db_cache_reloaded != null){
-          $this->wp_db_cache_reloaded->dbcr_clear();
-          } */
     }
 
-    public function flush_varnish_cache($url) {
+        public function flush_varnish_cache($url) {
         if (!(defined('WPBASE_CACHE_SANDBOX') && WPBASE_CACHE_SANDBOX)) {
-            //echo $url;
-            wp_remote_request($url, array('method' => 'PURGE'));
-        }
+            $urlParts = parse_url($url);
+            $newURL = "http://127.0.0.1".$urlParts['path'];
+            $response = wp_remote_request($newURL, array('method' => 'PURGE','headers'=>array('Host'=>$urlParts['host'])));
+       }
     }
 
 }
@@ -268,7 +222,7 @@ $cache_options = get_option('wpbase_cache_options');
 
 if (!isset($cache_options['varnish_cache']) || $cache_options['varnish_cache'] != '1') {
     $site = site_url();
-    //global $wpbase_cache;
+
     $wpbase_cache->flush_varnish_cache($site);
 }
 
@@ -296,8 +250,6 @@ function mail_from_wpoven($email) {
     $options = get_option('wpbase_cache_options');
     $send_as = $options['send_as'];
     if ($send_as != NULL) {
-        // $sitename = strtolower($_SERVER['SERVER_NAME']);
-        // $sitename = str_replace('www.','',$sitename);
         global $wpdb;
         $table_name = $wpdb->prefix . "options";
         $result = $wpdb->get_results('SELECT option_value FROM ' . $table_name . ' WHERE option_name = "siteurl";', ARRAY_N);
@@ -310,8 +262,6 @@ function mail_from_wpoven($email) {
         } else {
             return $send_as . '@' . $domain;
         }
-
-        //$sitename = substr($sitename,0,4)=='www.' ? substr($sitename, 4) : $sitename;
     }
 }
 

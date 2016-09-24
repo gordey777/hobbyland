@@ -56,7 +56,6 @@ class WPBase_Cache_Admin {
     }
 
     public function wpbase_cache_section_desc() {
-        //echo 'These settings are part of wpoven manager plugin.';
     }
 
     public function admin_bar_button_input(){

@@ -45,7 +45,7 @@ function wpeHeadNav() {
     'menu'            => '',
     'container'       => 'div',
     'container_class' => 'menu-{menu slug}-container',
-    'container_id'    => '',
+    'container_id'    => 'fffffffff',
     'menu_class'      => 'menu',
     'menu_id'         => '',
     'echo'            => true,
@@ -305,12 +305,9 @@ woocommerce_related_products(6,6);
 }
 
 
-//img in div
-add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "<div class=\"img-wrap-product-list-parent\"><div class=\"img-wrap-product-list-child\">";'), 5, 2);
-add_action( 'woocommerce_before_shop_loop_item_title', create_function('', 'echo "</div></div>";'), 12, 2);
 
 
-//show_admin_bar( false );
+show_admin_bar( false );
 
 
 
