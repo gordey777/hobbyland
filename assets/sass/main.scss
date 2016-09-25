@@ -656,13 +656,9 @@ header {
     padding: 0 0 6px 0;
   }
 }
-#usefull_link_block {
-  .buttons_bottom_block,
-  .print,
-  .sendtofriend {
-    margin: 0;
-  }
-}
+
+
+
 #thumbs_list .owl-controls div.owl-nav > div {
   &.owl-prev {
     right: 20px;
@@ -671,13 +667,12 @@ header {
     left: 20px;
   }
 }
-#thumbs_list .owl-controls div.owl-nav > div {
-  &.owl-prev {
-    right: 20px;
-  }
-  &.owl-next {
-    left: 20px;
-  }
+.icon-angle-upp:before {
+  content: '';
+}
+
+.icon-angle-downn:before {
+  content: '';
 }
 
 #thumbs_list .owl-controls div.owl-nav > div {
@@ -702,10 +697,11 @@ header {
     bottom: 0;
   }
 }
+
 #thumbs_list {
   display: inline-block;
   overflow: hidden;
-  ul#thumbs_list_frame {
+  #thumbs_list_frame {
     overflow: hidden;
 
     padding-left: 0;
@@ -739,6 +735,9 @@ header {
   }
 }
 
+
+
+
 .col-full {
   max-width: 90%;
 }
@@ -746,56 +745,3 @@ header {
   width: 100%;
 }
 
-
-#more_info_tabs {
-  margin-bottom: 30px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-
-  border-bottom: 1px solid #e2dfdf;
-  li {
-    float: left;
-
-    margin: 0 3px 0 0;
-
-    list-style: outside none none;
-
-    text-align: center;
-    a {
-      font-family: titlee;
-      font-size: 20px;
-      line-height: 20px;
-
-      display: inline-block;
-
-      padding: 7px 15px;
-
-      text-decoration: none;
-      text-transform: uppercase;
-
-      color: #666;
-      background: #f1f1f1 none repeat scroll 0 0;
-      &.selected,
-      &:hover {
-        cursor: default;
-
-        color: #fff;
-        background: #ee4143 none repeat scroll 0 0;
-      }
-    }
-  }
-}
-.page-product-box .rte p {
-  font-size: 13px;
-  line-height: 21px;
-
-  min-height: 1px;
-  margin: 0;
-  padding: 26px 20px;
-
-  text-align: justify;
-
-  color: #666;
-  background: #f1f1f1 none repeat scroll 0 0;
-  text-shadow: 1px 1px #fff;
-}

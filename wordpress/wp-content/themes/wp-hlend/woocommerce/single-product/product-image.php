@@ -33,7 +33,7 @@ global $post, $product; ?>
     </span>
   </div><!-- .image-block -->
   <div id="views_block" class="clearfix views-block-style">
-    <div id="thumbs_list">
+    <div id="thumbs_list" >
       <ul id="thumbs_list_frame">
         <?php if ( has_post_thumbnail()) : ?>
           <li id="thumbnail_">

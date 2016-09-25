@@ -24,11 +24,11 @@ var paths = {
   images: {
     src: basePaths.src + 'img/',
     srcimg: basePaths.src + 'img/**/*.{png,jpg,jpeg,gif,svg}',
-    dest: basePaths.dest + 'img/'
+    dest: basePaths.dest + 'assets/images/'
   },
   scripts: {
     src: basePaths.src + 'js/**',
-    dest: basePaths.dest + 'js/'
+    dest: basePaths.dest + 'assets/js/'
   },
   styles: {
     src: basePaths.src + 'sass/',
@@ -37,7 +37,7 @@ var paths = {
   },
   fonts: {
     src: basePaths.src + 'fonts/**',
-    dest: basePaths.dest + 'fonts/'
+    dest: basePaths.dest + 'assets/fonts/'
   },
   sprite: {
     src: basePaths.src + 'sprite/*'
