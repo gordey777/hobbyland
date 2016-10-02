@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the 4.6.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-09-12 21:46:06+0000\n"
+"PO-Revision-Date: 2016-09-26 14:31:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3967,7 +3967,7 @@ msgstr "Не вдалося перевірити SSL-сертифікат сер
 
 #: wp-includes/media-template.php:644
 msgid "Embed Media Player"
-msgstr "Код медіа плеєру"
+msgstr "Вставити програвач медіа"
 
 #: wp-includes/media-template.php:350 wp-includes/media-template.php:526
 msgid "Length:"

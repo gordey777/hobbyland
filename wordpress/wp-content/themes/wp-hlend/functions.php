@@ -258,18 +258,6 @@ else {
 }
 
 
-//Меняем местами краткое описание товара и цену
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
-/*add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);*/
-function HB_woocommerce_template_dimensions(){ //Добавим функцию вызова панельки с размерами и весом
-    global $woocommerce, $post, $product;
-    $product->list_attributes();
-}
-add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);
-
-
 
 include_once( get_stylesheet_directory() . '/ajax-login/ajax-login.php' );
 
@@ -303,6 +291,16 @@ add_filter('loop_shop_per_page', create_function('$cols', 'return 18;'));
 function woocommerce_output_related_products() {
 woocommerce_related_products(6,6);
 }
+//Меняем местами краткое описание товара и цену
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
+/*add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);*/
+function HB_woocommerce_template_dimensions(){ //Добавим функцию вызова панельки с размерами и весом
+    global $woocommerce, $post, $product;
+    $product->list_attributes();
+}
+add_action( 'woocommerce_single_product_summary', 'HB_woocommerce_template_dimensions', 15);
 
 
 

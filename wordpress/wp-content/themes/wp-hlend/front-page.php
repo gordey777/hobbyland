@@ -19,14 +19,14 @@ get_header(); ?>
 
             <div class="main-slider">
               <?php if( have_rows('product_slider') ): ?>
-                <div id="owl-product-slider" class="owlCarousel">
+                <div id="owl-product-slider" class="owl-carousel">
                   <?php while ( have_rows('product_slider') ) : the_row(); ?>
                     <div class="item">
-                     <a href="<?php the_sub_field('product_link'); ?>">
-                      <?php $image = get_sub_field('product_image');
-                      if( !empty($image) ): ?>
-                      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      <?php endif; ?>
+                      <a href="<?php the_sub_field('product_link'); ?>">
+                        <?php $image = get_sub_field('product_image');
+                        if( !empty($image) ): ?>
+                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <?php endif; ?>
                       </a>
                     </div>
                   <?php  endwhile;
@@ -41,13 +41,13 @@ get_header(); ?>
 
             <div class="main-slider">
               <?php if( have_rows('brend_slider') ): ?>
-                <div id="owl-brand-slider" class="owlCarousel">
+                <div id="owl-brand-slider" class="owl-carousel">
                  <?php while ( have_rows('brend_slider') ) : the_row(); ?>
                   <div class="item brand">
                    <a href="<?php the_sub_field('brand_link'); ?>">
                     <?php $image = get_sub_field('brand_image');
                     if( !empty($image) ): ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                     <?php endif; ?>
                     </a>
                   </div>
@@ -89,7 +89,7 @@ get_header(); ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->
-  </div>
+<!--   </div> -->
 
 <?php ; get_footer();
 

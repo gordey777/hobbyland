@@ -25,20 +25,20 @@ global $post, $product; ?>
   <div id="image-block" class="clearfix image-block-style">
     <span id="view_full_size">
       <?php if ( has_post_thumbnail()) : ?>
-        <img src="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" id="bigpic" itemprop="image" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" id="bigpic" class="fancybox shown" itemprop="image" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
         <span class="span_link no-print"></span>
       <?php else:?>
         <?php echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID ); ?>
       <?php endif; ?>
     </span>
   </div><!-- .image-block -->
-  <div id="views_block" class="clearfix views-block-style">
-    <div id="thumbs_list" >
+  <div id="views_block" class="clearfix views-block-style custom-container basic2">
+    <div id="thumbs_list" class="carousel_lite" >
       <ul id="thumbs_list_frame">
         <?php if ( has_post_thumbnail()) : ?>
-          <li id="thumbnail_">
-           <a href="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" data-fancybox-group="other-views" class="fancybox " data-rel="prettyPhoto[product-gallery]">
-            <img src="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" id="bigpic" itemprop="image" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+        <li id="thumbnail_">
+          <a href="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" data-fancybox-group="other-views" class="fancybox " data-rel="prettyPhoto[product-gallery]">
+            <img src="<?php echo get_the_post_thumbnail_url( '', 'full' ); ?>" id="thumb_" itemprop="image" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
           </a>
          </li>
         <?php else:?>
@@ -46,14 +46,22 @@ global $post, $product; ?>
 
         <?php do_action( 'woocommerce_product_thumbnails' ); ?>
       </ul>
-      <div class="owl-controls">
-        <div class="owl-nav">
-          <div class="owl-prev"><i class="icon-angle-downn"></i></div>
-          <div class="owl-next"><i class="icon-angle-upp"></i></div>
-        </div>
-      </div>
+
+
+
+<!--       <div class="owl-controls">
+  <div class="owl-nav">
+    <div class="owl-prev"><i class="icon-angle-downn"></i></div>
+    <div class="owl-next"><i class="icon-angle-upp"></i></div>
+  </div>
+</div> -->
+    </div><!-- .thumbs_list -->
+    <div class="thumbs_nav">
+      <div class="prev"><i class="icon-angle-downn"></i></div>
+      <div class="next"><i class="icon-angle-upp"></i></div>
     </div>
   </div><!-- .views_block -->
+
 
 
 

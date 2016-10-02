@@ -49,13 +49,47 @@
 
 </div><!-- #page -->
 
+
 <?php wp_footer(); ?>
 
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
 
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-page-sliders.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.js"></script>
+<!--   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-page-sliders.js"></script> -->
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.elevatezoom.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.jcarousellite.js"></script>
+
+
+  <script >
+  $(document).ready(function() {
+
+    $("#owl-product-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        smartSpeed:2000,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        dots: true,
+
+    });
+
+
+
+    $("#owl-brand-slider").owlCarousel({
+        items: 6,
+        loop: true,
+        margin: 10,
+        smartSpeed:1400,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+    });
+  });
+  </script>
+
 
   <!--  MAIN NAV -->
   <script>
@@ -87,6 +121,29 @@
 
   <script>
 
+  $(document).ready(function() {
+
+    $('#bigpic').elevateZoom({
+          zoomType: 'window',
+          cursor: 'default',
+          zoomWindowFadeIn: 400,
+          zoomWindowFadeOut: 550,
+          zoomWindowPosition: 1,
+          scrollZoom: true,
+          easing: true,
+          tint: true,
+          tintColour: '#000',
+          tintOpacity: 0.4,
+          lensShape: 'round',
+          lensSize: 400,
+          //zoomImage: bigimage,
+          borderSize: 1,
+          borderColour: '#e2dfdf',
+          zoomWindowWidth: 400,
+          zoomWindowHeight: 400,
+          zoomLevel: 0.7,
+          lensBorderSize: 0
+        });
 
       function applyElevateZoom() {
         var src = $('.thickbox.shown').attr('href');
@@ -113,7 +170,18 @@
           lensBorderSize: 0
         });
       }
-  $(document).ready(function() {
+      $(document).on('mouseover', '#views_block a', function() {
+        displayImage($(this));
+      });
+
+      $('#views_block a').hover(function() {
+        restartElevateZoom();
+      });
+
+      function restartElevateZoom() {
+        $(".zoomContainer").remove();
+        applyElevateZoom();
+      };;
       function displayImage(domAAroundImgThumb, no_animation) {
         if (typeof(no_animation) == 'undefined')
           no_animation = false;
@@ -136,20 +204,24 @@
         }
       }
 
-      $(document).on('mouseover', '#views_block a', function() {
-        displayImage($(this));
-      });
 
-      $('#views_block a').hover(function() {
-        restartElevateZoom();
-      });
 
-      function restartElevateZoom() {
-        $(".zoomContainer").remove();
-        applyElevateZoom();
-      };;
+
+    $(function() {
+        $(".carousel_lite").jCarouselLite({
+            btnNext: ".next",
+            btnPrev: ".prev",
+            vertical: true,
+
+            visible: 4,
+            start: 0,
+        });
+    });
 
   });
+
+
+
 
   </script>
 

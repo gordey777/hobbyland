@@ -1,31 +1,27 @@
+  $(document).ready(function() {
 
-    $(document).ready(function() {
-
-      $("#owl-product-slider").owlCarousel({
-          navigation : false,
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem:true,
-          autoPlay:true,
-          stopOnHover: true,
-          loop: true,
-          rewindSpeed: 1000,
-          rewindNav: true,
-      });
-
-       $("#owl-brand-slider").owlCarousel({
-          navigation : false,
-          slideSpeed : 200,
-          paginationSpeed : 500,
-          singleItem:false,
-          autoPlay:true,
-          items:6,
-          stopOnHover: true,
-          loop: true,
-          rewindSpeed: 1000,
-          rewindNav: true,
-          pagination: false,
-      });
+    $("#owl-product-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        smartSpeed:2000,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        dots: true,
 
     });
 
+
+
+    $("#owl-brand-slider").owlCarousel({
+        items: 6,
+        loop: true,
+        margin: 10,
+        smartSpeed:1400,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+    });
+  });
