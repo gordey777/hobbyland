@@ -225,7 +225,7 @@ if (function_exists('register_sidebar')) {
     'name' => __('Блок виджетов #1', 'wpeasy'),
     'description' => __('Description for this widget-area...', 'wpeasy'),
     'id' => 'widgetarea1',
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'before_widget' => '<div id="%1$s" class="widget-footer widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>'
@@ -256,8 +256,6 @@ else {
     echo "ВХОД\РЕГИСТРАЦИЯ";
   }
 }
-
-
 
 include_once( get_stylesheet_directory() . '/ajax-login/ajax-login.php' );
 

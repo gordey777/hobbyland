@@ -18,9 +18,11 @@ get_header(); ?>
                 <!--PRODUCT SLIDER -->
 
             <div class="main-slider">
-              <?php if( have_rows('product_slider') ): ?>
-                <div id="owl-product-slider" class="owl-carousel">
-                  <?php while ( have_rows('product_slider') ) : the_row(); ?>
+
+            <?php if( have_rows('product_slider' ) ): ?>
+              <div id="owl-product-slider" class="owl-carousel">
+
+                <?php while ( have_rows('product_slider', 73 ) ) : the_row(); ?>
                     <div class="item">
                       <a href="<?php the_sub_field('product_link'); ?>">
                         <?php $image = get_sub_field('product_image');
@@ -29,21 +31,25 @@ get_header(); ?>
                         <?php endif; ?>
                       </a>
                     </div>
-                  <?php  endwhile;
-                  else : ?>
-                </div>
-              <?php endif; ?>
-            </div>
+                  <?php  endwhile; ?>
+
+              </div><!-- #owl-product-slider -->
+              <?php else : ?>
+                <?php endif; ?>
+            </div><!-- .main-slider -->
+
 
 
 
                 <!-- BRAND SLIDER -->
 
             <div class="main-slider">
-              <?php if( have_rows('brend_slider') ): ?>
-                <div id="owl-brand-slider" class="owl-carousel">
-                 <?php while ( have_rows('brend_slider') ) : the_row(); ?>
-                  <div class="item brand">
+
+            <?php if( have_rows('brend_slider' ) ): ?>
+              <div id="owl-brand-slider" class="owl-carousel">
+
+                  <?php while ( have_rows('brend_slider', 73 ) ) : the_row(); ?>
+                  <div class="item">
                    <a href="<?php the_sub_field('brand_link'); ?>">
                     <?php $image = get_sub_field('brand_image');
                     if( !empty($image) ): ?>
@@ -51,19 +57,21 @@ get_header(); ?>
                     <?php endif; ?>
                     </a>
                   </div>
-                 <?php  endwhile;
-                 else : ?>
-                </div>
-             <?php endif;?>
-            </div>
+                 <?php  endwhile; ?>
+                 </div><!-- #owl-brand-slider -->
+                 <?php else : ?>
+                 <?php endif; ?>
+
+            </div><!-- .main-slider -->
 
 
-
-      <div class="widget-footer">
         <?php if ( is_active_sidebar('widgetarea2') ) : ?>
-          <?php dynamic_sidebar( 'widgetarea2' ); ?>
+          <div class="widget-footer">
+            <?php dynamic_sidebar( 'widgetarea2' ); ?>
+          </div><!-- .widget-footer -->
         <?php endif; ?>
-      </div>
+
+
 
 
 

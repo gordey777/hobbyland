@@ -50,15 +50,15 @@ if ( $products->have_posts() ) : ?>
 
 		<h2><?php _e( 'You may also like&hellip;', 'woocommerce' ) ?></h2>
 
-		<?php woocommerce_product_loop_start(); ?>
+    <div id="owl-up-sell" class="owl-carousel">
+      <?php woocommerce_product_loop_start(); ?>
+        <?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
-			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+            <?php wc_get_template_part( 'content', 'product' ); ?>
 
-				<?php wc_get_template_part( 'content', 'product' ); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		<?php woocommerce_product_loop_end(); ?>
+        <?php endwhile; // end of the loop. ?>
+      <?php woocommerce_product_loop_end(); ?>
+    </div><!-- #owl-up-sell -->
 
 	</div>
 

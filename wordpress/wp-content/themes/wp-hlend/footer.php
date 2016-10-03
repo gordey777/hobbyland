@@ -7,17 +7,17 @@
  * @package storefront
  */
 ?>
-    </div><!-- .col-full -->
-  </div><!-- #content -->
 
-      <div class="col-full">
-      <div class="widget-footer">
+
+
+
         <?php if ( is_active_sidebar('widgetarea1') ) : ?>
           <?php dynamic_sidebar( 'widgetarea1' ); ?>
         <?php endif; ?>
-      </div>
-    </div>
 
+
+    </div><!-- .col-full -->
+  </div><!-- #content -->
 
 
   <?php do_action( 'storefront_before_footer' ); ?>
@@ -55,40 +55,13 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.js"></script>
-<!--   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-page-sliders.js"></script> -->
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-page-sliders.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.elevatezoom.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.jcarousellite.js"></script>
+ <!--  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/product-image-thumb.js"></script>
+  -->
 
 
-  <script >
-  $(document).ready(function() {
-
-    $("#owl-product-slider").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        smartSpeed:2000,
-        autoplay: true,
-        autoplayTimeout: 2500,
-        autoplayHoverPause: true,
-        dots: true,
-
-    });
-
-
-
-    $("#owl-brand-slider").owlCarousel({
-        items: 6,
-        loop: true,
-        margin: 10,
-        smartSpeed:1400,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        dots: false,
-    });
-  });
-  </script>
 
 
   <!--  MAIN NAV -->
@@ -117,15 +90,23 @@
     });
   </script>
 
+<script>
 
+      $ScreenWidth = screen.width;
+      $ScreenHeight = screen.height;
 
-  <script>
-
-  $(document).ready(function() {
+      if($ScreenWidth < 768 ) {
+        $zoomType = "inner";
+        $cursor = "crosshair";
+      }
+      else{
+        $zoomType = "window";
+        $cursor = "default";
+      }
 
     $('#bigpic').elevateZoom({
-          zoomType: 'window',
-          cursor: 'default',
+          zoomType: $zoomType,
+          cursor: $cursor,
           zoomWindowFadeIn: 400,
           zoomWindowFadeOut: 550,
           zoomWindowPosition: 1,
@@ -149,8 +130,8 @@
         var src = $('.thickbox.shown').attr('href');
         var bigimage = $('.fancybox.shown').attr('href');
         $('#bigpic').elevateZoom({
-          zoomType: 'window',
-          cursor: 'default',
+          zoomType: $zoomType,
+          cursor: $cursor,
           zoomWindowFadeIn: 400,
           zoomWindowFadeOut: 550,
           zoomWindowPosition: 1,
@@ -170,6 +151,7 @@
           lensBorderSize: 0
         });
       }
+
       $(document).on('mouseover', '#views_block a', function() {
         displayImage($(this));
       });
@@ -181,7 +163,8 @@
       function restartElevateZoom() {
         $(".zoomContainer").remove();
         applyElevateZoom();
-      };;
+      };
+
       function displayImage(domAAroundImgThumb, no_animation) {
         if (typeof(no_animation) == 'undefined')
           no_animation = false;
@@ -204,28 +187,26 @@
         }
       }
 
+      $(function(){
+      var countLi = $('.carousel_lite>ul>li').size();
 
+      if (countLi > 4) {
 
+        $('.thumbs_nav').removeClass('thumbs_nav_hide');
 
-    $(function() {
         $(".carousel_lite").jCarouselLite({
             btnNext: ".next",
             btnPrev: ".prev",
             vertical: true,
-
             visible: 4,
             start: 0,
-        });
-    });
-
-  });
-
+          });
+        }
+      });
 
 
 
-  </script>
-
-
+</script>
 
 
 </body>

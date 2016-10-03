@@ -56,9 +56,9 @@ global $post, $product; ?>
   </div>
 </div> -->
     </div><!-- .thumbs_list -->
-    <div class="thumbs_nav">
-      <div class="prev"><i class="icon-angle-downn"></i></div>
-      <div class="next"><i class="icon-angle-upp"></i></div>
+    <div class="thumbs_nav thumbs_nav_hide">
+      <div class="prev"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+      <div class="next"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
     </div>
   </div><!-- .views_block -->
 
