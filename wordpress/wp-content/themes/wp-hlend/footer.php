@@ -23,7 +23,7 @@
   <?php do_action( 'storefront_before_footer' ); ?>
 
   <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="col-full">
+    <div class="col-full container">
 
       <?php wpeFootNav(); ?>
 
@@ -207,6 +207,29 @@
 
 
 </script>
+
+<!-- <script>
+//#upsell-owl>ul
+  $(document).ready(function() {
+$( "#upsell-owl>ul" ).addClass( "owl-carousel" );
+$( "#upsell-owl>ul>li" ).addClass( "item" );
+$( "#upsell-owl>ul>li" ).remClass( "product" );
+
+    $("#upsell-owl>ul").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        smartSpeed:1400,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        //itemElement: 'li',
+    });
+  });
+
+
+</script> -->
 
 
 </body>

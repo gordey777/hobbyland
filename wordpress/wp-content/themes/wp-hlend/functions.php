@@ -45,7 +45,7 @@ function wpeHeadNav() {
     'menu'            => '',
     'container'       => 'div',
     'container_class' => 'menu-{menu slug}-container',
-    'container_id'    => 'fffffffff',
+    'container_id'    => '',
     'menu_class'      => 'menu',
     'menu_id'         => '',
     'echo'            => true,
@@ -282,13 +282,14 @@ if (!function_exists('loop_columns')) {
   }
 }
 
-add_filter('loop_shop_per_page', create_function('$cols', 'return 18;'));
+add_filter('loop_shop_per_page', create_function('$cols', 'return 24;'));
 
 
 //releted products
 function woocommerce_output_related_products() {
 woocommerce_related_products(6,6);
 }
+
 //Меняем местами краткое описание товара и цену
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
@@ -307,4 +308,4 @@ show_admin_bar( false );
 
 
 
-
+?>

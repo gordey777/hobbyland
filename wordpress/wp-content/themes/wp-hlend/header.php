@@ -21,6 +21,7 @@
 
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.carousel.css">
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.theme.default.css">
+  <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/animate.css">
   <!-- <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/owl.theme.css"> -->
 
   <link media="all" rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/main.css">
@@ -32,7 +33,7 @@
 
 
 
-      <div class="col-full top-nav-col">
+      <div class="col-full top-nav-col container">
 
         <div id="top-nav" class="header-nav-myclass">
 
@@ -60,7 +61,7 @@
 
     <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 
-      <div class="col-full">
+      <div class="col-full container">
 
 
 <div class="header-content">
@@ -97,7 +98,7 @@
     do_action( 'storefront_before_content' ); ?>
 
   <div id="content" class="site-content" tabindex="-1">
-    <div class="col-full">
+    <div class="col-full container">
 
     <?php
     /**

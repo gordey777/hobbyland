@@ -15,7 +15,7 @@
  * @version     1.6.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+/*if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
@@ -46,11 +46,11 @@ $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
 
-	<div class="upsells products">
+	<div id="upsell-owl" class="upsells products">
 
 		<h2><?php _e( 'You may also like&hellip;', 'woocommerce' ) ?></h2>
 
-    <div id="owl-up-sell" class="owl-carousel">
+
       <?php woocommerce_product_loop_start(); ?>
         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
@@ -58,10 +58,9 @@ if ( $products->have_posts() ) : ?>
 
         <?php endwhile; // end of the loop. ?>
       <?php woocommerce_product_loop_end(); ?>
-    </div><!-- #owl-up-sell -->
 
 	</div>
 
 <?php endif;
 
-wp_reset_postdata();
+wp_reset_postdata();*/

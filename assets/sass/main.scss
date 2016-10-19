@@ -124,6 +124,7 @@ $breadcrumb-background: rgba(255, 255, 255, .5);
 
 // MAIN MENU
 #menu-glavnoe-menyu {
+  height: 60px;
   li {
     font-size: 1.1rem;
     font-weight: 100;
@@ -133,6 +134,9 @@ $breadcrumb-background: rgba(255, 255, 255, .5);
 
     box-sizing: border-box;
     width: 10%;
+    //height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     text-align: left;
     vertical-align: middle;
@@ -143,6 +147,9 @@ $breadcrumb-background: rgba(255, 255, 255, .5);
       ul {
         border: none;
       }
+    }
+    a {
+      height: 100%;
     }
     ul {
       text-align: left;
@@ -479,7 +486,6 @@ header {
 
 
 // Shop
-
 .woocommerce-LoopProduct-link {
   h3 {
     height: 100px; // висота блоку назви товару під іконкою
@@ -491,8 +497,6 @@ header {
     }
   }
 }
-
-
 
 @media (min-width: 768px) {
   .no-sid-bar {
@@ -568,7 +572,7 @@ header {
         width: 90%;
         height: 70px;
         margin: auto;
-        //padding-bottom: 3px;
+
 
         cursor: pointer;
         a {
@@ -626,13 +630,11 @@ header {
 
 
 .vertical-thumbnail {
-  //float: left;
-  //width: 50%;
+
   margin: 0;
 }
 .pb-left-column {
-  //float: left;
-  //width: 50%;
+
   #image-block {
     position: relative;
 
@@ -699,9 +701,9 @@ header {
   }
 }
 
-.col-full {
+/* .col-full {
   max-width: 90%;
-}
+} */
 #primary {
   width: 100%;
 }
@@ -742,6 +744,7 @@ header {
     //
   }
 }
-.container {
+/* .container {
   width: 100%;
-}
+} */
+

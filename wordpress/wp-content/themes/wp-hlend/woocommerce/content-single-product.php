@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="container">
+
   <div class="primary_block row">
 
     <div class="pb-left-column col-xs-12 col-sm-6 col-md-6 vertical-thumbnail">
@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div><!-- .pb-center-column -->
 
   </div><!-- .primary_block row -->
-  </div><!-- /.container -->
+
 
   <?php
     /**
