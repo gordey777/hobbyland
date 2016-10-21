@@ -23,15 +23,18 @@
   <?php do_action( 'storefront_before_footer' ); ?>
 
   <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="col-full container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <?php wpeFootNav(); ?>
 
-      <?php wpeFootNav(); ?>
 
-      <?php wpeFootNavTwo(); ?>
 
-      <?php wpeFootNavThree(); ?>
+        </div><!-- /.col-md-8 col-sm-12 -->
 
-      <?php wpeFootNavFor(); ?>
+        <div class="col-md-4 col-sm-12"></div><!-- /.col-sm-8 col-xs-12 -->
+
+      </div><!-- /.row -->
 
       <?php
       /**
@@ -88,6 +91,36 @@
       });
 
     });
+  </script>
+
+  <script>
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.sub-menu').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+
+  var accordion = new Accordion($('.accordion'), false);
+});
+
   </script>
 
 <script>

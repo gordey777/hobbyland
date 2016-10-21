@@ -96,11 +96,11 @@ function wpeFootNav() {
     'menu_id'         => '',
     'echo'            => true,
     'fallback_cb'     => 'wp_page_menu',
-    'before'          => '',
-    'after'           => '',
+    'before'          => '<div class="link">',
+    'after'           => '<i class="fa fa-chevron-down"></i></div>',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul data-tpl="navigation" class="footer-nav-myclass">%3$s</ul>',
+    'items_wrap'      => '<ul data-tpl="navigation" class="footer-nav-myclass accordion">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
